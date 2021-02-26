@@ -1,0 +1,772 @@
+-- Associated in OMQHUB - Made by FELIX & Tim11YT
+
+local Speedrunners4Hub = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Stage1 = Instance.new("TextButton")
+local Stage2 = Instance.new("TextButton")
+local Stage3 = Instance.new("TextButton")
+local Stage4 = Instance.new("TextButton")
+local Stage5 = Instance.new("TextButton")
+local Stage6 = Instance.new("TextButton")
+local Stage7 = Instance.new("TextButton")
+local Stage8 = Instance.new("TextButton")
+local Stage9 = Instance.new("TextButton")
+local Stage10 = Instance.new("TextButton")
+local Stage11 = Instance.new("TextButton")
+local Stage12 = Instance.new("TextButton")
+local Stage13 = Instance.new("TextButton")
+local Stage14 = Instance.new("TextButton")
+local Stage15 = Instance.new("TextButton")
+local Stage16 = Instance.new("TextButton")
+local Stage17 = Instance.new("TextButton")
+local Stage18 = Instance.new("TextButton")
+local Stage19 = Instance.new("TextButton")
+local Stage20 = Instance.new("TextButton")
+local Stage22 = Instance.new("TextButton")
+local Stage21 = Instance.new("TextButton")
+local Stage23 = Instance.new("TextButton")
+local Stage24 = Instance.new("TextButton")
+local Stage25 = Instance.new("TextButton")
+local Stage27 = Instance.new("TextButton")
+local Stage26 = Instance.new("TextButton")
+local Stage28 = Instance.new("TextButton")
+local Stage29 = Instance.new("TextButton")
+local Stage30 = Instance.new("TextButton")
+local Title = Instance.new("TextLabel")
+local MadeBy = Instance.new("TextLabel")
+local CreditsButton = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
+local CreditsTab = Instance.new("Frame")
+local Title2 = Instance.new("TextButton")
+local DISCORD = Instance.new("TextLabel")
+local FELIX = Instance.new("TextLabel")
+local TIM = Instance.new("TextLabel")
+local Nope = Instance.new("TextLabel")
+local YT = Instance.new("TextLabel")
+local YouTube = Instance.new("TextLabel")
+local LOL = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
+local Close2 = Instance.new("TextButton")
+local ShowMAIN = Instance.new("Frame")
+local SHOW = Instance.new("TextButton")
+
+--Properties:
+
+Speedrunners4Hub.Name = "Speedrunners 4 - Hub"
+Speedrunners4Hub.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = Speedrunners4Hub
+Main.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+Main.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Main.BorderSizePixel = 2
+Main.Position = UDim2.new(-0.0299277604, 0, 0.256080121, 0)
+Main.Size = UDim2.new(0, 698, 0, 340)
+Main.Visible = false
+Main.Active = true
+Main.Draggable = true
+
+Stage1.Name = "Stage 1"
+Stage1.Parent = Main
+Stage1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stage1.Position = UDim2.new(0.069757238, 0, 0.147508696, 0)
+Stage1.Size = UDim2.new(0, 120, 0, 40)
+Stage1.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Stage1.Font = Enum.Font.SourceSans
+Stage1.Text = "Stage 1"
+Stage1.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stage1.TextSize = 20.000
+Stage1.TextWrapped = true
+Stage1.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-251.974869, 150.677551, -434.977234)
+	wait(1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-282, 150, -433)
+end)
+
+Stage2.Name = "Stage 2"
+Stage2.Parent = Main
+Stage2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stage2.Position = UDim2.new(0.241677016, 0, 0.147508696, 0)
+Stage2.Size = UDim2.new(0, 120, 0, 40)
+Stage2.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Stage2.Font = Enum.Font.SourceSans
+Stage2.Text = "Stage 2"
+Stage2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stage2.TextSize = 20.000
+Stage2.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1166.8645, 163.097687, -465.912109)
+	wait(1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1189.3363, 163.097702, -466.828522)
+end)
+
+Stage3.Name = "Stage 3"
+Stage3.Parent = Main
+Stage3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stage3.Position = UDim2.new(0.413596809, 0, 0.147508696, 0)
+Stage3.Size = UDim2.new(0, 120, 0, 40)
+Stage3.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Stage3.Font = Enum.Font.SourceSans
+Stage3.Text = "Stage 3"
+Stage3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stage3.TextSize = 20.000
+Stage3.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2003.09937, 162.58757, -478.72699)
+	wait(1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2029.61694, 162.58757, -479.560272)
+end)
+
+Stage4.Name = "Stage 4"
+Stage4.Parent = Main
+Stage4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stage4.Position = UDim2.new(0.585516572, 0, 0.147508696, 0)
+Stage4.Size = UDim2.new(0, 120, 0, 40)
+Stage4.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Stage4.Font = Enum.Font.SourceSans
+Stage4.Text = "Stage 4"
+Stage4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stage4.TextSize = 20.000
+Stage4.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2824.25513, 323.429382, -462.970581)
+	wait(1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2851.52075, 323.429321, -463.428955)
+end)
+
+Stage5.Name = "Stage 5"
+Stage5.Parent = Main
+Stage5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stage5.Position = UDim2.new(0.757436335, 0, 0.147508696, 0)
+Stage5.Size = UDim2.new(0, 120, 0, 40)
+Stage5.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Stage5.Font = Enum.Font.SourceSans
+Stage5.Text = "Stage 5"
+Stage5.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stage5.TextSize = 20.000
+Stage5.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3832.77246, 291.247833, -411.956055)
+	wait(1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3861.62207, 291.247833, -415.895721)
+end)
+
+Stage6.Name = "Stage 6"
+Stage6.Parent = Main
+Stage6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stage6.Position = UDim2.new(0.069757238, 0, 0.265155762, 0)
+Stage6.Size = UDim2.new(0, 120, 0, 40)
+Stage6.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Stage6.Font = Enum.Font.SourceSans
+Stage6.Text = "Stage 6"
+Stage6.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stage6.TextSize = 20.000
+Stage6.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4644.92529, 67.9078064, -443.531097)
+	wait(1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4676.41748, 67.907753, -440.260986)
+end)
+
+Stage7.Name = "Stage 7"
+Stage7.Parent = Main
+Stage7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stage7.Position = UDim2.new(0.241677016, 0, 0.265155762, 0)
+Stage7.Size = UDim2.new(0, 120, 0, 40)
+Stage7.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Stage7.Font = Enum.Font.SourceSans
+Stage7.Text = "Stage 7"
+Stage7.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stage7.TextSize = 20.000
+Stage7.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5607.98047, 295.568268, 558.838928)
+	wait(1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5636.40771, 295.568207, 557.850037)
+end)
+
+Stage8.Name = "Stage 8"
+Stage8.Parent = Main
+Stage8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stage8.Position = UDim2.new(0.413596809, 0, 0.265155762, 0)
+Stage8.Size = UDim2.new(0, 120, 0, 40)
+Stage8.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Stage8.Font = Enum.Font.SourceSans
+Stage8.Text = "Stage 8"
+Stage8.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stage8.TextSize = 20.000
+Stage8.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6516.29297, 206.16803, -480.095306)
+	wait(1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6535.90479, 206.167984, -483.636444)
+end)
+
+Stage9.Name = "Stage 9"
+Stage9.Parent = Main
+Stage9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stage9.Position = UDim2.new(0.585516572, 0, 0.265155762, 0)
+Stage9.Size = UDim2.new(0, 120, 0, 40)
+Stage9.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Stage9.Font = Enum.Font.SourceSans
+Stage9.Text = "Stage 9"
+Stage9.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stage9.TextSize = 20.000
+Stage9.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7412.26416, 112.018112, -493.675873)
+	wait(1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7433.52588, 112.018082, -495.184723)
+end)
+
+Stage10.Name = "Stage 10"
+Stage10.Parent = Main
+Stage10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stage10.Position = UDim2.new(0.757436335, 0, 0.265155762, 0)
+Stage10.Size = UDim2.new(0, 120, 0, 40)
+Stage10.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Stage10.Font = Enum.Font.SourceSans
+Stage10.Text = "Stage 10"
+Stage10.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stage10.TextSize = 20.000
+Stage10.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8349.88086, 88.8677368, -501.387848)
+	wait(1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8368.05859, 88.8677216, -498.931763)
+end)
+
+Stage11.Name = "Stage 11"
+Stage11.Parent = Main
+Stage11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stage11.Position = UDim2.new(0.069757238, 0, 0.382802814, 0)
+Stage11.Size = UDim2.new(0, 120, 0, 40)
+Stage11.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Stage11.Font = Enum.Font.SourceSans
+Stage11.Text = "Stage 11"
+Stage11.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stage11.TextSize = 20.000
+Stage11.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9204.11426, 37.7181168, -496.807922)
+	wait(1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9223.81445, 37.718132, -494.937683)
+end)
+
+Stage12.Name = "Stage 12"
+Stage12.Parent = Main
+Stage12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stage12.Position = UDim2.new(0.241677016, 0, 0.382802814, 0)
+Stage12.Size = UDim2.new(0, 120, 0, 40)
+Stage12.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Stage12.Font = Enum.Font.SourceSans
+Stage12.Text = "Stage 12"
+Stage12.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stage12.TextSize = 20.000
+Stage12.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-10069.8682, 293.619568, -497.21167)
+	wait(1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-10102.9727, 293.619659, -497.807098)
+end)
+	
+Stage13.Name = "Stage 13"
+Stage13.Parent = Main
+Stage13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stage13.Position = UDim2.new(0.413596809, 0, 0.382802814, 0)
+Stage13.Size = UDim2.new(0, 120, 0, 40)
+Stage13.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Stage13.Font = Enum.Font.SourceSans
+Stage13.Text = "Stage 13"
+Stage13.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stage13.TextSize = 20.000
+Stage13.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-10902.5596, 96.4880676, -484.620453)
+	wait(1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-10933.4336, 96.4880905, -482.922577)
+end)
+
+Stage14.Name = "Stage 14"
+Stage14.Parent = Main
+Stage14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stage14.Position = UDim2.new(0.585516572, 0, 0.382802814, 0)
+Stage14.Size = UDim2.new(0, 120, 0, 40)
+Stage14.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Stage14.Font = Enum.Font.SourceSans
+Stage14.Text = "Stage 14"
+Stage14.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stage14.TextSize = 20.000
+Stage14.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-11776.2617, 74.5609589, -465.350159)
+	wait(1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-11821.2832, 74.5609741, -464.988647)
+end)
+
+Stage15.Name = "Stage 15"
+Stage15.Parent = Main
+Stage15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stage15.Position = UDim2.new(0.757436335, 0, 0.382802814, 0)
+Stage15.Size = UDim2.new(0, 120, 0, 40)
+Stage15.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Stage15.Font = Enum.Font.SourceSans
+Stage15.Text = "Stage 15"
+Stage15.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stage15.TextSize = 20.000
+Stage15.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-12589.9141, 215.078217, -461.704681)
+	wait(1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-12630.6104, 215.078293, -445.833069 )
+end)
+
+Stage16.Name = "Stage 16"
+Stage16.Parent = Main
+Stage16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stage16.Position = UDim2.new(0.069757238, 0, 0.500449836, 0)
+Stage16.Size = UDim2.new(0, 120, 0, 40)
+Stage16.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Stage16.Font = Enum.Font.SourceSans
+Stage16.Text = "Stage 16"
+Stage16.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stage16.TextSize = 20.000
+Stage16.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-13543.2441, 133.964401, -479.564758)
+	wait(1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-13578.5361, 133.964447, -477.03186)
+end)
+
+Stage17.Name = "Stage 17"
+Stage17.Parent = Main
+Stage17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stage17.Position = UDim2.new(0.241677016, 0, 0.500449836, 0)
+Stage17.Size = UDim2.new(0, 120, 0, 40)
+Stage17.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Stage17.Font = Enum.Font.SourceSans
+Stage17.Text = "Stage 17"
+Stage17.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stage17.TextSize = 20.000
+Stage17.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3226.59473, 218.306213, -3789.58008)
+	wait(1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3261.17603, 218.306183, -3789.94214)
+end)
+
+Stage18.Name = "Stage 18"
+Stage18.Parent = Main
+Stage18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stage18.Position = UDim2.new(0.413596809, 0, 0.500449836, 0)
+Stage18.Size = UDim2.new(0, 120, 0, 40)
+Stage18.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Stage18.Font = Enum.Font.SourceSans
+Stage18.Text = "Stage 18"
+Stage18.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stage18.TextSize = 20.000
+Stage18.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4077.53979, 187.846237, -3800.15576)
+	wait(1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4107.20166, 187.846283, -3800.58374)
+end)
+
+Stage19.Name = "Stage 19"
+Stage19.Parent = Main
+Stage19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stage19.Position = UDim2.new(0.585516572, 0, 0.500449836, 0)
+Stage19.Size = UDim2.new(0, 120, 0, 40)
+Stage19.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Stage19.Font = Enum.Font.SourceSans
+Stage19.Text = "Stage 19"
+Stage19.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stage19.TextSize = 20.000
+Stage19.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4968.08105, 217.276215, -3799.8313)
+	wait(1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4985.60059, 217.276306, -3803.78784)
+end)
+
+Stage20.Name = "Stage 20"
+Stage20.Parent = Main
+Stage20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stage20.Position = UDim2.new(0.757436335, 0, 0.500449836, 0)
+Stage20.Size = UDim2.new(0, 120, 0, 40)
+Stage20.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Stage20.Font = Enum.Font.SourceSans
+Stage20.Text = "Stage 20"
+Stage20.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stage20.TextSize = 20.000
+Stage20.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2766.82495, 563.668457, 130.749893)
+	wait(1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2745.67456, 563.668457, 129.943436)
+end)
+
+Stage22.Name = "Stage 22"
+Stage22.Parent = Main
+Stage22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stage22.Position = UDim2.new(0.241677016, 0, 0.618096888, 0)
+Stage22.Size = UDim2.new(0, 120, 0, 40)
+Stage22.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Stage22.Font = Enum.Font.SourceSans
+Stage22.Text = "Stage 22"
+Stage22.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stage22.TextSize = 20.000
+Stage22.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5791.46875, 245.294205, -3799.87817)
+	wait(1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5824.76074, 245.294067, -3800.66748)
+end)
+
+Stage21.Name = "Stage 21"
+Stage21.Parent = Main
+Stage21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stage21.Position = UDim2.new(0.069757238, 0, 0.618096888, 0)
+Stage21.Size = UDim2.new(0, 120, 0, 40)
+Stage21.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Stage21.Font = Enum.Font.SourceSans
+Stage21.Text = "Stage 21"
+Stage21.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stage21.TextSize = 20.000
+Stage21.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6728.7124, 306.425201, -3805.59644)
+	wait(1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6751.82568, 306.986969, -3803.48535)
+end)
+
+Stage23.Name = "Stage 23"
+Stage23.Parent = Main
+Stage23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stage23.Position = UDim2.new(0.413596809, 0, 0.618096888, 0)
+Stage23.Size = UDim2.new(0, 120, 0, 40)
+Stage23.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Stage23.Font = Enum.Font.SourceSans
+Stage23.Text = "Stage 23"
+Stage23.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stage23.TextSize = 20.000
+Stage23.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8163.93994, 221.277588, -3810.90381)
+	wait(1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8193.26074, 221.277237, -3808.46191)
+end)
+
+Stage24.Name = "Stage 24"
+Stage24.Parent = Main
+Stage24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stage24.Position = UDim2.new(0.585516572, 0, 0.618096888, 0)
+Stage24.Size = UDim2.new(0, 120, 0, 40)
+Stage24.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Stage24.Font = Enum.Font.SourceSans
+Stage24.Text = "Stage 24"
+Stage24.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stage24.TextSize = 20.000
+Stage24.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9071.32422, 330.226318, -3778.12842)
+	wait(1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9103.38379, 330.226318, -3777.32642)
+end)
+
+Stage25.Name = "Stage 25"
+Stage25.Parent = Main
+Stage25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stage25.Position = UDim2.new(0.757436335, 0, 0.618096888, 0)
+Stage25.Size = UDim2.new(0, 120, 0, 40)
+Stage25.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Stage25.Font = Enum.Font.SourceSans
+Stage25.Text = "Stage 25"
+Stage25.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stage25.TextSize = 20.000
+Stage25.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-10266.6494, 246.477402, -3826.42041)
+	wait(1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-10306.4277, 246.477432, -3831.58301)
+end)
+
+Stage27.Name = "Stage 27"
+Stage27.Parent = Main
+Stage27.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stage27.Position = UDim2.new(0.241677016, 0, 0.73574394, 0)
+Stage27.Size = UDim2.new(0, 120, 0, 40)
+Stage27.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Stage27.Font = Enum.Font.SourceSans
+Stage27.Text = "Stage 27"
+Stage27.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stage27.TextSize = 20.000
+Stage27.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-11485.3711, 479.077789, -3807.22681)
+	wait(1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-11522.6641, 479.07782, -3804.68555)
+end)
+
+Stage26.Name = "Stage 26"
+Stage26.Parent = Main
+Stage26.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stage26.Position = UDim2.new(0.069757238, 0, 0.73574394, 0)
+Stage26.Size = UDim2.new(0, 120, 0, 40)
+Stage26.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Stage26.Font = Enum.Font.SourceSans
+Stage26.Text = "Stage 26"
+Stage26.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stage26.TextSize = 20.000
+Stage26.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-12512.0713, 179.508316, -3815.85254)
+	wait(1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-12528.2881, 179.508362, -3815.2124)
+end)
+
+Stage28.Name = "Stage 28"
+Stage28.Parent = Main
+Stage28.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stage28.Position = UDim2.new(0.413596809, 0, 0.73574394, 0)
+Stage28.Size = UDim2.new(0, 120, 0, 40)
+Stage28.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Stage28.Font = Enum.Font.SourceSans
+Stage28.Text = "Stage 28"
+Stage28.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stage28.TextSize = 20.000
+Stage28.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-13453.9971, 459.201904, -3826.34961)
+	wait(1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-13483.4961, 459.202271, -3826.69189)
+end)
+
+Stage29.Name = "Stage 29"
+Stage29.Parent = Main
+Stage29.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stage29.Position = UDim2.new(0.585516572, 0, 0.73574394, 0)
+Stage29.Size = UDim2.new(0, 120, 0, 40)
+Stage29.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Stage29.Font = Enum.Font.SourceSans
+Stage29.Text = "Stage 29"
+Stage29.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stage29.TextSize = 20.000
+Stage29.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(692.014709, 372.104462, -3739.53979)
+	wait(1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(671.878174, 372.104401, -3738.96558)
+end)
+
+Stage30.Name = "Stage 30"
+Stage30.Parent = Main
+Stage30.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stage30.Position = UDim2.new(0.757436335, 0, 0.73574394, 0)
+Stage30.Size = UDim2.new(0, 120, 0, 40)
+Stage30.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Stage30.Font = Enum.Font.SourceSans
+Stage30.Text = "Stage 30"
+Stage30.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stage30.TextSize = 20.000
+Stage30.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4279.16064, 681.359009, -2178.83838)
+	wait(1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4263.94434, 681.359375, -2166.58887)
+	wait(1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-757.646667, 424.293488, -3190.07397)
+end)
+
+Title.Name = "Title"
+Title.Parent = Main
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.356170207, 0, -0.00862579048, 0)
+Title.Size = UDim2.new(0, 200, 0, 50)
+Title.Font = Enum.Font.Cartoon
+Title.Text = "Speedrunners 4"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+MadeBy.Name = "MadeBy"
+MadeBy.Parent = Main
+MadeBy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MadeBy.BackgroundTransparency = 1.000
+MadeBy.Position = UDim2.new(0.731646061, 0, 0.92828089, 0)
+MadeBy.Size = UDim2.new(0, 187, 0, 26)
+MadeBy.Font = Enum.Font.Cartoon
+MadeBy.Text = "Made by Tim11YT & FELIX"
+MadeBy.TextColor3 = Color3.fromRGB(0, 0, 0)
+MadeBy.TextScaled = true
+MadeBy.TextSize = 14.000
+MadeBy.TextWrapped = true
+
+CreditsButton.Name = "CreditsButton"
+CreditsButton.Parent = Main
+CreditsButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CreditsButton.BackgroundTransparency = 1.000
+CreditsButton.Position = UDim2.new(0.756559432, 0, 0.0116426963, 0)
+CreditsButton.Size = UDim2.new(0, 110, 0, 33)
+CreditsButton.Font = Enum.Font.Cartoon
+CreditsButton.Text = "Credits"
+CreditsButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+CreditsButton.TextScaled = true
+CreditsButton.TextSize = 14.000
+CreditsButton.TextWrapped = true
+CreditsButton.Active = true
+CreditsButton.MouseButton1Down:connect(function()
+	CreditsTab.Visible = true
+	CreditsButton.Visible = false
+end)
+
+Close.Name = "Close"
+Close.Parent = Main
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.Position = UDim2.new(0.953802824, 0, 0.00863865111, 0)
+Close.Size = UDim2.new(0, 25, 0, 24)
+Close.Font = Enum.Font.Cartoon
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+Close.MouseButton1Down:connect(function()
+	Main.Visible = false
+	SHOW.Visible = true
+end)
+
+CreditsTab.Name = "CreditsTab"
+CreditsTab.Parent = Main
+CreditsTab.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+CreditsTab.BorderColor3 = Color3.fromRGB(255, 0, 0)
+CreditsTab.BorderSizePixel = 2
+CreditsTab.Position = UDim2.new(1.01464605, 0, -0.00568461418, 0)
+CreditsTab.Size = UDim2.new(0, 286, 0, 340)
+CreditsTab.Visible = false
+
+Title2.Name = "Title2"
+Title2.Parent = CreditsTab
+Title2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title2.BackgroundTransparency = 1.000
+Title2.Position = UDim2.new(0.301993966, 0, 0.0145838726, 0)
+Title2.Size = UDim2.new(0, 110, 0, 33)
+Title2.Font = Enum.Font.Cartoon
+Title2.Text = "Credits"
+Title2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title2.TextScaled = true
+Title2.TextSize = 14.000
+Title2.TextWrapped = true
+
+DISCORD.Name = "DISCORD:"
+DISCORD.Parent = CreditsTab
+DISCORD.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DISCORD.BackgroundTransparency = 1.000
+DISCORD.Position = UDim2.new(0.214827091, 0, 0.160069183, 0)
+DISCORD.Size = UDim2.new(0, 154, 0, 30)
+DISCORD.Font = Enum.Font.Cartoon
+DISCORD.Text = "DISCORD:"
+DISCORD.TextColor3 = Color3.fromRGB(0, 0, 0)
+DISCORD.TextScaled = true
+DISCORD.TextSize = 14.000
+DISCORD.TextWrapped = true
+
+FELIX.Name = "FELIX"
+FELIX.Parent = CreditsTab
+FELIX.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FELIX.BackgroundTransparency = 1.000
+FELIX.Position = UDim2.new(0.062937066, 0, 0.264567465, 0)
+FELIX.Size = UDim2.new(0, 238, 0, 50)
+FELIX.Font = Enum.Font.Cartoon
+FELIX.Text = "FELIX: NotMxth#3408"
+FELIX.TextColor3 = Color3.fromRGB(0, 0, 0)
+FELIX.TextScaled = true
+FELIX.TextSize = 14.000
+FELIX.TextWrapped = true
+
+TIM.Name = "TIM"
+TIM.Parent = CreditsTab
+TIM.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TIM.BackgroundTransparency = 1.000
+TIM.Position = UDim2.new(0.337916225, 0, 0.392150521, 0)
+TIM.Size = UDim2.new(0, 160, 0, 34)
+TIM.Font = Enum.Font.Cartoon
+TIM.Text = "PvPJames#6474"
+TIM.TextColor3 = Color3.fromRGB(0, 0, 0)
+TIM.TextScaled = true
+TIM.TextSize = 1.000
+TIM.TextWrapped = true
+
+Nope.Name = "Nope"
+Nope.Parent = CreditsTab
+Nope.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Nope.BackgroundTransparency = 1.000
+Nope.Position = UDim2.new(-0.0061276257, 0, 0.404916406, 0)
+Nope.Size = UDim2.new(0, 98, 0, 25)
+Nope.Font = Enum.Font.Cartoon
+Nope.Text = "Tim11YT:"
+Nope.TextColor3 = Color3.fromRGB(0, 0, 0)
+Nope.TextScaled = true
+Nope.TextSize = 14.000
+Nope.TextWrapped = true
+
+YT.Name = "YT"
+YT.Parent = CreditsTab
+YT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+YT.BackgroundTransparency = 1.000
+YT.Position = UDim2.new(0.0784634724, 0, 0.584878922, 0)
+YT.Size = UDim2.new(0, 229, 0, 50)
+YT.Font = Enum.Font.Cartoon
+YT.Text = "Tim11YT YouTube: disgrat"
+YT.TextColor3 = Color3.fromRGB(0, 0, 0)
+YT.TextSize = 19.000
+YT.TextWrapped = true
+
+YouTube.Name = "YouTube"
+YouTube.Parent = CreditsTab
+YouTube.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+YouTube.BackgroundTransparency = 1.000
+YouTube.Position = UDim2.new(0.221820101, 0, 0.510069191, 0)
+YouTube.Size = UDim2.new(0, 154, 0, 30)
+YouTube.Font = Enum.Font.Cartoon
+YouTube.Text = "YouTube:"
+YouTube.TextColor3 = Color3.fromRGB(0, 0, 0)
+YouTube.TextScaled = true
+YouTube.TextSize = 14.000
+YouTube.TextWrapped = true
+
+LOL.Name = "LOL"
+LOL.Parent = CreditsTab
+LOL.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LOL.BackgroundTransparency = 1.000
+LOL.Position = UDim2.new(0.0359162018, 0, 0.659520507, 0)
+LOL.Size = UDim2.new(0, 252, 0, 50)
+LOL.Font = Enum.Font.Cartoon
+LOL.Text = "FELIX YouTube: N/A"
+LOL.TextColor3 = Color3.fromRGB(0, 0, 0)
+LOL.TextSize = 24.000
+LOL.TextWrapped = true
+
+TextLabel.Parent = CreditsTab
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.139860138, 0, 0.855882406, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.Cartoon
+TextLabel.Text = "Support my Friend Tim11YT <3"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 16.000
+TextLabel.TextWrapped = true
+
+Close2.Name = "Close2"
+Close2.Parent = CreditsTab
+Close2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close2.BackgroundTransparency = 1.000
+Close2.Position = UDim2.new(0.906795263, 0, -0.00296407938, 0)
+Close2.Size = UDim2.new(0, 23, 0, 24)
+Close2.Font = Enum.Font.Cartoon
+Close2.Text = "X"
+Close2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close2.TextScaled = true
+Close2.TextSize = 14.000
+Close2.TextWrapped = true
+Close2.MouseButton1Down:connect(function()
+	CreditsTab.Visible = false
+	CreditsButton.Visible = true
+end)
+
+ShowMAIN.Name = "ShowMAIN"
+ShowMAIN.Parent = Speedrunners4Hub
+ShowMAIN.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ShowMAIN.BackgroundTransparency = 1.000
+ShowMAIN.Size = UDim2.new(0, 120, 0, 38)
+ShowMAIN.Active = true
+
+SHOW.Name = "SHOW"
+SHOW.Parent = ShowMAIN
+SHOW.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SHOW.Size = UDim2.new(0, 120, 0, 38)
+SHOW.Style = Enum.ButtonStyle.RobloxButtonDefault
+SHOW.Font = Enum.Font.SourceSans
+SHOW.Text = "SHOW"
+SHOW.TextColor3 = Color3.fromRGB(255, 255, 255)
+SHOW.TextSize = 25.000
+SHOW.TextWrapped = true
+SHOW.MouseButton1Down:connect(function()
+	Main.Visible = true
+	SHOW.Visible = false
+end)
