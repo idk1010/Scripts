@@ -60,7 +60,7 @@ Main.Parent = Speedrunners4Hub
 Main.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
 Main.BorderColor3 = Color3.fromRGB(255, 0, 0)
 Main.BorderSizePixel = 2
-Main.Position = UDim2.new(-0.0299277604, 0, 0.256080121, 0)
+Main.Position = UDim2.new(0.282, 0, 0.285, 0)
 Main.Size = UDim2.new(0, 698, 0, 340)
 Main.Visible = false
 Main.Active = true
@@ -766,6 +766,7 @@ SHOW.Text = "SHOW"
 SHOW.TextColor3 = Color3.fromRGB(255, 255, 255)
 SHOW.TextSize = 25.000
 SHOW.TextWrapped = true
+SHOW.Position = UDim2.new(0, 0,6, 0)
 SHOW.MouseButton1Down:connect(function()
 	Main.Visible = true
 	SHOW.Visible = false
