@@ -1,1094 +1,969 @@
--- Made By lostburger13
--- Gui V1
--- Instances:
-local lostburger13Gui = Instance.new("ScreenGui")
-local strengthFrame = Instance.new("Frame")
-local Dummies = Instance.new("TextButton")
-local saitamaGym = Instance.new("TextButton")
-local dagobahBeach = Instance.new("TextButton")
-local meteor = Instance.new("TextButton")
-local kamiLookout = Instance.new("TextButton")
-local cellArena = Instance.new("TextButton")
-local excalibur = Instance.new("TextButton")
-local Nomu = Instance.new("TextButton")
-local title1 = Instance.new("TextLabel")
-local menuBarFrame = Instance.new("Frame")
-local Main = Instance.new("TextButton")
-local Strength = Instance.new("TextButton")
-local Durability = Instance.new("TextButton")
-local Chakra = Instance.new("TextButton")
-local Speed = Instance.new("TextButton")
-local Agility = Instance.new("TextButton")
-local Chest = Instance.new("TextButton")
-local Minimize = Instance.new("TextButton")
-local durabilityFrame = Instance.new("Frame")
-local pirateShip = Instance.new("TextButton")
-local desertIsland = Instance.new("TextButton")
-local aokijiIsland = Instance.new("TextButton")
-local ursusShock = Instance.new("TextButton")
-local mountAkainu = Instance.new("TextButton")
-local amaterasu = Instance.new("TextButton")
-local kingkaiplanet = Instance.new("TextButton")
-local hyperbolicTimeChamber = Instance.new("TextButton")
-local title3 = Instance.new("TextLabel")
-local mainFrame = Instance.new("Frame")
-local title2 = Instance.new("TextLabel")
-local version = Instance.new("TextLabel")
-local spawn = Instance.new("TextButton")
-local Message = Instance.new("TextLabel")
-local chakraFrame = Instance.new("Frame")
-local spiritTree = Instance.new("TextButton")
-local deathNote = Instance.new("TextButton")
-local waterfallOfTruth = Instance.new("TextButton")
-local temple = Instance.new("TextButton")
-local kuramaStatue = Instance.new("TextButton")
-local senbonzakuraKageyoshi = Instance.new("TextButton")
-local sageMeditationPlatform = Instance.new("TextButton")
-local towerOfHeaven = Instance.new("TextButton")
-local title4 = Instance.new("TextLabel")
-local speedFrame = Instance.new("Frame")
-local trampoline = Instance.new("TextButton")
-local gravityChamberS = Instance.new("TextButton")
-local spaceTimeKunaiFieldS = Instance.new("TextButton")
-local title5 = Instance.new("TextLabel")
-local agilityFrame = Instance.new("Frame")
-local title6 = Instance.new("TextLabel")
-local treadmills = Instance.new("TextButton")
-local gravityChamberA = Instance.new("TextButton")
-local spaceTimeKunaiFieldA = Instance.new("TextButton")
-local chestFrame = Instance.new("Frame")
-local Location1 = Instance.new("TextButton")
-local Location2 = Instance.new("TextButton")
-local Location3 = Instance.new("TextButton")
-local Location4 = Instance.new("TextButton")
-local Location5 = Instance.new("TextButton")
-local Location6 = Instance.new("TextButton")
-local title7 = Instance.new("TextLabel")
-local openFrame = Instance.new("Frame")
-local open = Instance.new("TextButton")
+-- AFSHub (Anime Fighting Simulator Hub) Made by FELIX - Associated in OMQHUB V2
+
+local AFS = Instance.new("ScreenGui")
+local Main = Instance.new("ImageLabel")
+local StrengthButton = Instance.new("TextButton")
+local _100Dummies = Instance.new("TextButton")
+local _10KGym = Instance.new("TextButton")
+local _100KFridge = Instance.new("TextButton")
+local _1MMeteor = Instance.new("TextButton")
+local _10MLookout = Instance.new("TextButton")
+local _100MArena = Instance.new("TextButton")
+local _1BExcalibur = Instance.new("TextButton")
+local _100BNomu = Instance.new("TextButton")
+local DurabilityButton = Instance.new("TextButton")
+local _100Ship = Instance.new("TextButton")
+local _10KDesert = Instance.new("TextButton")
+local _100KSnowRock = Instance.new("TextButton")
+local _1MPaw = Instance.new("TextButton")
+local _10MVolcano = Instance.new("TextButton")
+local _100MAmaterasu = Instance.new("TextButton")
+local _1BPlanet = Instance.new("TextButton")
+local _100BCOT = Instance.new("TextButton")
+local ChakraButton = Instance.new("TextButton")
+local _500SpiritTree = Instance.new("TextButton")
+local _15KDeathNote = Instance.new("TextButton")
+local _150KWOT = Instance.new("TextButton")
+local _15MTemple = Instance.new("TextButton")
+local _15MKurama = Instance.new("TextButton")
+local _250MSakura = Instance.new("TextButton")
+local _1BSage = Instance.new("TextButton")
+local _100BTOH = Instance.new("TextButton")
+local SpeedAgilityButton = Instance.new("TextButton")
+local _100Treadmill = Instance.new("TextButton")
+local _100Trampoline = Instance.new("TextButton")
+local _10KChamber = Instance.new("TextButton")
+local _100KKunai = Instance.new("TextButton")
+local ChestButton = Instance.new("TextButton")
+local Chest1 = Instance.new("TextButton")
+local Chest2 = Instance.new("TextButton")
+local Chest3 = Instance.new("TextButton")
+local Chest4 = Instance.new("TextButton")
+local Chest5 = Instance.new("TextButton")
+local AFSTitle = Instance.new("TextLabel")
+local X = Instance.new("TextButton")
+local Spawn = Instance.new("TextButton")
+local ShowMain = Instance.new("Frame")
+local AFSShow = Instance.new("TextButton")
+
 --Properties:
-lostburger13Gui.Name = "lostburger13Gui"
-lostburger13Gui.Parent = game.CoreGui
-lostburger13Gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-strengthFrame.Name = "strengthFrame"
-strengthFrame.Parent = lostburger13Gui
-strengthFrame.Active = true
-strengthFrame.BackgroundColor3 = Color3.new(0.333333, 1, 1)
-strengthFrame.Position = UDim2.new(0.338201374, 0, 0.184542581, 0)
-strengthFrame.Size = UDim2.new(0, 502, 0, 303)
-strengthFrame.Draggable = true
-
-Dummies.Name = "Dummies"
-Dummies.Parent = strengthFrame
-Dummies.BackgroundColor3 = Color3.new(1, 1, 0)
-Dummies.Position = UDim2.new(-0.00158478634, 0, -0.00121244427, 0)
-Dummies.Size = UDim2.new(0, 129, 0, 50)
-Dummies.Font = Enum.Font.GothamBlack
-Dummies.Text = "100 Dummies"
-Dummies.TextColor3 = Color3.new(0, 0, 0)
-Dummies.TextScaled = true
-Dummies.TextSize = 14
-Dummies.TextWrapped = true
-
-saitamaGym.Name = "saitamaGym"
-saitamaGym.Parent = strengthFrame
-saitamaGym.BackgroundColor3 = Color3.new(1, 1, 0)
-saitamaGym.Position = UDim2.new(-0.00120213139, 0, 0.161716178, 0)
-saitamaGym.Size = UDim2.new(0, 129, 0, 49)
-saitamaGym.Font = Enum.Font.GothamBlack
-saitamaGym.Text = "10K Saitama Gym"
-saitamaGym.TextColor3 = Color3.new(0, 0, 0)
-saitamaGym.TextScaled = true
-saitamaGym.TextSize = 14
-saitamaGym.TextWrapped = true
-
-dagobahBeach.Name = "dagobahBeach"
-dagobahBeach.Parent = strengthFrame
-dagobahBeach.BackgroundColor3 = Color3.new(1, 1, 0)
-dagobahBeach.Position = UDim2.new(-0.000133290727, 0, 0.317261159, 0)
-dagobahBeach.Size = UDim2.new(0, 128, 0, 50)
-dagobahBeach.Font = Enum.Font.GothamBlack
-dagobahBeach.Text = "100K Dagobah Beach"
-dagobahBeach.TextColor3 = Color3.new(0, 0, 0)
-dagobahBeach.TextScaled = true
-dagobahBeach.TextSize = 14
-dagobahBeach.TextWrapped = true
-
-meteor.Name = "meteor"
-meteor.Parent = strengthFrame
-meteor.BackgroundColor3 = Color3.new(1, 1, 0)
-meteor.Position = UDim2.new(-0.000333200878, 0, 0.480875552, 0)
-meteor.Size = UDim2.new(0, 128, 0, 50)
-meteor.Font = Enum.Font.GothamBlack
-meteor.Text = "1M Meteor"
-meteor.TextColor3 = Color3.new(0, 0, 0)
-meteor.TextScaled = true
-meteor.TextSize = 14
-meteor.TextWrapped = true
-
-kamiLookout.Name = "kamiLookout"
-kamiLookout.Parent = strengthFrame
-kamiLookout.BackgroundColor3 = Color3.new(1, 1, 0)
-kamiLookout.Position = UDim2.new(0, 0, 0.645652235, 0)
-kamiLookout.Size = UDim2.new(0, 127, 0, 49)
-kamiLookout.Font = Enum.Font.GothamBlack
-kamiLookout.Text = "10M Kami's Lookout"
-kamiLookout.TextColor3 = Color3.new(0, 0, 0)
-kamiLookout.TextScaled = true
-kamiLookout.TextSize = 14
-kamiLookout.TextWrapped = true
-
-cellArena.Name = "cellArena"
-cellArena.Parent = strengthFrame
-cellArena.BackgroundColor3 = Color3.new(1, 1, 0)
-cellArena.Position = UDim2.new(0, 0, 0.807368398, 0)
-cellArena.Size = UDim2.new(0, 127, 0, 58)
-cellArena.Font = Enum.Font.GothamBlack
-cellArena.Text = "100M Cell Arena"
-cellArena.TextColor3 = Color3.new(0, 0, 0)
-cellArena.TextScaled = true
-cellArena.TextSize = 14
-cellArena.TextWrapped = true
-
-excalibur.Name = "excalibur"
-excalibur.Parent = strengthFrame
-excalibur.BackgroundColor3 = Color3.new(1, 1, 0)
-excalibur.Position = UDim2.new(0.256972104, 0, -0.00144228293, 0)
-excalibur.Size = UDim2.new(0, 127, 0, 49)
-excalibur.Font = Enum.Font.GothamBlack
-excalibur.Text = "1B Excalibur"
-excalibur.TextColor3 = Color3.new(0, 0, 0)
-excalibur.TextScaled = true
-excalibur.TextSize = 14
-excalibur.TextWrapped = true
-
-Nomu.Name = "Nomu"
-Nomu.Parent = strengthFrame
-Nomu.BackgroundColor3 = Color3.new(1, 1, 0)
-Nomu.Position = UDim2.new(0.256972104, 0, 0.160273895, 0)
-Nomu.Size = UDim2.new(0, 127, 0, 46)
-Nomu.Font = Enum.Font.GothamBlack
-Nomu.Text = "100B Nomu"
-Nomu.TextColor3 = Color3.new(0, 0, 0)
-Nomu.TextScaled = true
-Nomu.TextSize = 14
-Nomu.TextWrapped = true
-
-title1.Name = "title1"
-title1.Parent = strengthFrame
-title1.BackgroundColor3 = Color3.new(0.819608, 0.819608, 0)
-title1.BorderSizePixel = 0
-title1.Position = UDim2.new(0.561752975, 0, 0.567656755, 0)
-title1.Size = UDim2.new(0, 131, 0, 83)
-title1.Font = Enum.Font.Highway
-title1.Text = "lostburger13"
-title1.TextColor3 = Color3.new(1, 0.333333, 0)
-title1.TextSize = 40
-
-menuBarFrame.Name = "menuBarFrame"
-menuBarFrame.Parent = lostburger13Gui
-menuBarFrame.Active = true
-menuBarFrame.BackgroundColor3 = Color3.new(1, 0, 0)
-menuBarFrame.Position = UDim2.new(0.325134516, 0, 0.95425868, 0)
-menuBarFrame.Size = UDim2.new(0, 502, 0, 29)
+AFS.Name = "AFS"
+AFS.Parent = game.CoreGui
 
 Main.Name = "Main"
-Main.Parent = menuBarFrame
-Main.BackgroundColor3 = Color3.new(1, 0, 0)
-Main.Position = UDim2.new(-0.00269286335, 0, 0, 0)
-Main.Size = UDim2.new(0, 66, 0, 30)
-Main.Font = Enum.Font.GothamBlack
-Main.Text = "Main"
-Main.TextColor3 = Color3.new(0, 0, 0)
-Main.TextSize = 14
-Main.TextWrapped = true
+Main.Parent = AFS
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BackgroundTransparency = 1.000
+Main.Position = UDim2.new(0.0936610699, 0, 0.20028612, 0)
+Main.Size = UDim2.new(0, 796, 0, 400)
+Main.Image = "rbxassetid://3570695787"
+Main.ImageColor3 = Color3.fromRGB(30, 30, 30)
+Main.ScaleType = Enum.ScaleType.Slice
+Main.SliceCenter = Rect.new(100, 100, 100, 100)
+Main.SliceScale = 0.250
+Main.Draggable = true
+Main.Active = true
+Main.Visible = false
 
-Strength.Name = "Strength"
-Strength.Parent = menuBarFrame
-Strength.BackgroundColor3 = Color3.new(1, 0, 0)
-Strength.Position = UDim2.new(0.127203107, 0, 4.09781933e-08, 0)
-Strength.Size = UDim2.new(0, 64, 0, 30)
-Strength.Font = Enum.Font.GothamBlack
-Strength.Text = "Strength"
-Strength.TextColor3 = Color3.new(0, 0, 0)
-Strength.TextSize = 14
-
-Durability.Name = "Durability"
-Durability.Parent = menuBarFrame
-Durability.BackgroundColor3 = Color3.new(1, 0, 0)
-Durability.Position = UDim2.new(0.253859878, 0, 0, 0)
-Durability.Size = UDim2.new(0, 66, 0, 30)
-Durability.Font = Enum.Font.GothamBlack
-Durability.Text = "Durability"
-Durability.TextColor3 = Color3.new(0, 0, 0)
-Durability.TextSize = 14
-
-Chakra.Name = "Chakra"
-Chakra.Parent = menuBarFrame
-Chakra.BackgroundColor3 = Color3.new(1, 0, 0)
-Chakra.Position = UDim2.new(0.383761346, 0, 0, 0)
-Chakra.Size = UDim2.new(0, 65, 0, 30)
-Chakra.Font = Enum.Font.GothamBlack
-Chakra.Text = "Chakra"
-Chakra.TextColor3 = Color3.new(0, 0, 0)
-Chakra.TextSize = 14
-
-Speed.Name = "Speed"
-Speed.Parent = menuBarFrame
-Speed.BackgroundColor3 = Color3.new(1, 0, 0)
-Speed.Position = UDim2.new(0.513243437, 0, 0, 0)
-Speed.Size = UDim2.new(0, 64, 0, 30)
-Speed.Font = Enum.Font.GothamBlack
-Speed.Text = "Speed"
-Speed.TextColor3 = Color3.new(0, 0, 0)
-Speed.TextSize = 14
-
-Agility.Name = "Agility"
-Agility.Parent = menuBarFrame
-Agility.BackgroundColor3 = Color3.new(1, 0, 0)
-Agility.Position = UDim2.new(0.63930887, 0, 0, 0)
-Agility.Size = UDim2.new(0, 63, 0, 30)
-Agility.Font = Enum.Font.GothamBlack
-Agility.Text = "Agility"
-Agility.TextColor3 = Color3.new(0, 0, 0)
-Agility.TextSize = 14
-
-Chest.Name = "Chest"
-Chest.Parent = menuBarFrame
-Chest.BackgroundColor3 = Color3.new(1, 0, 0)
-Chest.Position = UDim2.new(0.76314038, 0, 0, 0)
-Chest.Size = UDim2.new(0, 66, 0, 30)
-Chest.Font = Enum.Font.GothamBlack
-Chest.Text = "Chest"
-Chest.TextColor3 = Color3.new(0, 0, 0)
-Chest.TextSize = 14
-
-Minimize.Name = "Minimize"
-Minimize.Parent = menuBarFrame
-Minimize.BackgroundColor3 = Color3.new(1, 0, 0)
-Minimize.Position = UDim2.new(0.894614398, 0, 0, 0)
-Minimize.Size = UDim2.new(0, 52, 0, 30)
-Minimize.Font = Enum.Font.GothamBlack
-Minimize.Text = "Close"
-Minimize.TextColor3 = Color3.new(0, 0, 0)
-Minimize.TextSize = 14
-Minimize.TextWrapped = true
-
-durabilityFrame.Name = "durabilityFrame"
-durabilityFrame.Parent = lostburger13Gui
-durabilityFrame.Active = true
-durabilityFrame.BackgroundColor3 = Color3.new(0.333333, 1, 1)
-durabilityFrame.Position = UDim2.new(0.337162346, 0, 0.182965294, 0)
-durabilityFrame.Size = UDim2.new(0, 503, 0, 302)
-durabilityFrame.Draggable = true
-
-pirateShip.Name = "pirateShip"
-pirateShip.Parent = durabilityFrame
-pirateShip.BackgroundColor3 = Color3.new(1, 0.333333, 0)
-pirateShip.Size = UDim2.new(0, 131, 0, 49)
-pirateShip.Font = Enum.Font.GothamBlack
-pirateShip.Text = "100 Pirate Ship"
-pirateShip.TextColor3 = Color3.new(0, 0, 0)
-pirateShip.TextScaled = true
-pirateShip.TextSize = 14
-pirateShip.TextWrapped = true
-
-desertIsland.Name = "desertIsland"
-desertIsland.Parent = durabilityFrame
-desertIsland.BackgroundColor3 = Color3.new(1, 0.333333, 0)
-desertIsland.Position = UDim2.new(0, 0, 0.162251651, 0)
-desertIsland.Size = UDim2.new(0, 131, 0, 48)
-desertIsland.Font = Enum.Font.GothamBlack
-desertIsland.Text = "10K Desert Island"
-desertIsland.TextColor3 = Color3.new(0, 0, 0)
-desertIsland.TextScaled = true
-desertIsland.TextSize = 14
-desertIsland.TextWrapped = true
-
-aokijiIsland.Name = "aokijiIsland"
-aokijiIsland.Parent = durabilityFrame
-aokijiIsland.BackgroundColor3 = Color3.new(1, 0.333333, 0)
-aokijiIsland.Position = UDim2.new(0, 0, 0.321192056, 0)
-aokijiIsland.Size = UDim2.new(0, 132, 0, 48)
-aokijiIsland.Font = Enum.Font.GothamBlack
-aokijiIsland.Text = "100K Aokiji Island"
-aokijiIsland.TextColor3 = Color3.new(0, 0, 0)
-aokijiIsland.TextScaled = true
-aokijiIsland.TextSize = 14
-aokijiIsland.TextWrapped = true
-
-ursusShock.Name = "ursusShock"
-ursusShock.Parent = durabilityFrame
-ursusShock.BackgroundColor3 = Color3.new(1, 0.333333, 0)
-ursusShock.Position = UDim2.new(0.00198808312, 0, 0.48013249, 0)
-ursusShock.Size = UDim2.new(0, 131, 0, 48)
-ursusShock.Font = Enum.Font.GothamBlack
-ursusShock.Text = "1M Ursus Schock"
-ursusShock.TextColor3 = Color3.new(0, 0, 0)
-ursusShock.TextScaled = true
-ursusShock.TextSize = 14
-ursusShock.TextWrapped = true
-
-mountAkainu.Name = "mountAkainu"
-mountAkainu.Parent = durabilityFrame
-mountAkainu.BackgroundColor3 = Color3.new(1, 0.333333, 0)
-mountAkainu.Position = UDim2.new(0.00198807148, 0, 0.639072835, 0)
-mountAkainu.Size = UDim2.new(0, 131, 0, 48)
-mountAkainu.Font = Enum.Font.GothamBlack
-mountAkainu.Text = "10M Mount Akainu"
-mountAkainu.TextColor3 = Color3.new(0, 0, 0)
-mountAkainu.TextScaled = true
-mountAkainu.TextSize = 14
-mountAkainu.TextWrapped = true
-
-amaterasu.Name = "amaterasu"
-amaterasu.Parent = durabilityFrame
-amaterasu.BackgroundColor3 = Color3.new(1, 0.333333, 0)
-amaterasu.Position = UDim2.new(0.00198807148, 0, 0.79801327, 0)
-amaterasu.Size = UDim2.new(0, 131, 0, 61)
-amaterasu.Font = Enum.Font.GothamBlack
-amaterasu.Text = "100M Amaterasu"
-amaterasu.TextColor3 = Color3.new(0, 0, 0)
-amaterasu.TextScaled = true
-amaterasu.TextSize = 14
-amaterasu.TextWrapped = true
-
-kingkaiplanet.Name = "kingkaiplanet"
-kingkaiplanet.Parent = durabilityFrame
-kingkaiplanet.BackgroundColor3 = Color3.new(1, 0.333333, 0)
-kingkaiplanet.Position = UDim2.new(0.260437369, 0, 0.00331124663, 0)
-kingkaiplanet.Size = UDim2.new(0, 131, 0, 48)
-kingkaiplanet.Font = Enum.Font.GothamBlack
-kingkaiplanet.Text = "1B King Kai's Planet"
-kingkaiplanet.TextColor3 = Color3.new(0, 0, 0)
-kingkaiplanet.TextScaled = true
-kingkaiplanet.TextSize = 14
-kingkaiplanet.TextWrapped = true
-
-hyperbolicTimeChamber.Name = "hyperbolicTimeChamber"
-hyperbolicTimeChamber.Parent = durabilityFrame
-hyperbolicTimeChamber.BackgroundColor3 = Color3.new(1, 0.333333, 0)
-hyperbolicTimeChamber.Position = UDim2.new(0.260437369, 0, 0.162251651, 0)
-hyperbolicTimeChamber.Size = UDim2.new(0, 131, 0, 48)
-hyperbolicTimeChamber.Font = Enum.Font.GothamBlack
-hyperbolicTimeChamber.Text = "100B Hyperbolic Time Chamber"
-hyperbolicTimeChamber.TextColor3 = Color3.new(0, 0, 0)
-hyperbolicTimeChamber.TextScaled = true
-hyperbolicTimeChamber.TextSize = 14
-hyperbolicTimeChamber.TextWrapped = true
-
-title3.Name = "title3"
-title3.Parent = durabilityFrame
-title3.BackgroundColor3 = Color3.new(0.819608, 0.819608, 0)
-title3.BorderSizePixel = 0
-title3.Position = UDim2.new(0.561752975, 0, 0.567656755, 0)
-title3.Size = UDim2.new(0, 131, 0, 83)
-title3.Font = Enum.Font.Highway
-title3.Text = "lostburger13"
-title3.TextColor3 = Color3.new(1, 0.333333, 0)
-title3.TextSize = 40
-
-mainFrame.Name = "mainFrame"
-mainFrame.Parent = lostburger13Gui
-mainFrame.Active = true
-mainFrame.BackgroundColor3 = Color3.new(0.333333, 1, 1)
-mainFrame.Position = UDim2.new(0.337162346, 0, 0.182965294, 0)
-mainFrame.Size = UDim2.new(0, 503, 0, 302)
-mainFrame.Draggable = true
-
-title2.Name = "title2"
-title2.Parent = mainFrame
-title2.BackgroundColor3 = Color3.new(0.819608, 0.819608, 0)
-title2.BorderSizePixel = 0
-title2.Position = UDim2.new(0.561999977, 0, 0.568000019, 0)
-title2.Size = UDim2.new(0, 131, 0, 83)
-title2.Font = Enum.Font.Highway
-title2.Text = "lostburger13"
-title2.TextColor3 = Color3.new(1, 0.333333, 0)
-title2.TextSize = 40
-
-version.Name = "version"
-version.Parent = mainFrame
-version.BackgroundColor3 = Color3.new(1, 0, 0)
-version.BorderSizePixel = 0
-version.Position = UDim2.new(0.560636163, 0, 0.152317882, 0)
-version.Size = UDim2.new(0, 145, 0, 57)
-version.Font = Enum.Font.GothamBlack
-version.Text = "Anime Fighiting Simulator V1"
-version.TextColor3 = Color3.new(0, 0, 0)
-version.TextSize = 14
-
-spawn.Name = "spawn"
-spawn.Parent = mainFrame
-spawn.BackgroundColor3 = Color3.new(1, 1, 0)
-spawn.Position = UDim2.new(0.0656063631, 0, 0.115894042, 0)
-spawn.Size = UDim2.new(0, 128, 0, 48)
-spawn.Font = Enum.Font.GothamBlack
-spawn.Text = "Tp To Spawn"
-spawn.TextColor3 = Color3.new(0, 0, 0)
-spawn.TextScaled = true
-spawn.TextSize = 14
-spawn.TextWrapped = true
-
-Message.Name = "Message"
-Message.Parent = mainFrame
-Message.BackgroundColor3 = Color3.new(0.333333, 1, 1)
-Message.BorderSizePixel = 0
-Message.Position = UDim2.new(0.0278330017, 0, 0.470198661, 0)
-Message.Size = UDim2.new(0, 200, 0, 124)
-Message.Font = Enum.Font.GothamBlack
-Message.Text = "More Updates Coming Soon! The Chest Section is still in Progress!"
-Message.TextColor3 = Color3.new(0, 0, 0)
-Message.TextScaled = true
-Message.TextSize = 14
-Message.TextWrapped = true
-
-chakraFrame.Name = "chakraFrame"
-chakraFrame.Parent = lostburger13Gui
-chakraFrame.Active = true
-chakraFrame.BackgroundColor3 = Color3.new(0.333333, 1, 1)
-chakraFrame.Position = UDim2.new(0.337162346, 0, 0.182999998, 0)
-chakraFrame.Size = UDim2.new(0, 503, 0, 302)
-chakraFrame.Draggable = true
-
-spiritTree.Name = "spiritTree"
-spiritTree.Parent = chakraFrame
-spiritTree.BackgroundColor3 = Color3.new(1, 0.333333, 0)
-spiritTree.Position = UDim2.new(0, 0, 0.00331125874, 0)
-spiritTree.Size = UDim2.new(0, 131, 0, 48)
-spiritTree.Font = Enum.Font.GothamBlack
-spiritTree.Text = "500 Spirit Tree"
-spiritTree.TextColor3 = Color3.new(0, 0, 0)
-spiritTree.TextScaled = true
-spiritTree.TextSize = 14
-spiritTree.TextWrapped = true
-
-deathNote.Name = "deathNote"
-deathNote.Parent = chakraFrame
-deathNote.BackgroundColor3 = Color3.new(1, 0.333333, 0)
-deathNote.Position = UDim2.new(0, 0, 0.162251651, 0)
-deathNote.Size = UDim2.new(0, 131, 0, 48)
-deathNote.Font = Enum.Font.GothamBlack
-deathNote.Text = "15K Death Note"
-deathNote.TextColor3 = Color3.new(0, 0, 0)
-deathNote.TextScaled = true
-deathNote.TextSize = 14
-deathNote.TextWrapped = true
-
-waterfallOfTruth.Name = "waterfallOfTruth"
-waterfallOfTruth.Parent = chakraFrame
-waterfallOfTruth.BackgroundColor3 = Color3.new(1, 0.333333, 0)
-waterfallOfTruth.Position = UDim2.new(0, 0, 0.321192056, 0)
-waterfallOfTruth.Size = UDim2.new(0, 131, 0, 48)
-waterfallOfTruth.Font = Enum.Font.GothamBlack
-waterfallOfTruth.Text = "150K Waterfall Of Truth"
-waterfallOfTruth.TextColor3 = Color3.new(0, 0, 0)
-waterfallOfTruth.TextScaled = true
-waterfallOfTruth.TextSize = 14
-waterfallOfTruth.TextWrapped = true
-
-temple.Name = "temple"
-temple.Parent = chakraFrame
-temple.BackgroundColor3 = Color3.new(1, 0.333333, 0)
-temple.Position = UDim2.new(0, 0, 0.480132461, 0)
-temple.Size = UDim2.new(0, 131, 0, 48)
-temple.Font = Enum.Font.GothamBlack
-temple.Text = "1.5M Temple"
-temple.TextColor3 = Color3.new(0, 0, 0)
-temple.TextScaled = true
-temple.TextSize = 14
-temple.TextWrapped = true
-
-kuramaStatue.Name = "kuramaStatue"
-kuramaStatue.Parent = chakraFrame
-kuramaStatue.BackgroundColor3 = Color3.new(1, 0.333333, 0)
-kuramaStatue.Position = UDim2.new(0, 0, 0.639072895, 0)
-kuramaStatue.Size = UDim2.new(0, 131, 0, 48)
-kuramaStatue.Font = Enum.Font.GothamBlack
-kuramaStatue.Text = "15M Kurama Statue"
-kuramaStatue.TextColor3 = Color3.new(0, 0, 0)
-kuramaStatue.TextScaled = true
-kuramaStatue.TextSize = 14
-kuramaStatue.TextWrapped = true
-
-senbonzakuraKageyoshi.Name = "senbonzakuraKageyoshi"
-senbonzakuraKageyoshi.Parent = chakraFrame
-senbonzakuraKageyoshi.BackgroundColor3 = Color3.new(1, 0.333333, 0)
-senbonzakuraKageyoshi.Position = UDim2.new(0, 0, 0.798013151, 0)
-senbonzakuraKageyoshi.Size = UDim2.new(0, 131, 0, 61)
-senbonzakuraKageyoshi.Font = Enum.Font.GothamBlack
-senbonzakuraKageyoshi.Text = "250M Senbonzakura Kageyoshi"
-senbonzakuraKageyoshi.TextColor3 = Color3.new(0, 0, 0)
-senbonzakuraKageyoshi.TextScaled = true
-senbonzakuraKageyoshi.TextSize = 14
-senbonzakuraKageyoshi.TextWrapped = true
-
-sageMeditationPlatform.Name = "sageMeditationPlatform"
-sageMeditationPlatform.Parent = chakraFrame
-sageMeditationPlatform.BackgroundColor3 = Color3.new(1, 0.333333, 0)
-sageMeditationPlatform.Position = UDim2.new(0.260437369, 0, 0.00331124663, 0)
-sageMeditationPlatform.Size = UDim2.new(0, 131, 0, 48)
-sageMeditationPlatform.Font = Enum.Font.GothamBlack
-sageMeditationPlatform.Text = "1B Sage Meditation Platform"
-sageMeditationPlatform.TextColor3 = Color3.new(0, 0, 0)
-sageMeditationPlatform.TextScaled = true
-sageMeditationPlatform.TextSize = 14
-sageMeditationPlatform.TextWrapped = true
-
-towerOfHeaven.Name = "towerOfHeaven"
-towerOfHeaven.Parent = chakraFrame
-towerOfHeaven.BackgroundColor3 = Color3.new(1, 0.333333, 0)
-towerOfHeaven.Position = UDim2.new(0.260437369, 0, 0.162251651, 0)
-towerOfHeaven.Size = UDim2.new(0, 131, 0, 48)
-towerOfHeaven.Font = Enum.Font.GothamBlack
-towerOfHeaven.Text = "100B Tower Of Heaven"
-towerOfHeaven.TextColor3 = Color3.new(0, 0, 0)
-towerOfHeaven.TextScaled = true
-towerOfHeaven.TextSize = 14
-towerOfHeaven.TextWrapped = true
-
-title4.Name = "title4"
-title4.Parent = chakraFrame
-title4.BackgroundColor3 = Color3.new(0.819608, 0.819608, 0)
-title4.BorderSizePixel = 0
-title4.Position = UDim2.new(0.561752975, 0, 0.567656755, 0)
-title4.Size = UDim2.new(0, 131, 0, 83)
-title4.Font = Enum.Font.Highway
-title4.Text = "lostburger13"
-title4.TextColor3 = Color3.new(1, 0.333333, 0)
-title4.TextSize = 40
-
-speedFrame.Name = "speedFrame"
-speedFrame.Parent = lostburger13Gui
-speedFrame.Active = true
-speedFrame.BackgroundColor3 = Color3.new(0.333333, 1, 1)
-speedFrame.Position = UDim2.new(0.337162346, 0, 0.182965294, 0)
-speedFrame.Size = UDim2.new(0, 503, 0, 302)
-speedFrame.Draggable = true
-
-trampoline.Name = "trampoline"
-trampoline.Parent = speedFrame
-trampoline.BackgroundColor3 = Color3.new(1, 0.333333, 0)
-trampoline.Size = UDim2.new(0, 131, 0, 48)
-trampoline.Font = Enum.Font.GothamBlack
-trampoline.Text = "100 Treadmills"
-trampoline.TextColor3 = Color3.new(0, 0, 0)
-trampoline.TextScaled = true
-trampoline.TextSize = 14
-trampoline.TextWrapped = true
-
-gravityChamberS.Name = "gravityChamberS"
-gravityChamberS.Parent = speedFrame
-gravityChamberS.BackgroundColor3 = Color3.new(1, 0.333333, 0)
-gravityChamberS.Position = UDim2.new(0, 0, 0.158940405, 0)
-gravityChamberS.Size = UDim2.new(0, 131, 0, 48)
-gravityChamberS.Font = Enum.Font.GothamBlack
-gravityChamberS.Text = "10K Gravity Chamber"
-gravityChamberS.TextColor3 = Color3.new(0, 0, 0)
-gravityChamberS.TextScaled = true
-gravityChamberS.TextSize = 14
-gravityChamberS.TextWrapped = true
-
-spaceTimeKunaiFieldS.Name = "spaceTimeKunaiFieldS"
-spaceTimeKunaiFieldS.Parent = speedFrame
-spaceTimeKunaiFieldS.BackgroundColor3 = Color3.new(1, 0.333333, 0)
-spaceTimeKunaiFieldS.Position = UDim2.new(0, 0, 0.317880809, 0)
-spaceTimeKunaiFieldS.Size = UDim2.new(0, 131, 0, 48)
-spaceTimeKunaiFieldS.Font = Enum.Font.GothamBlack
-spaceTimeKunaiFieldS.Text = "100K Space-Time Kunai Field"
-spaceTimeKunaiFieldS.TextColor3 = Color3.new(0, 0, 0)
-spaceTimeKunaiFieldS.TextScaled = true
-spaceTimeKunaiFieldS.TextSize = 14
-spaceTimeKunaiFieldS.TextWrapped = true
-
-title5.Name = "title5"
-title5.Parent = speedFrame
-title5.BackgroundColor3 = Color3.new(0.819608, 0.819608, 0)
-title5.BorderSizePixel = 0
-title5.Position = UDim2.new(0.561999977, 0, 0.568000019, 0)
-title5.Size = UDim2.new(0, 131, 0, 83)
-title5.Font = Enum.Font.Highway
-title5.Text = "lostburger13"
-title5.TextColor3 = Color3.new(1, 0.333333, 0)
-title5.TextSize = 40
-
-agilityFrame.Name = "agilityFrame"
-agilityFrame.Parent = lostburger13Gui
-agilityFrame.Active = true
-agilityFrame.BackgroundColor3 = Color3.new(0.333333, 1, 1)
-agilityFrame.Position = UDim2.new(0.337162346, 0, 0.182965294, 0)
-agilityFrame.Draggable = true
-agilityFrame.Size = UDim2.new(0, 503, 0, 302)
-
-title6.Name = "title6"
-title6.Parent = agilityFrame
-title6.BackgroundColor3 = Color3.new(0.819608, 0.819608, 0)
-title6.BorderSizePixel = 0
-title6.Position = UDim2.new(0.561999977, 0, 0.568000019, 0)
-title6.Size = UDim2.new(0, 131, 0, 83)
-title6.Font = Enum.Font.Highway
-title6.Text = "lostburger13"
-title6.TextColor3 = Color3.new(1, 0.333333, 0)
-title6.TextSize = 40
-
-treadmills.Name = "treadmills"
-treadmills.Parent = agilityFrame
-treadmills.BackgroundColor3 = Color3.new(1, 0.333333, 0)
-treadmills.Size = UDim2.new(0, 131, 0, 48)
-treadmills.Font = Enum.Font.GothamBlack
-treadmills.Text = "100 Trampoline"
-treadmills.TextColor3 = Color3.new(0, 0, 0)
-treadmills.TextScaled = true
-treadmills.TextSize = 14
-treadmills.TextWrapped = true
-
-gravityChamberA.Name = "gravityChamberA"
-gravityChamberA.Parent = agilityFrame
-gravityChamberA.BackgroundColor3 = Color3.new(1, 0.333333, 0)
-gravityChamberA.Position = UDim2.new(0, 0, 0.158940405, 0)
-gravityChamberA.Size = UDim2.new(0, 131, 0, 48)
-gravityChamberA.Font = Enum.Font.GothamBlack
-gravityChamberA.Text = "10K Gravity Chamber"
-gravityChamberA.TextColor3 = Color3.new(0, 0, 0)
-gravityChamberA.TextScaled = true
-gravityChamberA.TextSize = 14
-gravityChamberA.TextWrapped = true
-
-spaceTimeKunaiFieldA.Name = "spaceTimeKunaiFieldA"
-spaceTimeKunaiFieldA.Parent = agilityFrame
-spaceTimeKunaiFieldA.BackgroundColor3 = Color3.new(1, 0.333333, 0)
-spaceTimeKunaiFieldA.Position = UDim2.new(0, 0, 0.317880809, 0)
-spaceTimeKunaiFieldA.Size = UDim2.new(0, 131, 0, 48)
-spaceTimeKunaiFieldA.Font = Enum.Font.GothamBlack
-spaceTimeKunaiFieldA.Text = "100K Space-Time Kunai Field"
-spaceTimeKunaiFieldA.TextColor3 = Color3.new(0, 0, 0)
-spaceTimeKunaiFieldA.TextScaled = true
-spaceTimeKunaiFieldA.TextSize = 14
-spaceTimeKunaiFieldA.TextWrapped = true
-
-chestFrame.Name = "chestFrame"
-chestFrame.Parent = lostburger13Gui
-chestFrame.Active = true
-chestFrame.BackgroundColor3 = Color3.new(0.333333, 1, 1)
-chestFrame.Position = UDim2.new(0.337162346, 0, 0.182965294, 0)
-chestFrame.Size = UDim2.new(0, 503, 0, 302)
-chestFrame.Draggable = true
-
-Location1.Name = "Location1"
-Location1.Parent = chestFrame
-Location1.BackgroundColor3 = Color3.new(1, 0.333333, 0)
-Location1.Size = UDim2.new(0, 131, 0, 48)
-Location1.Font = Enum.Font.GothamBlack
-Location1.Text = "Location 1"
-Location1.TextColor3 = Color3.new(0, 0, 0)
-Location1.TextScaled = true
-Location1.TextSize = 14
-Location1.TextWrapped = true
-
-Location2.Name = "Location2"
-Location2.Parent = chestFrame
-Location2.BackgroundColor3 = Color3.new(1, 0.333333, 0)
-Location2.Position = UDim2.new(0, 0, 0.139072865, 0)
-Location2.Size = UDim2.new(0, 131, 0, 48)
-Location2.Font = Enum.Font.GothamBlack
-Location2.Text = "Location 2"
-Location2.TextColor3 = Color3.new(0, 0, 0)
-Location2.TextScaled = true
-Location2.TextSize = 14
-Location2.TextWrapped = true
-
-Location3.Name = "Location3"
-Location3.Parent = chestFrame
-Location3.BackgroundColor3 = Color3.new(1, 0.333333, 0)
-Location3.Position = UDim2.new(0, 0, 0.29801327, 0)
-Location3.Size = UDim2.new(0, 131, 0, 48)
-Location3.Font = Enum.Font.GothamBlack
-Location3.Text = "Location 3"
-Location3.TextColor3 = Color3.new(0, 0, 0)
-Location3.TextScaled = true
-Location3.TextSize = 14
-Location3.TextWrapped = true
-
-Location4.Name = "Location4"
-Location4.Parent = chestFrame
-Location4.BackgroundColor3 = Color3.new(1, 0.333333, 0)
-Location4.Position = UDim2.new(0, 0, 0.456953645, 0)
-Location4.Size = UDim2.new(0, 131, 0, 48)
-Location4.Font = Enum.Font.GothamBlack
-Location4.Text = "Location 4"
-Location4.TextColor3 = Color3.new(0, 0, 0)
-Location4.TextScaled = true
-Location4.TextSize = 14
-Location4.TextWrapped = true
-
-Location5.Name = "Location5"
-Location5.Parent = chestFrame
-Location5.BackgroundColor3 = Color3.new(1, 0.333333, 0)
-Location5.Position = UDim2.new(0, 0, 0.61589402, 0)
-Location5.Size = UDim2.new(0, 131, 0, 48)
-Location5.Font = Enum.Font.GothamBlack
-Location5.Text = "Location 5"
-Location5.TextColor3 = Color3.new(0, 0, 0)
-Location5.TextScaled = true
-Location5.TextSize = 14
-Location5.TextWrapped = true
-
-Location6.Name = "Location6"
-Location6.Parent = chestFrame
-Location6.BackgroundColor3 = Color3.new(1, 0.333333, 0)
-Location6.Position = UDim2.new(0, 0, 0.774834394, 0)
-Location6.Size = UDim2.new(0, 131, 0, 48)
-Location6.Font = Enum.Font.GothamBlack
-Location6.Text = "Location 6"
-Location6.TextColor3 = Color3.new(0, 0, 0)
-Location6.TextScaled = true
-Location6.TextSize = 14
-Location6.TextWrapped = true
-
-title7.Name = "title7"
-title7.Parent = chestFrame
-title7.BackgroundColor3 = Color3.new(0.819608, 0.819608, 0)
-title7.BorderSizePixel = 0
-title7.Position = UDim2.new(0.561999977, 0, 0.568000019, 0)
-title7.Size = UDim2.new(0, 131, 0, 83)
-title7.Font = Enum.Font.Highway
-title7.Text = "lostburger13"
-title7.TextColor3 = Color3.new(1, 0.333333, 0)
-title7.TextSize = 40
-
-openFrame.Name = "openFrame"
-openFrame.Parent = lostburger13Gui
-openFrame.Active = true
-openFrame.BackgroundColor3 = Color3.new(1, 1, 1)
-openFrame.Position = UDim2.new(0, 0, 0.883280754, 0)
-openFrame.Size = UDim2.new(0, 100, 0, 29)
-
-open.Name = "open"
-open.Parent = openFrame
-open.BackgroundColor3 = Color3.new(0.333333, 1, 1)
-open.Size = UDim2.new(0, 100, 0, 45)
-open.Font = Enum.Font.GothamBlack
-open.Text = "Open"
-open.TextColor3 = Color3.new(0, 0, 0)
-open.TextScaled = true
-open.TextSize = 14
-open.TextWrapped = true
--- Scripts:
-
--- Gui
-openFrame.Visible = false
-chestFrame.Visible = false
-agilityFrame.Visible = false
-speedFrame.Visible = false
-chakraFrame.Visible = false
-durabilityFrame.Visible = false
-strengthFrame.Visible = false
-mainFrame.Visible = false
-menuBarFrame.Visible = true
-
-Agility.MouseButton1Click:connect(function()
-   chestFrame.Visible = false
-   agilityFrame.Visible = true
-   speedFrame.Visible = false
-   chakraFrame.Visible = false
-   durabilityFrame.Visible = false
-   strengthFrame.Visible = false
-   mainFrame.Visible = false
-   Agility.BackgroundColor3 = Color3.new(0, 255, 0)
-   Chakra.BackgroundColor3 = Color3.new(255, 0, 0)
-   Durability.BackgroundColor3 = Color3.new(255, 0, 0)
-   Chest.BackgroundColor3 = Color3.new(255, 0, 0)
-   Main.BackgroundColor3 = Color3.new(255, 0, 0)
-   Speed.BackgroundColor3 = Color3.new(255, 0, 0)
-   Strength.BackgroundColor3 = Color3.new(255, 0, 0)
+StrengthButton.Name = "StrengthButton"
+StrengthButton.Parent = Main
+StrengthButton.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+StrengthButton.BackgroundTransparency = 1.000
+StrengthButton.Position = UDim2.new(0.0658961535, 0, 0.114722215, 0)
+StrengthButton.Size = UDim2.new(0, 128, 0, 33)
+StrengthButton.Font = Enum.Font.Cartoon
+StrengthButton.Text = "Strength"
+StrengthButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+StrengthButton.TextScaled = true
+StrengthButton.TextSize = 14.000
+StrengthButton.TextWrapped = true
+StrengthButton.MouseButton1Down:connect(function()
+	-- Strength
+	_100Dummies.Visible = true
+	_10KGym.Visible = true
+	_100KFridge.Visible = true
+	_1MMeteor.Visible = true
+	_10MLookout.Visible = true
+	_100MArena.Visible = true
+	_1BExcalibur.Visible = true
+	_100BNomu.Visible = true
+	-- Durability
+	_100Ship.Visible = false
+	_10KDesert.Visible = false
+	_100KSnowRock.Visible = false
+	_1MPaw.Visible = false
+	_10MVolcano.Visible = false
+	_100MAmaterasu.Visible = false
+	_1BPlanet.Visible = false
+	_100BCOT.Visible = false
+	-- Chakra
+	_500SpiritTree.Visible = false
+	_15KDeathNote.Visible = false
+	_150KWOT.Visible = false
+	_15MTemple.Visible = false
+	_15MKurama.Visible = false
+	_250MSakura.Visible = false
+	_1BSage.Visible = false
+	_100BTOH.Visible = false
+	-- Speed & Agility
+	_100Treadmill.Visible = false
+	_10KChamber.Visible = false
+	_100KKunai.Visible = false
+	_100Trampoline.Visible = false
+	-- Chests
+	Chest1.Visible = false
+	Chest2.Visible = false
+	Chest3.Visible = false
+	Chest4.Visible = false
+	Chest5.Visible = false
 end)
 
-Chakra.MouseButton1Click:connect(function()
-   chestFrame.Visible = false
-   agilityFrame.Visible = false
-   speedFrame.Visible = false
-   chakraFrame.Visible = true
-   durabilityFrame.Visible = false
-   strengthFrame.Visible = false
-   mainFrame.Visible = false
-   Chakra.BackgroundColor3 = Color3.new(0, 255, 0)
-   Agility.BackgroundColor3 = Color3.new(255, 0, 0)
-   Durability.BackgroundColor3 = Color3.new(255, 0, 0)
-   Chest.BackgroundColor3 = Color3.new(255, 0, 0)
-   Main.BackgroundColor3 = Color3.new(255, 0, 0)
-   Speed.BackgroundColor3 = Color3.new(255, 0, 0)
-   Strength.BackgroundColor3 = Color3.new(255, 0, 0)
+_100Dummies.Name = "100+ Dummies"
+_100Dummies.Parent = Main
+_100Dummies.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+_100Dummies.BackgroundTransparency = 1.000
+_100Dummies.BorderSizePixel = 0
+_100Dummies.Position = UDim2.new(0.0619839653, 0, 0.21345517, 0)
+_100Dummies.Size = UDim2.new(0, 136, 0, 35)
+_100Dummies.Visible = false
+_100Dummies.Text = "100+ Dummies"
+_100Dummies.TextColor3 = Color3.fromRGB(0, 0, 0)
+_100Dummies.TextScaled = true
+_100Dummies.TextSize = 45.000
+_100Dummies.TextWrapped = true
+_100Dummies.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(25.1118641, 65, 147.74437)
 end)
 
-Chest.MouseButton1Click:connect(function()
-   chestFrame.Visible = true
-   agilityFrame.Visible = false
-   speedFrame.Visible = false
-   chakraFrame.Visible = false
-   durabilityFrame.Visible = false
-   strengthFrame.Visible = false
-   mainFrame.Visible = false
-   Chest.BackgroundColor3 = Color3.new(0, 255, 0)
-   Chakra.BackgroundColor3 = Color3.new(255, 0, 0)
-   Agility.BackgroundColor3 = Color3.new(255, 0, 0)
-   Durability.BackgroundColor3 = Color3.new(255, 0, 0)
-   Main.BackgroundColor3 = Color3.new(255, 0, 0)
-   Speed.BackgroundColor3 = Color3.new(255, 0, 0)
-   Strength.BackgroundColor3 = Color3.new(255, 0, 0)
+_10KGym.Name = "10K+ Gym"
+_10KGym.Parent = Main
+_10KGym.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+_10KGym.BackgroundTransparency = 1.000
+_10KGym.BorderSizePixel = 0
+_10KGym.Position = UDim2.new(0.0619839653, 0, 0.298823327, 0)
+_10KGym.Size = UDim2.new(0, 136, 0, 35)
+_10KGym.Visible = false
+_10KGym.Text = "10K+ Gym"
+_10KGym.TextColor3 = Color3.fromRGB(0, 0, 0)
+_10KGym.TextScaled = true
+_10KGym.TextSize = 45.000
+_10KGym.TextWrapped = true
+_10KGym.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1369.01196, 142, -124.50946)
 end)
 
-Durability.MouseButton1Click:connect(function()
-   chestFrame.Visible = false
-   agilityFrame.Visible = false
-   speedFrame.Visible = false
-   chakraFrame.Visible = false
-   durabilityFrame.Visible = true
-   strengthFrame.Visible = false
-   mainFrame.Visible = false
-   Durability.BackgroundColor3 = Color3.new(0, 255, 0)
-   Chakra.BackgroundColor3 = Color3.new(255, 0, 0)
-   Agility.BackgroundColor3 = Color3.new(255, 0, 0)
-   Chest.BackgroundColor3 = Color3.new(255, 0, 0)
-   Main.BackgroundColor3 = Color3.new(255, 0, 0)
-   Speed.BackgroundColor3 = Color3.new(255, 0, 0)
-   Strength.BackgroundColor3 = Color3.new(255, 0, 0)
+_100KFridge.Name = "100K+ Fridge"
+_100KFridge.Parent = Main
+_100KFridge.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+_100KFridge.BackgroundTransparency = 1.000
+_100KFridge.BorderSizePixel = 0
+_100KFridge.Position = UDim2.new(0.0619839653, 0, 0.384191483, 0)
+_100KFridge.Size = UDim2.new(0, 136, 0, 35)
+_100KFridge.Visible = false
+_100KFridge.Text = "10K+ Fridge"
+_100KFridge.TextColor3 = Color3.fromRGB(0, 0, 0)
+_100KFridge.TextScaled = true
+_100KFridge.TextSize = 45.000
+_100KFridge.TextWrapped = true
+_100KFridge.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1221, 58.9999886, 502)
 end)
 
-Main.MouseButton1Click:connect(function()
-   chestFrame.Visible = false
-   agilityFrame.Visible = false
-   speedFrame.Visible = false
-   chakraFrame.Visible = false
-   durabilityFrame.Visible = false
-   strengthFrame.Visible = false
-   mainFrame.Visible = true
-   Main.BackgroundColor3 = Color3.new(0, 255, 0)
-   Chakra.BackgroundColor3 = Color3.new(255, 0, 0)
-   Agility.BackgroundColor3 = Color3.new(255, 0, 0)
-   Durability.BackgroundColor3 = Color3.new(255, 0, 0)
-   Chest.BackgroundColor3 = Color3.new(255, 0, 0)
-   Speed.BackgroundColor3 = Color3.new(255, 0, 0)
-   Strength.BackgroundColor3 = Color3.new(255, 0, 0)
+_1MMeteor.Name = "1M+ Meteor"
+_1MMeteor.Parent = Main
+_1MMeteor.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+_1MMeteor.BackgroundTransparency = 1.000
+_1MMeteor.BorderSizePixel = 0
+_1MMeteor.Position = UDim2.new(0.0619839653, 0, 0.46955961, 0)
+_1MMeteor.Size = UDim2.new(0, 136, 0, 35)
+_1MMeteor.Visible = false
+_1MMeteor.Text = "1M+ Meteor"
+_1MMeteor.TextColor3 = Color3.fromRGB(0, 0, 0)
+_1MMeteor.TextScaled = true
+_1MMeteor.TextSize = 45.000
+_1MMeteor.TextWrapped = true
+_1MMeteor.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-823.975159, 49.9999886, 182.217896)
 end)
 
-Speed.MouseButton1Click:connect(function()
-   chestFrame.Visible = false
-   agilityFrame.Visible = false
-   speedFrame.Visible = true
-   chakraFrame.Visible = false
-   durabilityFrame.Visible = false
-   strengthFrame.Visible = false
-   mainFrame.Visible = false
-   Speed.BackgroundColor3 = Color3.new(0, 255, 0)
-   Chakra.BackgroundColor3 = Color3.new(255, 0, 0)
-   Agility.BackgroundColor3 = Color3.new(255, 0, 0)
-   Durability.BackgroundColor3 = Color3.new(255, 0, 0)
-   Chest.BackgroundColor3 = Color3.new(255, 0, 0)
-   Main.BackgroundColor3 = Color3.new(255, 0, 0)
-   Strength.BackgroundColor3 = Color3.new(255, 0, 0)
+_10MLookout.Name = "10M+ Lookout"
+_10MLookout.Parent = Main
+_10MLookout.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+_10MLookout.BackgroundTransparency = 1.000
+_10MLookout.BorderSizePixel = 0
+_10MLookout.Position = UDim2.new(0.0619839653, 0, 0.554927766, 0)
+_10MLookout.Size = UDim2.new(0, 136, 0, 35)
+_10MLookout.Visible = false
+_10MLookout.Text = "10M+ Lookout"
+_10MLookout.TextColor3 = Color3.fromRGB(0, 0, 0)
+_10MLookout.TextScaled = true
+_10MLookout.TextSize = 45.000
+_10MLookout.TextWrapped = true
+_10MLookout.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2140.76929, 617.689514, 554.665894)
 end)
 
-Strength.MouseButton1Click:connect(function()
-   chestFrame.Visible = false
-   agilityFrame.Visible = false
-   speedFrame.Visible = false
-   chakraFrame.Visible = false
-   durabilityFrame.Visible = false
-   strengthFrame.Visible = true
-   mainFrame.Visible = false
-   Strength.BackgroundColor3 = Color3.new(0, 255, 0)
-   Chakra.BackgroundColor3 = Color3.new(255, 0, 0)
-   Agility.BackgroundColor3 = Color3.new(255, 0, 0)
-   Durability.BackgroundColor3 = Color3.new(255, 0, 0)
-   Chest.BackgroundColor3 = Color3.new(255, 0, 0)
-   Main.BackgroundColor3 = Color3.new(255, 0, 0)
-   Speed.BackgroundColor3 = Color3.new(255, 0, 0)
+_100MArena.Name = "100M+ Arena"
+_100MArena.Parent = Main
+_100MArena.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+_100MArena.BackgroundTransparency = 1.000
+_100MArena.BorderSizePixel = 0
+_100MArena.Position = UDim2.new(0.0619839653, 0, 0.640295923, 0)
+_100MArena.Size = UDim2.new(0, 136, 0, 35)
+_100MArena.Visible = false
+_100MArena.Text = "100M+ Arena"
+_100MArena.TextColor3 = Color3.fromRGB(0, 0, 0)
+_100MArena.TextScaled = true
+_100MArena.TextSize = 45.000
+_100MArena.TextWrapped = true
+_100MArena.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8.95516968, 70.9999771, -1258.60852)
 end)
 
-open.MouseButton1Click:connect(function()
-   chestFrame.Visible = false
-   agilityFrame.Visible = false
-   speedFrame.Visible = false
-   chakraFrame.Visible = false
-   durabilityFrame.Visible = false
-   strengthFrame.Visible = false
-   mainFrame.Visible = false
-   menuBarFrame.Visible = true
-   openFrame.Visible = false
+_1BExcalibur.Name = "1B+ Excalibur"
+_1BExcalibur.Parent = Main
+_1BExcalibur.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+_1BExcalibur.BackgroundTransparency = 1.000
+_1BExcalibur.BorderSizePixel = 0
+_1BExcalibur.Position = UDim2.new(0.0619839653, 0, 0.725664079, 0)
+_1BExcalibur.Size = UDim2.new(0, 136, 0, 35)
+_1BExcalibur.Visible = false
+_1BExcalibur.Text = "1B+ Excalibur"
+_1BExcalibur.TextColor3 = Color3.fromRGB(0, 0, 0)
+_1BExcalibur.TextScaled = true
+_1BExcalibur.TextSize = 45.000
+_1BExcalibur.TextWrapped = true
+_1BExcalibur.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(748.555298, 140.999954, 966.042175)
 end)
 
-Minimize.MouseButton1Click:connect(function()
-openFrame.Visible = true
-   chestFrame.Visible = false
-   agilityFrame.Visible = false
-   speedFrame.Visible = false
-   chakraFrame.Visible = false
-   durabilityFrame.Visible = false
-   strengthFrame.Visible = false
-   mainFrame.Visible = false
-   menuBarFrame.Visible = false
-   Speed.BackgroundColor3 = Color3.new(255, 0, 0)
-   Chakra.BackgroundColor3 = Color3.new(255, 0, 0)
-   Agility.BackgroundColor3 = Color3.new(255, 0, 0)
-   Durability.BackgroundColor3 = Color3.new(255, 0, 0)
-   Chest.BackgroundColor3 = Color3.new(255, 0, 0)
-   Main.BackgroundColor3 = Color3.new(255, 0, 0)
-   Strength.BackgroundColor3 = Color3.new(255, 0, 0)
+_100BNomu.Name = "100B+ Nomu"
+_100BNomu.Parent = Main
+_100BNomu.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+_100BNomu.BackgroundTransparency = 1.000
+_100BNomu.BorderSizePixel = 0
+_100BNomu.Position = UDim2.new(0.0619839653, 0, 0.811896145, 0)
+_100BNomu.Size = UDim2.new(0, 136, 0, 35)
+_100BNomu.Visible = false
+_100BNomu.Text = "100B+ Nomu"
+_100BNomu.TextColor3 = Color3.fromRGB(0, 0, 0)
+_100BNomu.TextScaled = true
+_100BNomu.TextSize = 45.000
+_100BNomu.TextWrapped = true
+_100BNomu.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1869.2876, 141.199951, 111.216576)
 end)
 
---Functions:
--- Main:
-spawn.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(38, 79, 14)
+DurabilityButton.Name = "DurabilityButton"
+DurabilityButton.Parent = Main
+DurabilityButton.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+DurabilityButton.BackgroundTransparency = 1.000
+DurabilityButton.Position = UDim2.new(0.285745412, 0, 0.114722215, 0)
+DurabilityButton.Size = UDim2.new(0, 121, 0, 33)
+DurabilityButton.Font = Enum.Font.Cartoon
+DurabilityButton.Text = "Durability"
+DurabilityButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+DurabilityButton.TextScaled = true
+DurabilityButton.TextSize = 14.000
+DurabilityButton.TextWrapped = true
+DurabilityButton.MouseButton1Down:connect(function()
+	-- Strength
+	_100Dummies.Visible = false
+	_10KGym.Visible = false
+	_100KFridge.Visible = false
+	_1MMeteor.Visible = false
+	_10MLookout.Visible = false
+	_100MArena.Visible = false
+	_1BExcalibur.Visible = false
+	_100BNomu.Visible = false
+	-- Durability
+	_100Ship.Visible = true
+	_10KDesert.Visible = true
+	_100KSnowRock.Visible = true
+	_1MPaw.Visible = true
+	_10MVolcano.Visible = true
+	_100MAmaterasu.Visible = true
+	_1BPlanet.Visible = true
+	_100BCOT.Visible = true
+	-- Chakra
+	_500SpiritTree.Visible = false
+	_15KDeathNote.Visible = false
+	_150KWOT.Visible = false
+	_15MTemple.Visible = false
+	_15MKurama.Visible = false
+	_250MSakura.Visible = false
+	_1BSage.Visible = false
+	_100BTOH.Visible = false
+	-- Speed & Agility
+	_100Treadmill.Visible = false
+	_10KChamber.Visible = false
+	_100KKunai.Visible = false
+	_100Trampoline.Visible = false
+	-- Chests
+	Chest1.Visible = false
+	Chest2.Visible = false
+	Chest3.Visible = false
+	Chest4.Visible = false
+	Chest5.Visible = false
 end)
 
--- Strength:
-Dummies.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(22, 65, 149)
+_100Ship.Name = "100+ Ship"
+_100Ship.Parent = Main
+_100Ship.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+_100Ship.BackgroundTransparency = 1.000
+_100Ship.BorderSizePixel = 0
+_100Ship.Position = UDim2.new(0.266757846, 0, 0.21345517, 0)
+_100Ship.Size = UDim2.new(0, 136, 0, 35)
+_100Ship.Visible = false
+_100Ship.Text = "100+ Ship"
+_100Ship.TextColor3 = Color3.fromRGB(0, 0, 0)
+_100Ship.TextScaled = true
+_100Ship.TextSize = 45.000
+_100Ship.TextWrapped = true
+_100Ship.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(120.252907, 72.1192322, 896.741882)
 end)
 
-Nomu.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1880, 141, 112)
+_10KDesert.Name = "10K+ Desert"
+_10KDesert.Parent = Main
+_10KDesert.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+_10KDesert.BackgroundTransparency = 1.000
+_10KDesert.BorderSizePixel = 0
+_10KDesert.Position = UDim2.new(0.266757846, 0, 0.300955176, 0)
+_10KDesert.Size = UDim2.new(0, 136, 0, 35)
+_10KDesert.Visible = false
+_10KDesert.Text = "10K+ Desert"
+_10KDesert.TextColor3 = Color3.fromRGB(0, 0, 0)
+_10KDesert.TextScaled = true
+_10KDesert.TextSize = 45.000
+_10KDesert.TextWrapped = true
+_10KDesert.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1555.20654, 61.3838196, -522.891907)
 end)
 
-cellArena.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6, 70, -1285)
+_100KSnowRock.Name = "100K+ Snow-Rock"
+_100KSnowRock.Parent = Main
+_100KSnowRock.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+_100KSnowRock.BackgroundTransparency = 1.000
+_100KSnowRock.BorderSizePixel = 0
+_100KSnowRock.Position = UDim2.new(0.266757846, 0, 0.381691486, 0)
+_100KSnowRock.Size = UDim2.new(0, 136, 0, 35)
+_100KSnowRock.Visible = false
+_100KSnowRock.Text = "100K+ Snow-Rock"
+_100KSnowRock.TextColor3 = Color3.fromRGB(0, 0, 0)
+_100KSnowRock.TextScaled = true
+_100KSnowRock.TextSize = 45.000
+_100KSnowRock.TextWrapped = true
+_100KSnowRock.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-40.129612, 84.0079117, 2033.18176)
 end)
 
-dagobahBeach.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1221, 58, 502)
+_1MPaw.Name = "1M+ Paw"
+_1MPaw.Parent = Main
+_1MPaw.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+_1MPaw.BackgroundTransparency = 1.000
+_1MPaw.BorderSizePixel = 0
+_1MPaw.Position = UDim2.new(0.271782935, 0, 0.47169143, 0)
+_1MPaw.Size = UDim2.new(0, 128, 0, 35)
+_1MPaw.Visible = false
+_1MPaw.Text = "1M+ Paw"
+_1MPaw.TextColor3 = Color3.fromRGB(0, 0, 0)
+_1MPaw.TextScaled = true
+_1MPaw.TextSize = 45.000
+_1MPaw.TextWrapped = true
+_1MPaw.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-555.656555, 178.999954, 753.529968)
 end)
 
-excalibur.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(755, 149, 952)
+_10MVolcano.Name = "10M+ Volcano"
+_10MVolcano.Parent = Main
+_10MVolcano.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+_10MVolcano.BackgroundTransparency = 1.000
+_10MVolcano.BorderSizePixel = 0
+_10MVolcano.Position = UDim2.new(0.266757846, 0, 0.551691473, 0)
+_10MVolcano.Size = UDim2.new(0, 136, 0, 35)
+_10MVolcano.Visible = false
+_10MVolcano.Text = "10M+ Volcano"
+_10MVolcano.TextColor3 = Color3.fromRGB(0, 0, 0)
+_10MVolcano.TextScaled = true
+_10MVolcano.TextSize = 45.000
+_10MVolcano.TextWrapped = true
+_10MVolcano.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1095.59058, 243.448181, -931.3255)
 end)
 
-kamiLookout.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2229, 617, 553)
+_100MAmaterasu.Name = "100M+ Amaterasu"
+_100MAmaterasu.Parent = Main
+_100MAmaterasu.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+_100MAmaterasu.BackgroundTransparency = 1.000
+_100MAmaterasu.BorderSizePixel = 0
+_100MAmaterasu.Position = UDim2.new(0.266757846, 0, 0.636691451, 0)
+_100MAmaterasu.Size = UDim2.new(0, 136, 0, 35)
+_100MAmaterasu.Visible = false
+_100MAmaterasu.Text = "100M+ Amaterasu"
+_100MAmaterasu.TextColor3 = Color3.fromRGB(0, 0, 0)
+_100MAmaterasu.TextScaled = true
+_100MAmaterasu.TextSize = 45.000
+_100MAmaterasu.TextWrapped = true
+_100MAmaterasu.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-273.991943, 61.9999886, -1615.09753)
 end)
 
-meteor.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-840, 49, 177)
+_1BPlanet.Name = "1B+ Planet"
+_1BPlanet.Parent = Main
+_1BPlanet.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+_1BPlanet.BackgroundTransparency = 1.000
+_1BPlanet.BorderSizePixel = 0
+_1BPlanet.Position = UDim2.new(0.266757846, 0, 0.726691484, 0)
+_1BPlanet.Size = UDim2.new(0, 136, 0, 35)
+_1BPlanet.Visible = false
+_1BPlanet.Text = "1B+ Planet"
+_1BPlanet.TextColor3 = Color3.fromRGB(0, 0, 0)
+_1BPlanet.TextScaled = true
+_1BPlanet.TextSize = 45.000
+_1BPlanet.TextWrapped = true
+_1BPlanet.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2497.3916, 1539.73291, -350.975739)
 end)
 
-saitamaGym.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1371, 142, -112)
+_100BCOT.Name = "100B+ COT"
+_100BCOT.Parent = Main
+_100BCOT.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+_100BCOT.BackgroundTransparency = 1.000
+_100BCOT.BorderSizePixel = 0
+_100BCOT.Position = UDim2.new(0.266757846, 0, 0.814191461, 0)
+_100BCOT.Size = UDim2.new(0, 136, 0, 35)
+_100BCOT.Visible = false
+_100BCOT.Text = "100B+ COT"
+_100BCOT.TextColor3 = Color3.fromRGB(0, 0, 0)
+_100BCOT.TextScaled = true
+_100BCOT.TextSize = 45.000
+_100BCOT.TextWrapped = true
+_100BCOT.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2705.97803, -227.695755, 370.541992)
 end)
 
--- Durability:
-amaterasu.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-297, 61, -1630)
+ChakraButton.Name = "ChakraButton"
+ChakraButton.Parent = Main
+ChakraButton.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+ChakraButton.BackgroundTransparency = 1.000
+ChakraButton.Position = UDim2.new(0.481725305, 0, 0.114722215, 0)
+ChakraButton.Size = UDim2.new(0, 121, 0, 33)
+ChakraButton.Font = Enum.Font.Cartoon
+ChakraButton.Text = "Chakra"
+ChakraButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+ChakraButton.TextScaled = true
+ChakraButton.TextSize = 14.000
+ChakraButton.TextWrapped = true
+ChakraButton.MouseButton1Down:connect(function()
+	-- Strength
+	_100Dummies.Visible = false
+	_10KGym.Visible = false
+	_100KFridge.Visible = false
+	_1MMeteor.Visible = false
+	_10MLookout.Visible = false
+	_100MArena.Visible = false
+	_1BExcalibur.Visible = false
+	_100BNomu.Visible = false
+	-- Durability
+	_100Ship.Visible = false
+	_10KDesert.Visible = false
+	_100KSnowRock.Visible = false
+	_1MPaw.Visible = false
+	_10MVolcano.Visible = false
+	_100MAmaterasu.Visible = false
+	_1BPlanet.Visible = false
+	_100BCOT.Visible = false
+	-- Chakra
+	_500SpiritTree.Visible = true
+	_15KDeathNote.Visible = true
+	_150KWOT.Visible = true
+	_15MTemple.Visible = true
+	_15MKurama.Visible = true
+	_250MSakura.Visible = true
+	_1BSage.Visible = true
+	_100BTOH.Visible = true
+	-- Speed & Agility
+	_100Treadmill.Visible = false
+	_10KChamber.Visible = false
+	_100KKunai.Visible = false
+	_100Trampoline.Visible = false
+	-- Chests
+	Chest1.Visible = false
+	Chest2.Visible = false
+	Chest3.Visible = false
+	Chest4.Visible = false
+	Chest5.Visible = false
 end)
 
-aokijiIsland.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-42, 84, 2036)
+_500SpiritTree.Name = "500+ Spirit Tree"
+_500SpiritTree.Parent = Main
+_500SpiritTree.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+_500SpiritTree.BackgroundTransparency = 1.000
+_500SpiritTree.BorderSizePixel = 0
+_500SpiritTree.Position = UDim2.new(0.462737739, 0, 0.21345517, 0)
+_500SpiritTree.Size = UDim2.new(0, 136, 0, 35)
+_500SpiritTree.Visible = false
+_500SpiritTree.Text = "500+ Spirit Tree"
+_500SpiritTree.TextColor3 = Color3.fromRGB(0, 0, 0)
+_500SpiritTree.TextScaled = true
+_500SpiritTree.TextSize = 45.000
+_500SpiritTree.TextWrapped = true
+_500SpiritTree.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(24.8983459, 64.9999771, -94.7455826)
 end)
 
-desertIsland.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1567, 61, -523)
+_15KDeathNote.Name = "15K+ Death Note"
+_15KDeathNote.Parent = Main
+_15KDeathNote.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+_15KDeathNote.BackgroundTransparency = 1.000
+_15KDeathNote.BorderSizePixel = 0
+_15KDeathNote.Position = UDim2.new(0.462737739, 0, 0.300955176, 0)
+_15KDeathNote.Size = UDim2.new(0, 136, 0, 35)
+_15KDeathNote.Visible = false
+_15KDeathNote.Text = "15K+ Death Note"
+_15KDeathNote.TextColor3 = Color3.fromRGB(0, 0, 0)
+_15KDeathNote.TextScaled = true
+_15KDeathNote.TextSize = 45.000
+_15KDeathNote.TextWrapped = true
+_15KDeathNote.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1454.18347, 146.999954, -557.14386)
 end)
 
-hyperbolicTimeChamber.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2748, -227, 371)
+_150KWOT.Name = "150K+ WOT"
+_150KWOT.Parent = Main
+_150KWOT.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+_150KWOT.BackgroundTransparency = 1.000
+_150KWOT.BorderSizePixel = 0
+_150KWOT.Position = UDim2.new(0.462737739, 0, 0.388455182, 0)
+_150KWOT.Size = UDim2.new(0, 136, 0, 35)
+_150KWOT.Visible = false
+_150KWOT.Text = "150K+ WOT"
+_150KWOT.TextColor3 = Color3.fromRGB(0, 0, 0)
+_150KWOT.TextScaled = true
+_150KWOT.TextSize = 45.000
+_150KWOT.TextWrapped = true
+_150KWOT.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(956.046875, 140.999954, 803.637024)
 end)
 
-kingkaiplanet.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2038, 1307, -1192)
+_15MTemple.Name = "1.5M+ Temple"
+_15MTemple.Parent = Main
+_15MTemple.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+_15MTemple.BackgroundTransparency = 1.000
+_15MTemple.BorderSizePixel = 0
+_15MTemple.Position = UDim2.new(0.462737739, 0, 0.468455195, 0)
+_15MTemple.Size = UDim2.new(0, 136, 0, 35)
+_15MTemple.Visible = false
+_15MTemple.Text = "1.5M+ Temple"
+_15MTemple.TextColor3 = Color3.fromRGB(0, 0, 0)
+_15MTemple.TextScaled = true
+_15MTemple.TextSize = 45.000
+_15MTemple.TextWrapped = true
+_15MTemple.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1519.93591, 387.999908, 757.290222)
 end)
 
-mountAkainu.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1068, 233, -928)
+_15MKurama.Name = "15M+ Kurama"
+_15MKurama.Parent = Main
+_15MKurama.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+_15MKurama.BackgroundTransparency = 1.000
+_15MKurama.BorderSizePixel = 0
+_15MKurama.Position = UDim2.new(0.462737739, 0, 0.558455229, 0)
+_15MKurama.Size = UDim2.new(0, 136, 0, 35)
+_15MKurama.Visible = false
+_15MKurama.Text = "15M+ Kurama"
+_15MKurama.TextColor3 = Color3.fromRGB(0, 0, 0)
+_15MKurama.TextScaled = true
+_15MKurama.TextSize = 45.000
+_15MKurama.TextWrapped = true
+_15MKurama.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(363.649109, -156.000046, -1721.26807)
 end)
 
-pirateShip.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(107, 72, 892)
+_250MSakura.Name = "250M+ Sakura"
+_250MSakura.Parent = Main
+_250MSakura.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+_250MSakura.BackgroundTransparency = 1.000
+_250MSakura.BorderSizePixel = 0
+_250MSakura.Position = UDim2.new(0.462737739, 0, 0.638455212, 0)
+_250MSakura.Size = UDim2.new(0, 136, 0, 35)
+_250MSakura.Visible = false
+_250MSakura.Text = "250M+ Sakura"
+_250MSakura.TextColor3 = Color3.fromRGB(0, 0, 0)
+_250MSakura.TextScaled = true
+_250MSakura.TextSize = 45.000
+_250MSakura.TextWrapped = true
+_250MSakura.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1059.85791, 250.999954, -581.989807)
 end)
 
-ursusShock.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-584, 178, 759)
+_1BSage.Name = "1B+ Sage"
+_1BSage.Parent = Main
+_1BSage.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+_1BSage.BackgroundTransparency = 1.000
+_1BSage.BorderSizePixel = 0
+_1BSage.Position = UDim2.new(0.462737739, 0, 0.725955188, 0)
+_1BSage.Size = UDim2.new(0, 136, 0, 35)
+_1BSage.Visible = false
+_1BSage.Text = "1B+ Sage"
+_1BSage.TextColor3 = Color3.fromRGB(0, 0, 0)
+_1BSage.TextScaled = true
+_1BSage.TextSize = 45.000
+_1BSage.TextWrapped = true
+_1BSage.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3089.12207, 111.080544, 1124.15784)
 end)
 
--- Chakra:
-deathNote.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1455, 146, -563)
+_100BTOH.Name = "100B+ TOH"
+_100BTOH.Parent = Main
+_100BTOH.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+_100BTOH.BackgroundTransparency = 1.000
+_100BTOH.BorderSizePixel = 0
+_100BTOH.Position = UDim2.new(0.462737739, 0, 0.813455164, 0)
+_100BTOH.Size = UDim2.new(0, 136, 0, 35)
+_100BTOH.Visible = false
+_100BTOH.Text = "100B+ TOH"
+_100BTOH.TextColor3 = Color3.fromRGB(0, 0, 0)
+_100BTOH.TextScaled = true
+_100BTOH.TextSize = 45.000
+_100BTOH.TextWrapped = true
+_100BTOH.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1581.70068, 960.785767, 1921.61414)
 end)
 
-kuramaStatue.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(363, -150, -1800)
+SpeedAgilityButton.Name = "Speed&AgilityButton"
+SpeedAgilityButton.Parent = Main
+SpeedAgilityButton.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+SpeedAgilityButton.BackgroundTransparency = 1.000
+SpeedAgilityButton.Position = UDim2.new(0.652579486, 0, 0.107222214, 0)
+SpeedAgilityButton.Size = UDim2.new(0, 128, 0, 39)
+SpeedAgilityButton.Font = Enum.Font.Cartoon
+SpeedAgilityButton.Text = "Speed&Agility"
+SpeedAgilityButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+SpeedAgilityButton.TextScaled = true
+SpeedAgilityButton.TextSize = 14.000
+SpeedAgilityButton.TextWrapped = true
+SpeedAgilityButton.MouseButton1Down:connect(function()
+	-- Strength
+	_100Dummies.Visible = false
+	_10KGym.Visible = false
+	_100KFridge.Visible = false
+	_1MMeteor.Visible = false
+	_10MLookout.Visible = false
+	_100MArena.Visible = false
+	_1BExcalibur.Visible = false
+	_100BNomu.Visible = false
+	-- Durability
+	_100Ship.Visible = false
+	_10KDesert.Visible = false
+	_100KSnowRock.Visible = false
+	_1MPaw.Visible = false
+	_10MVolcano.Visible = false
+	_100MAmaterasu.Visible = false
+	_1BPlanet.Visible = false
+	_100BCOT.Visible = false
+	-- Chakra
+	_500SpiritTree.Visible = false
+	_15KDeathNote.Visible = false
+	_150KWOT.Visible = false
+	_15MTemple.Visible = false
+	_15MKurama.Visible = false
+	_250MSakura.Visible = false
+	_1BSage.Visible = false
+	_100BTOH.Visible = false
+	-- Speed & Agility
+	_100Treadmill.Visible = true
+	_10KChamber.Visible = true
+	_100KKunai.Visible = true
+	_100Trampoline.Visible = true
+	-- Chests
+	Chest1.Visible = false
+	Chest2.Visible = false
+	Chest3.Visible = false
+	Chest4.Visible = false
+	Chest5.Visible = false
 end)
 
-sageMeditationPlatform.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3084, 111, 1124)
+_100Treadmill.Name = "100+ Treadmill"
+_100Treadmill.Parent = Main
+_100Treadmill.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+_100Treadmill.BackgroundTransparency = 1.000
+_100Treadmill.BorderSizePixel = 0
+_100Treadmill.Position = UDim2.new(0.648667395, 0, 0.21345517, 0)
+_100Treadmill.Size = UDim2.new(0, 136, 0, 35)
+_100Treadmill.Visible = false
+_100Treadmill.Text = "100+ Treadmill"
+_100Treadmill.TextColor3 = Color3.fromRGB(0, 0, 0)
+_100Treadmill.TextScaled = true
+_100Treadmill.TextSize = 45.000
+_100Treadmill.TextWrapped = true
+_100Treadmill.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-94.2746048, 61.2399864, -487.458069)
 end)
 
-senbonzakuraKageyoshi.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1050, 249, -600)
+_100Trampoline.Name = "100+ Trampoline"
+_100Trampoline.Parent = Main
+_100Trampoline.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+_100Trampoline.BackgroundTransparency = 1.000
+_100Trampoline.BorderSizePixel = 0
+_100Trampoline.Position = UDim2.new(0.648667395, 0, 0.293455184, 0)
+_100Trampoline.Size = UDim2.new(0, 136, 0, 35)
+_100Trampoline.Visible = false
+_100Trampoline.Text = "100+ Trampoline"
+_100Trampoline.TextColor3 = Color3.fromRGB(0, 0, 0)
+_100Trampoline.TextScaled = true
+_100Trampoline.TextSize = 45.000
+_100Trampoline.TextWrapped = true
+_100Trampoline.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(73.0394592, 60.9999886, 507.811249)
 end)
 
-spiritTree.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(25, 64, -99)
+_10KChamber.Name = "10K+ Chamber"
+_10KChamber.Parent = Main
+_10KChamber.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+_10KChamber.BackgroundTransparency = 1.000
+_10KChamber.BorderSizePixel = 0
+_10KChamber.Position = UDim2.new(0.648667395, 0, 0.388455182, 0)
+_10KChamber.Size = UDim2.new(0, 136, 0, 35)
+_10KChamber.Visible = false
+_10KChamber.Text = "10K+ Chamber"
+_10KChamber.TextColor3 = Color3.fromRGB(0, 0, 0)
+_10KChamber.TextScaled = true
+_10KChamber.TextSize = 45.000
+_10KChamber.TextWrapped = true
+_10KChamber.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-379.964691, 122.408112, -59.798111)
 end)
 
-temple.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1586, 388, 702)
+_100KKunai.Name = "100K+ Kunai"
+_100KKunai.Parent = Main
+_100KKunai.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+_100KKunai.BackgroundTransparency = 1.000
+_100KKunai.BorderSizePixel = 0
+_100KKunai.Position = UDim2.new(0.648667395, 0, 0.478455186, 0)
+_100KKunai.Size = UDim2.new(0, 136, 0, 35)
+_100KKunai.Visible = false
+_100KKunai.Text = "100K+ Kunai"
+_100KKunai.TextColor3 = Color3.fromRGB(0, 0, 0)
+_100KKunai.TextScaled = true
+_100KKunai.TextSize = 45.000
+_100KKunai.TextWrapped = true
+_100KKunai.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3485.72705, 59.9999886, 167.935196)
 end)
 
-towerOfHeaven.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1558, 396, 1861)
+ChestButton.Name = "ChestButton"
+ChestButton.Parent = Main
+ChestButton.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+ChestButton.BackgroundTransparency = 1.000
+ChestButton.Position = UDim2.new(0.842278004, 0, 0.114722215, 0)
+ChestButton.Size = UDim2.new(0, 112, 0, 36)
+ChestButton.Font = Enum.Font.Cartoon
+ChestButton.Text = "Chest"
+ChestButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+ChestButton.TextScaled = true
+ChestButton.TextSize = 14.000
+ChestButton.TextWrapped = true
+ChestButton.MouseButton1Down:connect(function()
+	-- Strength
+	_100Dummies.Visible = false
+	_10KGym.Visible = false
+	_100KFridge.Visible = false
+	_1MMeteor.Visible = false
+	_10MLookout.Visible = false
+	_100MArena.Visible = false
+	_1BExcalibur.Visible = false
+	_100BNomu.Visible = false
+	-- Durability
+	_100Ship.Visible = false
+	_10KDesert.Visible = false
+	_100KSnowRock.Visible = false
+	_1MPaw.Visible = false
+	_10MVolcano.Visible = false
+	_100MAmaterasu.Visible = false
+	_1BPlanet.Visible = false
+	_100BCOT.Visible = false
+	-- Chakra
+	_500SpiritTree.Visible = false
+	_15KDeathNote.Visible = false
+	_150KWOT.Visible = false
+	_15MTemple.Visible = false
+	_15MKurama.Visible = false
+	_250MSakura.Visible = false
+	_1BSage.Visible = false
+	_100BTOH.Visible = false
+	-- Speed & Agility
+	_100Treadmill.Visible = false
+	_10KChamber.Visible = false
+	_100KKunai.Visible = false
+	_100Trampoline.Visible = false
+	-- Chests
+	Chest1.Visible = true
+	Chest2.Visible = true
+	Chest3.Visible = true
+	Chest4.Visible = true
+	Chest5.Visible = true
 end)
 
-waterfallOfTruth.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(953, 140, 803)
+Chest1.Name = "Chest1"
+Chest1.Parent = Main
+Chest1.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+Chest1.BackgroundTransparency = 1.000
+Chest1.BorderSizePixel = 0
+Chest1.Position = UDim2.new(0.828315616, 0, 0.21345517, 0)
+Chest1.Size = UDim2.new(0, 136, 0, 35)
+Chest1.Visible = false
+Chest1.Text = "Chest1"
+Chest1.TextColor3 = Color3.fromRGB(0, 0, 0)
+Chest1.TextScaled = true
+Chest1.TextSize = 45.000
+Chest1.TextWrapped = true
+Chest1.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-388.795471, 129.999954, -249.312622)
 end)
 
--- Speed:
-gravityChamberS.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-404, 122, -70)
+Chest2.Name = "Chest2"
+Chest2.Parent = Main
+Chest2.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+Chest2.BackgroundTransparency = 1.000
+Chest2.BorderSizePixel = 0
+Chest2.Position = UDim2.new(0.828315616, 0, 0.300955176, 0)
+Chest2.Size = UDim2.new(0, 136, 0, 35)
+Chest2.Visible = false
+Chest2.Text = "Chest2"
+Chest2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Chest2.TextScaled = true
+Chest2.TextSize = 45.000
+Chest2.TextWrapped = true
+Chest2.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-899.406128, 132.999969, 570.153564)
 end)
 
-trampoline.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-79, 61, -488)
+Chest3.Name = "Chest3"
+Chest3.Parent = Main
+Chest3.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+Chest3.BackgroundTransparency = 1.000
+Chest3.BorderSizePixel = 0
+Chest3.Position = UDim2.new(0.828315616, 0, 0.39095515, 0)
+Chest3.Size = UDim2.new(0, 136, 0, 35)
+Chest3.Visible = false
+Chest3.Text = "Chest3"
+Chest3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Chest3.TextScaled = true
+Chest3.TextSize = 45.000
+Chest3.TextWrapped = true
+Chest3.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1126.57385, 181.999954, -1234.85132)
 end)
 
-spaceTimeKunaiFieldS.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3508, 59, 162)
+Chest4.Name = "Chest4"
+Chest4.Parent = Main
+Chest4.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+Chest4.BackgroundTransparency = 1.000
+Chest4.BorderSizePixel = 0
+Chest4.Position = UDim2.new(0.828315616, 0, 0.478455156, 0)
+Chest4.Size = UDim2.new(0, 136, 0, 35)
+Chest4.Visible = false
+Chest4.Text = "Chest4"
+Chest4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Chest4.TextScaled = true
+Chest4.TextSize = 45.000
+Chest4.TextWrapped = true
+Chest4.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-387.996185, 156.999969, -1475.34045)
 end)
 
--- Agility:
-treadmills.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(65, 65, 471)
+Chest5.Name = "Chest5"
+Chest5.Parent = Main
+Chest5.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+Chest5.BackgroundTransparency = 1.000
+Chest5.BorderSizePixel = 0
+Chest5.Position = UDim2.new(0.828315616, 0, 0.565955162, 0)
+Chest5.Size = UDim2.new(0, 136, 0, 35)
+Chest5.Visible = false
+Chest5.Text = "Chest5"
+Chest5.TextColor3 = Color3.fromRGB(0, 0, 0)
+Chest5.TextScaled = true
+Chest5.TextSize = 45.000
+Chest5.TextWrapped = true
+Chest5.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1379.85046, 231.999969, -737.934143)
 end)
 
-spaceTimeKunaiFieldA.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3508, 59, 162)
+AFSTitle.Name = "AFSTitle"
+AFSTitle.Parent = Main
+AFSTitle.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+AFSTitle.BackgroundTransparency = 1.000
+AFSTitle.Position = UDim2.new(0.390452266, 0, -0.00077585876, 0)
+AFSTitle.Size = UDim2.new(0, 200, 0, 50)
+AFSTitle.Font = Enum.Font.Cartoon
+AFSTitle.Text = "AFSHUB"
+AFSTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+AFSTitle.TextScaled = true
+AFSTitle.TextSize = 14.000
+AFSTitle.TextWrapped = true
+
+X.Name = "X"
+X.Parent = Main
+X.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+X.BackgroundTransparency = 1.000
+X.Position = UDim2.new(0.952261388, 0, 0.0342241302, 0)
+X.Size = UDim2.new(0, 24, 0, 21)
+X.Font = Enum.Font.Cartoon
+X.Text = "X"
+X.TextColor3 = Color3.fromRGB(0, 0, 0)
+X.TextScaled = true
+X.TextSize = 14.000
+X.TextWrapped = true
+X.MouseButton1Down:connect(function()
+	Main.Visible = false
+	ShowMain.Visible = true
+	AFSShow.Visible = true
 end)
 
-gravityChamberA.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-404, 122, -70)
+Spawn.Name = "Spawn"
+Spawn.Parent = Main
+Spawn.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Spawn.BackgroundTransparency = 1.000
+Spawn.Position = UDim2.new(0.686499119, 0, 0.0172222182, 0)
+Spawn.Size = UDim2.new(0, 112, 0, 36)
+Spawn.Font = Enum.Font.Cartoon
+Spawn.Text = "Spawn"
+Spawn.TextColor3 = Color3.fromRGB(0, 0, 0)
+Spawn.TextScaled = true
+Spawn.TextSize = 14.000
+Spawn.TextWrapped = true
+Spawn.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(24.8531475, 79.9999771, -24.9064846)
 end)
 
--- Chest:
-Location1.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402, 129, -215)
-end)
+ShowMain.Name = "ShowMain"
+ShowMain.Parent = AFS
+ShowMain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ShowMain.BackgroundTransparency = 1.000
+ShowMain.Position = UDim2.new(0, 0, 0.0357653797, 0)
+ShowMain.Size = UDim2.new(0, 124, 0, 40)
+ShowMain.Active = true
+ShowMain.Visible = true
 
-Location2.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-931, 132, 545)
-end)
-
-Location3.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1135, 181, -1295)
-end)
-
-Location4.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-417, 156, -1450)
-end)
-
-Location5.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1397, 231, -719)
-end)
-
-Location6.MouseButton1Click:connect(function()
-game:service'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1470, 231, -706)
+AFSShow.Name = "AFSShow"
+AFSShow.Parent = ShowMain
+AFSShow.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+AFSShow.Position = UDim2.new(0, 0, 4.79722214, 0)
+AFSShow.Size = UDim2.new(0, 110, 0, 43)
+AFSShow.Style = Enum.ButtonStyle.RobloxRoundButton
+AFSShow.Font = Enum.Font.Gotham
+AFSShow.Text = "SHOW"
+AFSShow.TextColor3 = Color3.fromRGB(0, 0, 0)
+AFSShow.TextScaled = true
+AFSShow.TextSize = 14.000
+AFSShow.TextWrapped = true
+AFSShow.Visible = true
+AFSShow.Active = true
+AFSShow.MouseButton1Down:connect(function()
+	Main.Visible = true
+	AFSShow.Visible = true
+	ShowMain.Visible = false
 end)
