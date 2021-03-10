@@ -60,7 +60,7 @@ Backround.Size = UDim2.new(0, 830, 0, 400)
 Backround.Image = "http://www.roblox.com/asset/?id=6496513285"
 Backround.ScaleType = Enum.ScaleType.Crop
 Backround.SliceScale = 0.000
-Backround.Visible = true
+Backround.Visible = false
 Backround.Draggable = true
 
 StrengthButton.Name = "StrengthButton"
