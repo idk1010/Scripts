@@ -1,0 +1,557 @@
+-- AFSHUB-D2
+
+local AFSHUBD2 = Instance.new("ScreenGui")
+local Main = Instance.new("ImageLabel")
+local Backround = Instance.new("ImageLabel")
+local StrengthButton = Instance.new("TextButton")
+local _1TRoadRoller = Instance.new("TextButton")
+local _100TIIW = Instance.new("TextButton")
+local _1QDUnbreakableRock = Instance.new("TextButton")
+local _100QDExecutor = Instance.new("TextButton")
+local _1TColossalTitan = Instance.new("TextButton")
+local DurabilityButton = Instance.new("TextButton")
+local _100TGravityRock = Instance.new("TextButton")
+local _1QDBlackIronTemple = Instance.new("TextButton")
+local _100QDFlamesofCremation = Instance.new("TextButton")
+local ChakraButton = Instance.new("TextButton")
+local _1TCoffinBoat = Instance.new("TextButton")
+local _100TAntique = Instance.new("TextButton")
+local _1QDBeerusPlanet = Instance.new("TextButton")
+local _100QDInfiniteTsukujomi = Instance.new("TextButton")
+local MiscButton = Instance.new("TextButton")
+local Spawn = Instance.new("TextButton")
+local Kagune = Instance.new("TextButton")
+local Pyrokinesis = Instance.new("TextButton")
+local Quirk = Instance.new("TextButton")
+local Bloodline = Instance.new("TextButton")
+local AFSD2Title = Instance.new("TextLabel")
+local DraggableFrame = Instance.new("Frame")
+local X = Instance.new("ImageButton")
+local ShowMain = Instance.new("Frame")
+local Show = Instance.new("TextButton")
+
+--Properties:
+
+AFSHUBD2.Name = "AFSHUBD2"
+AFSHUBD2.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = AFSHUBD2
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BackgroundTransparency = 1.000
+Main.Position = UDim2.new(0.0925600305, 0, 0.213161662, 0)
+Main.Selectable = true
+Main.Size = UDim2.new(0, 830, 0, 400)
+Main.Image = "rbxassetid://3570695787"
+Main.ImageTransparency = 1.000
+Main.ScaleType = Enum.ScaleType.Slice
+Main.SliceCenter = Rect.new(100, 100, 100, 100)
+Main.SliceScale = 0.120
+Main.Draggable = true
+
+Backround.Name = "Backround"
+Backround.Parent = Main
+Backround.Active = true
+Backround.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Backround.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Backround.LayoutOrder = 0
+Backround.Position = UDim2.new(-0.00114092231, 0, -0.00183834136, 0)
+Backround.Size = UDim2.new(0, 830, 0, 400)
+Backround.Image = "http://www.roblox.com/asset/?id=6496513285"
+Backround.ScaleType = Enum.ScaleType.Crop
+Backround.SliceScale = 0.000
+Backround.Visible = true
+Backround.Draggable = true
+
+StrengthButton.Name = "StrengthButton"
+StrengthButton.Parent = Backround
+StrengthButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+StrengthButton.BackgroundTransparency = 1.000
+StrengthButton.Position = UDim2.new(0.0421003699, 0, 0.278390557, 0)
+StrengthButton.Size = UDim2.new(0, 163, 0, 40)
+StrengthButton.Font = Enum.Font.Cartoon
+StrengthButton.Text = "Strength"
+StrengthButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+StrengthButton.TextScaled = true
+StrengthButton.TextSize = 14.000
+StrengthButton.TextWrapped = true
+StrengthButton.MouseButton1Down:connect(function()
+	-- Strength
+	_1TRoadRoller.Visible = true
+	_100TIIW.Visible = true
+	_1QDUnbreakableRock.Visible = true
+	_100QDExecutor.Visible = true
+	-- Durability
+	_1TColossalTitan.Visible = false
+	_100TGravityRock.Visible = false
+	_100QDFlamesofCremation.Visible = false
+	_1QDBlackIronTemple.Visible = false
+	-- Chakra
+	_1TCoffinBoat.Visible = false
+	_100TAntique.Visible = false
+	_1QDBeerusPlanet.Visible = false
+	_100QDInfiniteTsukujomi.Visible = false
+	-- Misc
+	Spawn.Visible = false
+	Kagune.Visible = false
+	Pyrokinesis.Visible = false
+	Quirk.Visible = false
+	Bloodline.Visible = false
+end)
+
+_1TRoadRoller.Name = "1T+ Road Roller"
+_1TRoadRoller.Parent = Backround
+_1TRoadRoller.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_1TRoadRoller.BackgroundTransparency = 1.000
+_1TRoadRoller.Position = UDim2.new(0.0491817743, 0, 0.403866261, 0)
+_1TRoadRoller.Size = UDim2.new(0, 150, 0, 44)
+_1TRoadRoller.Visible = false
+_1TRoadRoller.Font = Enum.Font.Cartoon
+_1TRoadRoller.Text = "1T+ Road-Roller"
+_1TRoadRoller.TextColor3 = Color3.fromRGB(255, 255, 255)
+_1TRoadRoller.TextScaled = true
+_1TRoadRoller.TextSize = 14.000
+_1TRoadRoller.TextWrapped = true
+_1TRoadRoller.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(176.727219, 60.9999886, 709.311462)
+end)
+
+_100TIIW.Name = "100T+ IIW"
+_100TIIW.Parent = Backround
+_100TIIW.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_100TIIW.BackgroundTransparency = 1.000
+_100TIIW.Position = UDim2.new(0.0525708571, 0, 0.516813278, 0)
+_100TIIW.Size = UDim2.new(0, 143, 0, 43)
+_100TIIW.Visible = false
+_100TIIW.Font = Enum.Font.Cartoon
+_100TIIW.Text = "100T+ Ichigo's world"
+_100TIIW.TextColor3 = Color3.fromRGB(255, 255, 255)
+_100TIIW.TextScaled = true
+_100TIIW.TextSize = 14.000
+_100TIIW.TextWrapped = true
+_100TIIW.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1703.03442, -257.463287, 234.734314)
+end)
+
+_1QDUnbreakableRock.Name = "1QD+ Unbreakable Rock"
+_1QDUnbreakableRock.Parent = Backround
+_1QDUnbreakableRock.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_1QDUnbreakableRock.BackgroundTransparency = 1.000
+_1QDUnbreakableRock.Position = UDim2.new(0.0491817817, 0, 0.643705308, 0)
+_1QDUnbreakableRock.Size = UDim2.new(0, 150, 0, 41)
+_1QDUnbreakableRock.Visible = false
+_1QDUnbreakableRock.Font = Enum.Font.Cartoon
+_1QDUnbreakableRock.Text = "1QD+ Unbreakable Rock"
+_1QDUnbreakableRock.TextColor3 = Color3.fromRGB(255, 255, 255)
+_1QDUnbreakableRock.TextScaled = true
+_1QDUnbreakableRock.TextSize = 14.000
+_1QDUnbreakableRock.TextWrapped = true
+_1QDUnbreakableRock.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(799.037415, 237.999954, -444.442383)
+end)
+
+_100QDExecutor.Name = "100QD+ Executor"
+_100QDExecutor.Parent = Backround
+_100QDExecutor.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_100QDExecutor.BackgroundTransparency = 1.000
+_100QDExecutor.Position = UDim2.new(0.0574680194, 0, 0.74486047, 0)
+_100QDExecutor.Size = UDim2.new(0, 137, 0, 39)
+_100QDExecutor.Visible = false
+_100QDExecutor.Font = Enum.Font.Cartoon
+_100QDExecutor.Text = "100QD+ Executor"
+_100QDExecutor.TextColor3 = Color3.fromRGB(255, 255, 255)
+_100QDExecutor.TextScaled = true
+_100QDExecutor.TextSize = 14.000
+_100QDExecutor.TextWrapped = true
+_100QDExecutor.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2074.10352, 395.999908, -1678.54797)
+end)
+
+_1TColossalTitan.Name = "1T+ Colossal Titan"
+_1TColossalTitan.Parent = Backround
+_1TColossalTitan.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_1TColossalTitan.BackgroundTransparency = 1.000
+_1TColossalTitan.Position = UDim2.new(0.29339844, 0, 0.408866227, 0)
+_1TColossalTitan.Size = UDim2.new(0, 150, 0, 44)
+_1TColossalTitan.Visible = false
+_1TColossalTitan.Font = Enum.Font.Cartoon
+_1TColossalTitan.Text = "1T+ Colossal"
+_1TColossalTitan.TextColor3 = Color3.fromRGB(255, 255, 255)
+_1TColossalTitan.TextScaled = true
+_1TColossalTitan.TextSize = 14.000
+_1TColossalTitan.TextWrapped = true
+_1TColossalTitan.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1755.55872, 225.999954, 1376.46069)
+end)
+
+DurabilityButton.Name = "DurabilityButton"
+DurabilityButton.Parent = Backround
+DurabilityButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DurabilityButton.BackgroundTransparency = 1.000
+DurabilityButton.Position = UDim2.new(0.293545932, 0, 0.278390557, 0)
+DurabilityButton.Size = UDim2.new(0, 163, 0, 40)
+DurabilityButton.Font = Enum.Font.Cartoon
+DurabilityButton.Text = "Durability"
+DurabilityButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+DurabilityButton.TextScaled = true
+DurabilityButton.TextSize = 14.000
+DurabilityButton.TextWrapped = true
+DurabilityButton.MouseButton1Down:connect(function()
+	-- Strength
+	_1TRoadRoller.Visible = false
+	_100TIIW.Visible = false
+	_1QDUnbreakableRock.Visible = false
+	_100QDExecutor.Visible = false
+	-- Durability
+	_1TColossalTitan.Visible = true
+	_100TGravityRock.Visible = true
+	_100QDFlamesofCremation.Visible = true
+	_1QDBlackIronTemple.Visible = true
+	-- Chakra
+	_1TCoffinBoat.Visible = false
+	_100TAntique.Visible = false
+	_1QDBeerusPlanet.Visible = false
+	_100QDInfiniteTsukujomi.Visible = false
+	-- Misc
+	Spawn.Visible = false
+	Kagune.Visible = false
+	Pyrokinesis.Visible = false
+	Quirk.Visible = false
+	Bloodline.Visible = false
+end)
+
+_100TGravityRock.Name = "100T+ Gravity Rock"
+_100TGravityRock.Parent = Backround
+_100TGravityRock.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_100TGravityRock.BackgroundTransparency = 1.000
+_100TGravityRock.Position = UDim2.new(0.292193621, 0, 0.51431334, 0)
+_100TGravityRock.Size = UDim2.new(0, 150, 0, 44)
+_100TGravityRock.Visible = false
+_100TGravityRock.Font = Enum.Font.Cartoon
+_100TGravityRock.Text = "100T+ Gravity Rock"
+_100TGravityRock.TextColor3 = Color3.fromRGB(255, 255, 255)
+_100TGravityRock.TextScaled = true
+_100TGravityRock.TextSize = 14.000
+_100TGravityRock.TextWrapped = true
+_100TGravityRock.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3400.33862, 746.960205, -120.481987)
+end)
+
+_1QDBlackIronTemple.Name = "1QD+ Black-Iron Temple"
+_1QDBlackIronTemple.Parent = Backround
+_1QDBlackIronTemple.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_1QDBlackIronTemple.BackgroundTransparency = 1.000
+_1QDBlackIronTemple.Position = UDim2.new(0.290988833, 0, 0.766913474, 0)
+_1QDBlackIronTemple.Size = UDim2.new(0, 150, 0, 44)
+_1QDBlackIronTemple.Visible = false
+_1QDBlackIronTemple.Font = Enum.Font.Cartoon
+_1QDBlackIronTemple.Text = "1QD+ Black-Iron temple"
+_1QDBlackIronTemple.TextColor3 = Color3.fromRGB(255, 255, 255)
+_1QDBlackIronTemple.TextScaled = true
+_1QDBlackIronTemple.TextSize = 14.000
+_1QDBlackIronTemple.TextWrapped = true
+_1QDBlackIronTemple.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1047.20776, 230.999954, -1908.71045)
+end)
+
+_100QDFlamesofCremation.Name = "100QD+ Flames of Cremation"
+_100QDFlamesofCremation.Parent = Backround
+_100QDFlamesofCremation.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_100QDFlamesofCremation.BackgroundTransparency = 1.000
+_100QDFlamesofCremation.Position = UDim2.new(0.290988833, 0, 0.632360518, 0)
+_100QDFlamesofCremation.Size = UDim2.new(0, 150, 0, 44)
+_100QDFlamesofCremation.Visible = false
+_100QDFlamesofCremation.Font = Enum.Font.Cartoon
+_100QDFlamesofCremation.Text = "100QD+ Flames of Cremation"
+_100QDFlamesofCremation.TextColor3 = Color3.fromRGB(255, 255, 255)
+_100QDFlamesofCremation.TextScaled = true
+_100QDFlamesofCremation.TextSize = 14.000
+_100QDFlamesofCremation.TextWrapped = true
+_100QDFlamesofCremation.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-737.031311, 60.9999962, 27.6112728)
+end)
+
+ChakraButton.Name = "ChakraButton"
+ChakraButton.Parent = Backround
+ChakraButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ChakraButton.BackgroundTransparency = 1.000
+ChakraButton.Position = UDim2.new(0.525104225, 0, 0.278390557, 0)
+ChakraButton.Size = UDim2.new(0, 163, 0, 40)
+ChakraButton.Font = Enum.Font.Cartoon
+ChakraButton.Text = "Chakra"
+ChakraButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ChakraButton.TextScaled = true
+ChakraButton.TextSize = 14.000
+ChakraButton.TextWrapped = true
+ChakraButton.MouseButton1Down:connect(function()
+	-- Strength
+	_1TRoadRoller.Visible = false
+	_100TIIW.Visible = false
+	_1QDUnbreakableRock.Visible = false
+	_100QDExecutor.Visible = false
+	-- Durability
+	_1TColossalTitan.Visible = false
+	_100TGravityRock.Visible = false
+	_100QDFlamesofCremation.Visible = false
+	_1QDBlackIronTemple.Visible = false
+	-- Chakra
+	_1TCoffinBoat.Visible = true
+	_100TAntique.Visible = true
+	_1QDBeerusPlanet.Visible = true
+	_100QDInfiniteTsukujomi.Visible = true
+	-- Misc
+	Spawn.Visible = false
+	Kagune.Visible = false
+	Pyrokinesis.Visible = false
+	Quirk.Visible = false
+	Bloodline.Visible = false
+end)
+
+_1TCoffinBoat.Name = "1T+ Coffin Boat"
+_1TCoffinBoat.Parent = Backround
+_1TCoffinBoat.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_1TCoffinBoat.BackgroundTransparency = 1.000
+_1TCoffinBoat.Position = UDim2.new(0.523751974, 0, 0.404935628, 0)
+_1TCoffinBoat.Size = UDim2.new(0, 150, 0, 44)
+_1TCoffinBoat.Visible = false
+_1TCoffinBoat.Font = Enum.Font.Cartoon
+_1TCoffinBoat.Text = "1T+ Coffin Boat"
+_1TCoffinBoat.TextColor3 = Color3.fromRGB(255, 255, 255)
+_1TCoffinBoat.TextScaled = true
+_1TCoffinBoat.TextSize = 14.000
+_1TCoffinBoat.TextWrapped = true
+_1TCoffinBoat.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(184.781982, 56.5079231, 1429.07141)
+end)
+
+_100TAntique.Name = "100T+ Antique"
+_100TAntique.Parent = Backround
+_100TAntique.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_100TAntique.BackgroundTransparency = 1.000
+_100TAntique.Position = UDim2.new(0.523751974, 0, 0.499313354, 0)
+_100TAntique.Size = UDim2.new(0, 150, 0, 44)
+_100TAntique.Visible = false
+_100TAntique.Font = Enum.Font.Cartoon
+_100TAntique.Text = "100T+ Antique"
+_100TAntique.TextColor3 = Color3.fromRGB(255, 255, 255)
+_100TAntique.TextScaled = true
+_100TAntique.TextSize = 14.000
+_100TAntique.TextWrapped = true
+_100TAntique.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2570.89111, 79.1282654, 902.264954)
+end)
+
+_1QDBeerusPlanet.Name = "1QD+ Beerus Planet"
+_1QDBeerusPlanet.Parent = Backround
+_1QDBeerusPlanet.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_1QDBeerusPlanet.BackgroundTransparency = 1.000
+_1QDBeerusPlanet.Position = UDim2.new(0.522547126, 0, 0.630844116, 0)
+_1QDBeerusPlanet.Size = UDim2.new(0, 150, 0, 44)
+_1QDBeerusPlanet.Visible = false
+_1QDBeerusPlanet.Font = Enum.Font.Cartoon
+_1QDBeerusPlanet.Text = "1QD+ Beerus Planet"
+_1QDBeerusPlanet.TextColor3 = Color3.fromRGB(255, 255, 255)
+_1QDBeerusPlanet.TextScaled = true
+_1QDBeerusPlanet.TextSize = 14.000
+_1QDBeerusPlanet.TextWrapped = true
+_1QDBeerusPlanet.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1378.73254, 1897.40686, 1414.78113)
+end)
+
+_100QDInfiniteTsukujomi.Name = "100QD+ Infinite Tsukujomi"
+_100QDInfiniteTsukujomi.Parent = Backround
+_100QDInfiniteTsukujomi.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_100QDInfiniteTsukujomi.BackgroundTransparency = 1.000
+_100QDInfiniteTsukujomi.Position = UDim2.new(0.515360236, 0, 0.764860511, 0)
+_100QDInfiniteTsukujomi.Size = UDim2.new(0, 150, 0, 44)
+_100QDInfiniteTsukujomi.Visible = false
+_100QDInfiniteTsukujomi.Font = Enum.Font.Cartoon
+_100QDInfiniteTsukujomi.Text = "100QD+ Infinite Tsukujomi"
+_100QDInfiniteTsukujomi.TextColor3 = Color3.fromRGB(255, 255, 255)
+_100QDInfiniteTsukujomi.TextScaled = true
+_100QDInfiniteTsukujomi.TextSize = 14.000
+_100QDInfiniteTsukujomi.TextWrapped = true
+_100QDInfiniteTsukujomi.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2997.43823, 2027.53235, 837.669495)
+end)
+
+MiscButton.Name = "MiscButton"
+MiscButton.Parent = Backround
+MiscButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MiscButton.BackgroundTransparency = 1.000
+MiscButton.Position = UDim2.new(0.741831183, 0, 0.278390557, 0)
+MiscButton.Size = UDim2.new(0, 163, 0, 40)
+MiscButton.Font = Enum.Font.Cartoon
+MiscButton.Text = "Misc"
+MiscButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+MiscButton.TextScaled = true
+MiscButton.TextSize = 14.000
+MiscButton.TextWrapped = true
+MiscButton.MouseButton1Down:connect(function()
+	-- Strength
+	_1TRoadRoller.Visible = false
+	_100TIIW.Visible = false
+	_1QDUnbreakableRock.Visible = false
+	_100QDExecutor.Visible = false
+	-- Durability
+	_1TColossalTitan.Visible = false
+	_100TGravityRock.Visible = false
+	_100QDFlamesofCremation.Visible = false
+	_1QDBlackIronTemple.Visible = false
+	-- Chakra
+	_1TCoffinBoat.Visible = false
+	_100TAntique.Visible = false
+	_1QDBeerusPlanet.Visible = false
+	_100QDInfiniteTsukujomi.Visible = false
+	-- Misc
+	Spawn.Visible = true
+	Kagune.Visible = true
+	Pyrokinesis.Visible = true
+	Quirk.Visible = true
+	Bloodline.Visible = true
+end)
+
+Spawn.Name = "Spawn"
+Spawn.Parent = Backround
+Spawn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Spawn.BackgroundTransparency = 1.000
+Spawn.Position = UDim2.new(0.757096529, 0, 0.417435616, 0)
+Spawn.Size = UDim2.new(0, 137, 0, 37)
+Spawn.Visible = false
+Spawn.Font = Enum.Font.Cartoon
+Spawn.Text = "Spawn"
+Spawn.TextColor3 = Color3.fromRGB(255, 255, 255)
+Spawn.TextScaled = true
+Spawn.TextSize = 14.000
+Spawn.TextWrapped = true
+Spawn.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(268.521484, 69.5999527, 463.830109)
+end)
+
+Kagune.Name = "Kagune"
+Kagune.Parent = Backround
+Kagune.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Kagune.BackgroundTransparency = 1.000
+Kagune.Position = UDim2.new(0.757096529, 0, 0.530382693, 0)
+Kagune.Size = UDim2.new(0, 137, 0, 31)
+Kagune.Visible = false
+Kagune.Font = Enum.Font.Cartoon
+Kagune.Text = "Kagune"
+Kagune.TextColor3 = Color3.fromRGB(255, 255, 255)
+Kagune.TextScaled = true
+Kagune.TextSize = 14.000
+Kagune.TextWrapped = true
+Kagune.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2572.83691, 61.1999893, 848.513428)
+end)
+
+Pyrokinesis.Name = "Pyrokinesis"
+Pyrokinesis.Parent = Backround
+Pyrokinesis.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Pyrokinesis.BackgroundTransparency = 1.000
+Pyrokinesis.Position = UDim2.new(0.757096529, 0, 0.638315499, 0)
+Pyrokinesis.Size = UDim2.new(0, 137, 0, 31)
+Pyrokinesis.Visible = false
+Pyrokinesis.Font = Enum.Font.Cartoon
+Pyrokinesis.Text = "Pyrokinesis"
+Pyrokinesis.TextColor3 = Color3.fromRGB(255, 255, 255)
+Pyrokinesis.TextScaled = true
+Pyrokinesis.TextSize = 14.000
+Pyrokinesis.TextWrapped = true
+Pyrokinesis.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2072.01392, 61.1999893, 461.148682)
+end)
+
+Quirk.Name = "Quirk"
+Quirk.Parent = Backround
+Quirk.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Quirk.BackgroundTransparency = 1.000
+Quirk.Position = UDim2.new(0.757096529, 0, 0.740178883, 0)
+Quirk.Size = UDim2.new(0, 137, 0, 31)
+Quirk.Visible = false
+Quirk.Font = Enum.Font.Cartoon
+Quirk.Text = "Quirk"
+Quirk.TextColor3 = Color3.fromRGB(255, 255, 255)
+Quirk.TextScaled = true
+Quirk.TextSize = 14.000
+Quirk.TextWrapped = true
+Quirk.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1743.94446, 63.005127, -486.682098)
+end)
+
+Bloodline.Name = "Bloodline"
+Bloodline.Parent = Backround
+Bloodline.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Bloodline.BackgroundTransparency = 1.000
+Bloodline.Position = UDim2.new(0.757096529, 0, 0.842042208, 0)
+Bloodline.Size = UDim2.new(0, 137, 0, 31)
+Bloodline.Visible = false
+Bloodline.Font = Enum.Font.Cartoon
+Bloodline.Text = "Bloodline"
+Bloodline.TextColor3 = Color3.fromRGB(255, 255, 255)
+Bloodline.TextScaled = true
+Bloodline.TextSize = 14.000
+Bloodline.TextWrapped = true
+Bloodline.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-114.451729, 101.999977, -367.50116)
+end)
+
+AFSD2Title.Name = "AFS-D2 Title"
+AFSD2Title.Parent = Backround
+AFSD2Title.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+AFSD2Title.BackgroundTransparency = 1.000
+AFSD2Title.Position = UDim2.new(0.362785101, 0, 0.0817882791, 0)
+AFSD2Title.Size = UDim2.new(0, 239, 0, 73)
+AFSD2Title.Font = Enum.Font.Cartoon
+AFSD2Title.Text = "AFS-D2 HUB"
+AFSD2Title.TextColor3 = Color3.fromRGB(250, 250, 250)
+AFSD2Title.TextScaled = true
+AFSD2Title.TextSize = 14.000
+AFSD2Title.TextWrapped = true
+
+DraggableFrame.Name = "DraggableFrame"
+DraggableFrame.Parent = Main
+DraggableFrame.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
+DraggableFrame.Size = UDim2.new(0, 828, 0, 37)
+DraggableFrame.Draggable = true
+DraggableFrame.Active = true
+
+X.Name = "X"
+X.Parent = DraggableFrame
+X.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+X.BackgroundTransparency = 1.000
+X.Position = UDim2.new(0.960183442, 0, 0.108108111, 0)
+X.Size = UDim2.new(0, 32, 0, 29)
+X.Image = "rbxassetid://6497405144"
+X.MouseButton1Down:connect(function()
+	DraggableFrame.Visible = false
+	Backround.Visible = false
+	Show.Visible = true
+	ShowMain.Visible = true
+end)
+
+ShowMain.Name = "ShowMain"
+ShowMain.Parent = AFSHUBD2
+ShowMain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ShowMain.BackgroundTransparency = 1.000
+ShowMain.Position = UDim2.new(0.897728622, 0, 0.935622334, 0)
+ShowMain.Size = UDim2.new(0, 102, 0, 45)
+ShowMain.Active = true
+
+Show.Name = "Show"
+Show.Parent = ShowMain
+Show.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Show.Position = UDim2.new(-0.00492709875, 0, -0.00476890802, 0)
+Show.Size = UDim2.new(0, 102, 0, 48)
+Show.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+Show.Font = Enum.Font.Cartoon
+Show.Text = "Show"
+Show.TextColor3 = Color3.fromRGB(0, 0, 0)
+Show.TextScaled = true
+Show.TextSize = 14.000
+Show.TextWrapped = true
+Show.MouseButton1Down:connect(function()
+	Backround.Visible = true
+	ShowMain.Visible = false
+	DraggableFrame.Visible = true
+end)
