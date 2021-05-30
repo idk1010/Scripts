@@ -51,7 +51,7 @@ BootlegsDay.Name = "Bootlegs Day"
 BootlegsDay.Parent = game["CoreGui"]
 
 Main.Name = "Main"
-Main.Parent = BootlegsDay
+Main.Parent = MainBar
 Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Main.BackgroundTransparency = 1.000
 Main.Position = UDim2.new(0.0478764698, 0, 0.125948414, 0)
@@ -294,7 +294,7 @@ TopLogo.ZIndex = 2
 TopLogo.Image = "http://www.roblox.com/asset/?id=6881622812"
 
 MainBar.Name = "MainBar"
-MainBar.Parent = Main
+MainBar.Parent = BootlegsDay
 MainBar.Active = true
 MainBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 MainBar.BackgroundTransparency = 1.000
@@ -352,7 +352,7 @@ Minimize.TextColor3 = Color3.fromRGB(0, 0, 0)
 Minimize.TextSize = 30.000
 
 TPLibtab.Name = "TPLib tab"
-TPLibtab.Parent = BootlegsDay
+TPLibtab.Parent = TPLibtopbar
 TPLibtab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TPLibtab.BackgroundTransparency = 1.000
 TPLibtab.Position = UDim2.new(0.477992326, 0, 0.127465859, 0)
@@ -600,7 +600,7 @@ Close2.MouseButton1Down:Connect(function()
 end)
 
 GUIstab.Name = "GUIs tab"
-GUIstab.Parent = BootlegsDay
+GUIstab.Parent = GUIstopbar
 GUIstab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 GUIstab.BackgroundTransparency = 1.000
 GUIstab.Position = UDim2.new(0.0501930714, 0, 0.606980324, 0)
