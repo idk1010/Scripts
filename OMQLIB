@@ -364,6 +364,7 @@ TPLibtab.ImageColor3 = Color3.fromRGB(35, 35, 35)
 TPLibtab.ScaleType = Enum.ScaleType.Slice
 TPLibtab.SliceCenter = Rect.new(100, 100, 100, 100)
 TPLibtab.SliceScale = 0.120
+TPLibtab.Draggable = true
 
 SafeTPbutton.Name = "SafeTP - button"
 SafeTPbutton.Parent = TPLibtab
@@ -566,6 +567,7 @@ TPLibtopbar.ImageColor3 = Color3.fromRGB(255, 157, 0)
 TPLibtopbar.ScaleType = Enum.ScaleType.Slice
 TPLibtopbar.SliceCenter = Rect.new(100, 100, 100, 100)
 TPLibtopbar.SliceScale = 0.100
+TPLibtopbar.Draggable = true
 
 Title2.Name = "Title2"
 Title2.Parent = TPLibtopbar
@@ -609,6 +611,7 @@ GUIstab.ImageColor3 = Color3.fromRGB(35, 35, 35)
 GUIstab.ScaleType = Enum.ScaleType.Slice
 GUIstab.SliceCenter = Rect.new(100, 100, 100, 100)
 GUIstab.SliceScale = 0.120
+GUIstab.Draggable = true
 
 GUIstopbar.Name = "GUIs topbar"
 GUIstopbar.Parent = GUIstab
@@ -623,6 +626,7 @@ GUIstopbar.ImageColor3 = Color3.fromRGB(255, 157, 0)
 GUIstopbar.ScaleType = Enum.ScaleType.Slice
 GUIstopbar.SliceCenter = Rect.new(100, 100, 100, 100)
 GUIstopbar.SliceScale = 0.100
+GUIstopbar.Draggable = true
 
 Title_2.Name = "Title"
 Title_2.Parent = GUIstopbar
