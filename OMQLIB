@@ -1,0 +1,713 @@
+--[[ Variables ]]--
+
+local BootlegsDay = Instance.new("ScreenGui")
+local Main = Instance.new("ImageLabel")
+local Library = Instance.new("Frame")
+local TPLbutton = Instance.new("TextButton")
+local TPLbackround = Instance.new("ImageLabel")
+local Miscbutton = Instance.new("TextButton")
+local Miscbackround = Instance.new("ImageLabel")
+local CheatXbutton = Instance.new("TextButton")
+local CheatXbackround = Instance.new("ImageLabel")
+local InfJumpbackround = Instance.new("ImageLabel")
+local InfJumpbutton = Instance.new("TextButton")
+local GUIsbutton = Instance.new("TextButton")
+local GUIsbackround = Instance.new("ImageLabel")
+local Logo = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TopLogo = Instance.new("ImageLabel")
+local MainBar = Instance.new("ImageLabel")
+local Title = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local Minimize = Instance.new("TextButton")
+local TPLibtab = Instance.new("ImageLabel")
+local SafeTPbutton = Instance.new("TextButton")
+local MoneyTPbutton = Instance.new("TextButton")
+local ItemTPbutton = Instance.new("TextButton")
+local EnricoTPbutton = Instance.new("TextButton")
+local ItemTPbackround = Instance.new("ImageLabel")
+local EnricoTPbackround = Instance.new("ImageLabel")
+local MoneyTPbackround = Instance.new("ImageLabel")
+local SafeTPbackround = Instance.new("ImageLabel")
+local Close_2 = Instance.new("TextButton")
+local ChariotTPbutton = Instance.new("TextButton")
+local ChariotTPbackround = Instance.new("ImageLabel")
+local TPLibtopbar = Instance.new("ImageLabel")
+local Title2 = Instance.new("TextLabel")
+local Close2 = Instance.new("TextButton")
+local GUIstab = Instance.new("ImageLabel")
+local GUIstopbar = Instance.new("ImageLabel")
+local Title_2 = Instance.new("TextLabel")
+local Close_3 = Instance.new("TextButton")
+local OpenShopbutton = Instance.new("TextButton")
+local OpenShopbackround = Instance.new("ImageLabel")
+local OpenStoragebackround = Instance.new("ImageLabel")
+local OpenStoragebutton = Instance.new("TextButton")
+
+--[[ Graphical User Interface ]]--
+
+BootlegsDay.Name = "Bootlegs Day"
+BootlegsDay.Parent = game["CoreGui"]
+
+Main.Name = "Main"
+Main.Parent = BootlegsDay
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BackgroundTransparency = 1.000
+Main.Position = UDim2.new(0.0478764698, 0, 0.125948414, 0)
+Main.Size = UDim2.new(0, 549, 0, 309)
+Main.Image = "rbxassetid://3570695787"
+Main.ImageColor3 = Color3.fromRGB(35, 35, 35)
+Main.ScaleType = Enum.ScaleType.Slice
+Main.SliceCenter = Rect.new(100, 100, 100, 100)
+Main.SliceScale = 0.120
+Main.Active = true
+Main.Draggable = true
+
+Library.Name = "Library"
+Library.Parent = Main
+Library.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Library.BackgroundTransparency = 1.000
+Library.Position = UDim2.new(0, 0, 0.121924542, 0)
+Library.Size = UDim2.new(0, 546, 0, 131)
+
+TPLbutton.Name = "TPL - button"
+TPLbutton.Parent = Library
+TPLbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TPLbutton.BackgroundTransparency = 1.000
+TPLbutton.Position = UDim2.new(0.0305818543, 0, 0.0415094979, 0)
+TPLbutton.Size = UDim2.new(0, 143, 0, 43)
+TPLbutton.ZIndex = 6
+TPLbutton.Font = Enum.Font.Ubuntu
+TPLbutton.Text = "Teleport Library"
+TPLbutton.TextColor3 = Color3.fromRGB(255, 157, 0)
+TPLbutton.TextSize = 18.000
+TPLbutton.TextWrapped = true
+TPLbutton.MouseButton1Down:Connect(function()
+	TPLibtab.Visible = true
+end)
+
+TPLbackround.Name = "TPL - backround"
+TPLbackround.Parent = Library
+TPLbackround.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TPLbackround.BackgroundTransparency = 1.000
+TPLbackround.Position = UDim2.new(0.0305818245, 0, 0.0415094346, 0)
+TPLbackround.Size = UDim2.new(0, 143, 0, 43)
+TPLbackround.Image = "rbxassetid://3570695787"
+TPLbackround.ImageColor3 = Color3.fromRGB(45, 45, 45)
+TPLbackround.ScaleType = Enum.ScaleType.Slice
+TPLbackround.SliceCenter = Rect.new(100, 100, 100, 100)
+TPLbackround.SliceScale = 0.120
+
+Miscbutton.Name = "Misc - button"
+Miscbutton.Parent = Library
+Miscbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Miscbutton.BackgroundTransparency = 1.000
+Miscbutton.Position = UDim2.new(0.370730042, 0, 0.0415094383, 0)
+Miscbutton.Size = UDim2.new(0, 143, 0, 43)
+Miscbutton.ZIndex = 6
+Miscbutton.Font = Enum.Font.Ubuntu
+Miscbutton.Text = "Miscellaneous"
+Miscbutton.TextColor3 = Color3.fromRGB(255, 157, 0)
+Miscbutton.TextSize = 18.000
+Miscbutton.TextWrapped = true
+Miscbutton.MouseButton1Down:Connect(function()
+	local bindableFunction = Instance.new("BindableFunction")
+
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "OMQLib";
+		Text = "This feature isn't available yet.";
+		Duration = 5; -- Optional, default: 5.
+	})
+end)
+
+Miscbackround.Name = "Misc - backround"
+Miscbackround.Parent = Library
+Miscbackround.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Miscbackround.BackgroundTransparency = 1.000
+Miscbackround.Position = UDim2.new(0.372561574, 0, 0.0415094346, 0)
+Miscbackround.Size = UDim2.new(0, 143, 0, 43)
+Miscbackround.Image = "rbxassetid://3570695787"
+Miscbackround.ImageColor3 = Color3.fromRGB(45, 45, 45)
+Miscbackround.ScaleType = Enum.ScaleType.Slice
+Miscbackround.SliceCenter = Rect.new(100, 100, 100, 100)
+Miscbackround.SliceScale = 0.120
+
+CheatXbutton.Name = "CheatX - button"
+CheatXbutton.Parent = Library
+CheatXbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CheatXbutton.BackgroundTransparency = 1.000
+CheatXbutton.Position = UDim2.new(0.712752402, 0, 0.0338759087, 0)
+CheatXbutton.Size = UDim2.new(0, 143, 0, 44)
+CheatXbutton.ZIndex = 6
+CheatXbutton.Font = Enum.Font.Ubuntu
+CheatXbutton.Text = "Cheat X"
+CheatXbutton.TextColor3 = Color3.fromRGB(255, 157, 0)
+CheatXbutton.TextSize = 18.000
+CheatXbutton.TextWrapped = true
+CheatXbutton.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/2dgeneralspam1/cheatx/main/cheatx%20loader'), true))()
+end)
+
+CheatXbackround.Name = "CheatX - backround"
+CheatXbackround.Parent = Library
+CheatXbackround.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CheatXbackround.BackgroundTransparency = 1.000
+CheatXbackround.Position = UDim2.new(0.712752342, 0, 0.0415094346, 0)
+CheatXbackround.Size = UDim2.new(0, 143, 0, 43)
+CheatXbackround.Image = "rbxassetid://3570695787"
+CheatXbackround.ImageColor3 = Color3.fromRGB(45, 45, 45)
+CheatXbackround.ScaleType = Enum.ScaleType.Slice
+CheatXbackround.SliceCenter = Rect.new(100, 100, 100, 100)
+CheatXbackround.SliceScale = 0.120
+
+InfJumpbackround.Name = "InfJump - backround"
+InfJumpbackround.Parent = Library
+InfJumpbackround.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+InfJumpbackround.BackgroundTransparency = 1.000
+InfJumpbackround.Position = UDim2.new(0.370730013, 0, 0.538614392, 0)
+InfJumpbackround.Size = UDim2.new(0, 143, 0, 43)
+InfJumpbackround.Image = "rbxassetid://3570695787"
+InfJumpbackround.ImageColor3 = Color3.fromRGB(45, 45, 45)
+InfJumpbackround.ScaleType = Enum.ScaleType.Slice
+InfJumpbackround.SliceCenter = Rect.new(100, 100, 100, 100)
+InfJumpbackround.SliceScale = 0.120
+
+InfJumpbutton.Name = "InfJump - button"
+InfJumpbutton.Parent = Library
+InfJumpbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfJumpbutton.BackgroundTransparency = 1.000
+InfJumpbutton.Position = UDim2.new(0.372561514, 0, 0.538614392, 0)
+InfJumpbutton.Size = UDim2.new(0, 143, 0, 43)
+InfJumpbutton.ZIndex = 6
+InfJumpbutton.Font = Enum.Font.Ubuntu
+InfJumpbutton.Text = "Infinite Jump"
+InfJumpbutton.TextColor3 = Color3.fromRGB(255, 157, 0)
+InfJumpbutton.TextSize = 18.000
+InfJumpbutton.TextWrapped = true
+InfJumpbutton.MouseButton1Down:Connect(function()
+	--[[ Alert ]]--
+
+	local bindableFunction = Instance.new("BindableFunction")
+
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Alert";
+		Text = "The Keybind is: V";
+		Duration = 5;
+		Button1 = "Understood.";
+		Button2 = "what"
+	})
+
+	wait(6)
+
+	--[[ Informations ]]--
+
+	local Version = "Latest V1.0"
+	local ScriptName = "Air Jump"
+	local Keybind = Enum.KeyCode.V
+	local Scripter = xFelix3732
+
+	--[[ Function ]]--
+
+	local LocalPlayer = game:GetService("Players").LocalPlayer
+
+	function InfJump(act,inp,obj)
+		if inp == Enum.UserInputState.Begin then
+			LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Seated")
+			wait()
+			LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+		end
+	end
+
+	game:GetService("ContextActionService"):BindAction("InfJump",InfJump,false,Keybind)
+end)
+
+GUIsbutton.Name = "GUIs - button"
+GUIsbutton.Parent = Library
+GUIsbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GUIsbutton.BackgroundTransparency = 1.000
+GUIsbutton.Position = UDim2.new(0.0282391608, 0, 0.538614392, 0)
+GUIsbutton.Size = UDim2.new(0, 143, 0, 43)
+GUIsbutton.ZIndex = 6
+GUIsbutton.Font = Enum.Font.Ubuntu
+GUIsbutton.Text = "Graphical User Interfaces"
+GUIsbutton.TextColor3 = Color3.fromRGB(255, 157, 0)
+GUIsbutton.TextSize = 18.000
+GUIsbutton.TextWrapped = true
+GUIsbutton.MouseButton1Down:Connect(function()
+	GUIstab.Visible = true
+end)
+
+GUIsbackround.Name = "GUIs - backround"
+GUIsbackround.Parent = Library
+GUIsbackround.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+GUIsbackround.BackgroundTransparency = 1.000
+GUIsbackround.Position = UDim2.new(0.0277706385, 0, 0.537692666, 0)
+GUIsbackround.Size = UDim2.new(0, 143, 0, 43)
+GUIsbackround.Image = "rbxassetid://3570695787"
+GUIsbackround.ImageColor3 = Color3.fromRGB(45, 45, 45)
+GUIsbackround.ScaleType = Enum.ScaleType.Slice
+GUIsbackround.SliceCenter = Rect.new(100, 100, 100, 100)
+GUIsbackround.SliceScale = 0.120
+
+Logo.Name = "Logo"
+Logo.Parent = Main
+Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logo.BackgroundTransparency = 1.000
+Logo.Position = UDim2.new(0.0491803288, 0, 0.537971377, 0)
+Logo.Size = UDim2.new(0, 121, 0, 116)
+Logo.Image = "http://www.roblox.com/asset/?id=6881622812"
+
+TextLabel.Parent = Logo
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.99999994, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 357, 0, 116)
+TextLabel.ZIndex = 6
+TextLabel.Font = Enum.Font.Cartoon
+TextLabel.Text = "OMQLIB"
+TextLabel.TextColor3 = Color3.fromRGB(121, 16, 16)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = Logo
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(1.09099996, 2, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 346, 0, 116)
+TextLabel_2.ZIndex = 5
+TextLabel_2.Font = Enum.Font.Cartoon
+TextLabel_2.Text = "OMQLIB"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+TopLogo.Name = "TopLogo"
+TopLogo.Parent = Main
+TopLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TopLogo.BackgroundTransparency = 1.000
+TopLogo.Position = UDim2.new(0, 0, -0.00248170132, 0)
+TopLogo.Size = UDim2.new(0, 33, 0, 30)
+TopLogo.ZIndex = 2
+TopLogo.Image = "http://www.roblox.com/asset/?id=6881622812"
+
+MainBar.Name = "MainBar"
+MainBar.Parent = Main
+MainBar.Active = true
+MainBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainBar.BackgroundTransparency = 1.000
+MainBar.Position = UDim2.new(0.048, 0, 0.126, 0)
+MainBar.Size = UDim2.new(0, 550, 0, 30)
+MainBar.Image = "rbxassetid://3570695787"
+MainBar.ImageColor3 = Color3.fromRGB(255, 157, 0)
+MainBar.ScaleType = Enum.ScaleType.Slice
+MainBar.SliceCenter = Rect.new(100, 100, 100, 100)
+MainBar.SliceScale = 0.100
+MainBar.Draggable = true
+MainBar.Active = true
+
+Title.Name = "Title"
+Title.Parent = MainBar
+Title.Active = true
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.0500000007, 3, 0, 0)
+Title.Size = UDim2.new(0, 237, 0, 29)
+Title.ZIndex = 5
+Title.Font = Enum.Font.Cartoon
+Title.Text = "A bootlegs day - OMQLIB"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = MainBar
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.Position = UDim2.new(0.939999998, 0, 0, 0)
+Close.Size = UDim2.new(0, 30, 0, 29)
+Close.ZIndex = 5
+Close.Font = Enum.Font.Cartoon
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextSize = 30.000
+Close.MouseButton1Down:Connect(function()
+	game:GetService("CoreGui")["Bootlegs Day"]:Destroy()
+end)
+
+Minimize.Name = "Minimize"
+Minimize.Parent = MainBar
+Minimize.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Minimize.BackgroundTransparency = 1.000
+Minimize.Position = UDim2.new(0.879999995, 0, 0.0333333351, 0)
+Minimize.Size = UDim2.new(0, 30, 0, 29)
+Minimize.ZIndex = 6
+Minimize.Font = Enum.Font.SourceSans
+Minimize.LineHeight = 1.670
+Minimize.Text = "_"
+Minimize.TextColor3 = Color3.fromRGB(0, 0, 0)
+Minimize.TextSize = 30.000
+
+TPLibtab.Name = "TPLib tab"
+TPLibtab.Parent = BootlegsDay
+TPLibtab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TPLibtab.BackgroundTransparency = 1.000
+TPLibtab.Position = UDim2.new(0.477992326, 0, 0.127465859, 0)
+TPLibtab.Size = UDim2.new(0, 245, 0, 308)
+TPLibtab.Visible = false
+TPLibtab.ZIndex = 2
+TPLibtab.Image = "rbxassetid://3570695787"
+TPLibtab.ImageColor3 = Color3.fromRGB(35, 35, 35)
+TPLibtab.ScaleType = Enum.ScaleType.Slice
+TPLibtab.SliceCenter = Rect.new(100, 100, 100, 100)
+TPLibtab.SliceScale = 0.120
+
+SafeTPbutton.Name = "SafeTP - button"
+SafeTPbutton.Parent = TPLibtab
+SafeTPbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SafeTPbutton.BackgroundTransparency = 1.000
+SafeTPbutton.Position = UDim2.new(0.202533662, 0, 0.462122589, 0)
+SafeTPbutton.Size = UDim2.new(0, 142, 0, 43)
+SafeTPbutton.ZIndex = 3
+SafeTPbutton.Font = Enum.Font.Ubuntu
+SafeTPbutton.Text = "Safe Spot"
+SafeTPbutton.TextColor3 = Color3.fromRGB(255, 157, 0)
+SafeTPbutton.TextSize = 18.000
+SafeTPbutton.TextWrapped = true
+SafeTPbutton.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-659.228088, 213.270554, 313.429138)
+end)
+
+MoneyTPbutton.Name = "MoneyTP - button"
+MoneyTPbutton.Parent = TPLibtab
+MoneyTPbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MoneyTPbutton.BackgroundTransparency = 1.000
+MoneyTPbutton.Position = UDim2.new(0.20661515, 0, 0.29611069, 0)
+MoneyTPbutton.Size = UDim2.new(0, 142, 0, 43)
+MoneyTPbutton.ZIndex = 3
+MoneyTPbutton.Font = Enum.Font.Ubuntu
+MoneyTPbutton.Text = "Money Teleport"
+MoneyTPbutton.TextColor3 = Color3.fromRGB(255, 157, 0)
+MoneyTPbutton.TextSize = 18.000
+MoneyTPbutton.TextWrapped = true
+MoneyTPbutton.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-224.220596, 212.643417, -114.709183, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	wait(0.5)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-150.088699, 212.371384, 36.8832016, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+	wait(0.5)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-91.7636871, 211.648346, 13.0955505, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+	wait(0.5)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-10.6803741, 212.501892, 64.5235443, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	wait(0.5)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-188.719315, 214.03157, 258.772614, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	wait(0.5)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-151.061539, 211.549118, -60.6628571, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+	wait(0.5)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-458.350586, 211.626068, -77.2764053, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+	wait(0.5)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-295.308167, 212.048416, 47.640625, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+	wait(0.5)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-341.235901, 211.873917, -116.067429, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	wait(0.5)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-31.2357349, 211.371674, 206.129791, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+
+ItemTPbutton.Name = "ItemTP - button"
+ItemTPbutton.Parent = TPLibtab
+ItemTPbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ItemTPbutton.BackgroundTransparency = 1.000
+ItemTPbutton.Position = UDim2.new(0.204783976, 0, 0.141981304, 0)
+ItemTPbutton.Size = UDim2.new(0, 141, 0, 43)
+ItemTPbutton.ZIndex = 3
+ItemTPbutton.Font = Enum.Font.Ubuntu
+ItemTPbutton.Text = "Item Teleport"
+ItemTPbutton.TextColor3 = Color3.fromRGB(255, 157, 0)
+ItemTPbutton.TextSize = 18.000
+ItemTPbutton.TextWrapped = true
+ItemTPbutton.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(274.86145, 216.134186, 94.5093765, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	wait(0.5)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(280.410034, 217.490265, 204.93428, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	wait(0.5)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(251.310547, 217.490265, -74.1096039, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	wait(0.5)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(273.381195, 217.490265, 263.31131, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	wait(0.5)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-42.9567375, 216.103287, -84.4091797, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	wait(0.5)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(321.14563, 217.490265, 30.9180145, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	wait(0.5)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(339.783813, 217.490265, -50.5063362, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	wait(0.5)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(173.403671, 217.490265, -87.4487152, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	wait(0.5)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-136.961258, 213.073975, -18.2182655, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	wait(0.5)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(32.4475899, 212.887039, 61.2201996, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	wait(0.5)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(165.004898, 215.697342, 105.898254, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	wait(0.5)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-87.5356903, 213.109039, 283.299164, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	wait(0.5)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(269.355713, 216.590271, -150.90918, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+
+EnricoTPbutton.Name = "Enrico TP - button"
+EnricoTPbutton.Parent = TPLibtab
+EnricoTPbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EnricoTPbutton.BackgroundTransparency = 1.000
+EnricoTPbutton.Position = UDim2.new(0.204783797, 0, 0.802644908, 0)
+EnricoTPbutton.Size = UDim2.new(0, 143, 0, 43)
+EnricoTPbutton.ZIndex = 3
+EnricoTPbutton.Font = Enum.Font.Ubuntu
+EnricoTPbutton.Text = "TP to Enrico"
+EnricoTPbutton.TextColor3 = Color3.fromRGB(255, 157, 0)
+EnricoTPbutton.TextSize = 18.000
+EnricoTPbutton.TextWrapped = true
+EnricoTPbutton.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = game:GetService("Workspace").Enrico.Torso.CFrame
+end)
+
+ItemTPbackround.Name = "ItemTP - backround"
+ItemTPbackround.Parent = TPLibtab
+ItemTPbackround.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ItemTPbackround.BackgroundTransparency = 1.000
+ItemTPbackround.Position = UDim2.new(0.204783916, 0, 0.141981304, 0)
+ItemTPbackround.Size = UDim2.new(0, 142, 0, 43)
+ItemTPbackround.ZIndex = 2
+ItemTPbackround.Image = "rbxassetid://3570695787"
+ItemTPbackround.ImageColor3 = Color3.fromRGB(45, 45, 45)
+ItemTPbackround.ScaleType = Enum.ScaleType.Slice
+ItemTPbackround.SliceCenter = Rect.new(100, 100, 100, 100)
+ItemTPbackround.SliceScale = 0.120
+
+EnricoTPbackround.Name = "Enrico TP - backround"
+EnricoTPbackround.Parent = TPLibtab
+EnricoTPbackround.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+EnricoTPbackround.BackgroundTransparency = 1.000
+EnricoTPbackround.Position = UDim2.new(0.203804135, 0, 0.802644908, 0)
+EnricoTPbackround.Size = UDim2.new(0, 143, 0, 43)
+EnricoTPbackround.ZIndex = 2
+EnricoTPbackround.Image = "rbxassetid://3570695787"
+EnricoTPbackround.ImageColor3 = Color3.fromRGB(45, 45, 45)
+EnricoTPbackround.ScaleType = Enum.ScaleType.Slice
+EnricoTPbackround.SliceCenter = Rect.new(100, 100, 100, 100)
+EnricoTPbackround.SliceScale = 0.120
+
+MoneyTPbackround.Name = "MoneyTP - backround"
+MoneyTPbackround.Parent = TPLibtab
+MoneyTPbackround.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MoneyTPbackround.BackgroundTransparency = 1.000
+MoneyTPbackround.Position = UDim2.new(0.204783916, 0, 0.299346834, 0)
+MoneyTPbackround.Size = UDim2.new(0, 143, 0, 43)
+MoneyTPbackround.ZIndex = 2
+MoneyTPbackround.Image = "rbxassetid://3570695787"
+MoneyTPbackround.ImageColor3 = Color3.fromRGB(45, 45, 45)
+MoneyTPbackround.ScaleType = Enum.ScaleType.Slice
+MoneyTPbackround.SliceCenter = Rect.new(100, 100, 100, 100)
+MoneyTPbackround.SliceScale = 0.120
+
+SafeTPbackround.Name = "SafeTP  - backround"
+SafeTPbackround.Parent = TPLibtab
+SafeTPbackround.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+SafeTPbackround.BackgroundTransparency = 1.000
+SafeTPbackround.Position = UDim2.new(0.204783916, 0, 0.462122589, 0)
+SafeTPbackround.Size = UDim2.new(0, 143, 0, 43)
+SafeTPbackround.ZIndex = 2
+SafeTPbackround.Image = "rbxassetid://3570695787"
+SafeTPbackround.ImageColor3 = Color3.fromRGB(45, 45, 45)
+SafeTPbackround.ScaleType = Enum.ScaleType.Slice
+SafeTPbackround.SliceCenter = Rect.new(100, 100, 100, 100)
+SafeTPbackround.SliceScale = 0.120
+
+
+ChariotTPbutton.Name = "ChariotTP - button"
+ChariotTPbutton.Parent = TPLibtab
+ChariotTPbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ChariotTPbutton.BackgroundTransparency = 1.000
+ChariotTPbutton.Position = UDim2.new(0.206615269, 0, 0.630407393, 0)
+ChariotTPbutton.Size = UDim2.new(0, 142, 0, 43)
+ChariotTPbutton.ZIndex = 3
+ChariotTPbutton.Font = Enum.Font.Ubuntu
+ChariotTPbutton.Text = "TP to Chariot"
+ChariotTPbutton.TextColor3 = Color3.fromRGB(255, 157, 0)
+ChariotTPbutton.TextSize = 18.000
+ChariotTPbutton.TextWrapped = true
+ChariotTPbutton.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = game:GetService("Workspace")["Chariot Requiem"].torso.Part.CFrame
+end)
+
+ChariotTPbackround.Name = "ChariotTP  - backround"
+ChariotTPbackround.Parent = TPLibtab
+ChariotTPbackround.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ChariotTPbackround.BackgroundTransparency = 1.000
+ChariotTPbackround.Position = UDim2.new(0.204783916, 0, 0.630407453, 0)
+ChariotTPbackround.Size = UDim2.new(0, 143, 0, 43)
+ChariotTPbackround.ZIndex = 2
+ChariotTPbackround.Image = "rbxassetid://3570695787"
+ChariotTPbackround.ImageColor3 = Color3.fromRGB(45, 45, 45)
+ChariotTPbackround.ScaleType = Enum.ScaleType.Slice
+ChariotTPbackround.SliceCenter = Rect.new(100, 100, 100, 100)
+ChariotTPbackround.SliceScale = 0.120
+
+TPLibtopbar.Name = "TPLibtopbar"
+TPLibtopbar.Parent = TPLibtab
+TPLibtopbar.Active = true
+TPLibtopbar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TPLibtopbar.BackgroundTransparency = 1.000
+TPLibtopbar.Position = UDim2.new(-0.00330942869, 0, -0.00178264081, 0)
+TPLibtopbar.Size = UDim2.new(0, 245, 0, 30)
+TPLibtopbar.ZIndex = 4
+TPLibtopbar.Image = "rbxassetid://3570695787"
+TPLibtopbar.ImageColor3 = Color3.fromRGB(255, 157, 0)
+TPLibtopbar.ScaleType = Enum.ScaleType.Slice
+TPLibtopbar.SliceCenter = Rect.new(100, 100, 100, 100)
+TPLibtopbar.SliceScale = 0.100
+
+Title2.Name = "Title2"
+Title2.Parent = TPLibtopbar
+Title2.Active = true
+Title2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title2.BackgroundTransparency = 1.000
+Title2.Position = UDim2.new(0.0204084124, 3, 0, 0)
+Title2.Size = UDim2.new(0, 132, 0, 29)
+Title2.ZIndex = 5
+Title2.Font = Enum.Font.Cartoon
+Title2.Text = "Teleport Library"
+Title2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title2.TextScaled = true
+Title2.TextSize = 14.000
+Title2.TextWrapped = true
+
+Close2.Name = "Close2"
+Close2.Parent = TPLibtopbar
+Close2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close2.BackgroundTransparency = 1.000
+Close2.Position = UDim2.new(0.874693811, 0, 0.0333333351, 0)
+Close2.Size = UDim2.new(0, 30, 0, 29)
+Close2.ZIndex = 5
+Close2.Font = Enum.Font.Cartoon
+Close2.Text = "X"
+Close2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close2.TextSize = 30.000
+Close2.MouseButton1Down:Connect(function()
+	TPLibtab.Visible = false
+end)
+
+GUIstab.Name = "GUIs tab"
+GUIstab.Parent = BootlegsDay
+GUIstab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GUIstab.BackgroundTransparency = 1.000
+GUIstab.Position = UDim2.new(0.0501930714, 0, 0.606980324, 0)
+GUIstab.Size = UDim2.new(0, 547, 0, 235)
+GUIstab.Visible = false
+GUIstab.Image = "rbxassetid://3570695787"
+GUIstab.ImageColor3 = Color3.fromRGB(35, 35, 35)
+GUIstab.ScaleType = Enum.ScaleType.Slice
+GUIstab.SliceCenter = Rect.new(100, 100, 100, 100)
+GUIstab.SliceScale = 0.120
+
+GUIstopbar.Name = "GUIs topbar"
+GUIstopbar.Parent = GUIstab
+GUIstopbar.Active = true
+GUIstopbar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GUIstopbar.BackgroundTransparency = 1.000
+GUIstopbar.Position = UDim2.new(-0.000681847334, 0, -0.00153034925, 0)
+GUIstopbar.Size = UDim2.new(0, 547, 0, 30)
+GUIstopbar.ZIndex = 3
+GUIstopbar.Image = "rbxassetid://3570695787"
+GUIstopbar.ImageColor3 = Color3.fromRGB(255, 157, 0)
+GUIstopbar.ScaleType = Enum.ScaleType.Slice
+GUIstopbar.SliceCenter = Rect.new(100, 100, 100, 100)
+GUIstopbar.SliceScale = 0.100
+
+Title_2.Name = "Title"
+Title_2.Parent = GUIstopbar
+Title_2.Active = true
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.Position = UDim2.new(0.0091407299, 3, 0, 0)
+Title_2.Size = UDim2.new(0, 224, 0, 29)
+Title_2.ZIndex = 5
+Title_2.Font = Enum.Font.Cartoon
+Title_2.Text = "Graphical User Interfaces"
+Title_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
+
+Close_3.Name = "Close"
+Close_3.Parent = GUIstopbar
+Close_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close_3.BackgroundTransparency = 1.000
+Close_3.Position = UDim2.new(0.939999998, 0, 0, 0)
+Close_3.Size = UDim2.new(0, 30, 0, 29)
+Close_3.ZIndex = 5
+Close_3.Font = Enum.Font.Cartoon
+Close_3.Text = "X"
+Close_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close_3.TextSize = 30.000
+Close_3.MouseButton1Down:Connect(function()
+	GUIstab.Visible = false
+end)
+
+OpenShopbutton.Name = "OpenShop - button"
+OpenShopbutton.Parent = GUIstab
+OpenShopbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OpenShopbutton.BackgroundTransparency = 1.000
+OpenShopbutton.Position = UDim2.new(0.0280553997, 0, 0.187067389, 0)
+OpenShopbutton.Size = UDim2.new(0, 143, 0, 43)
+OpenShopbutton.ZIndex = 6
+OpenShopbutton.Font = Enum.Font.Ubuntu
+OpenShopbutton.Text = "Open Shop"
+OpenShopbutton.TextColor3 = Color3.fromRGB(255, 157, 0)
+OpenShopbutton.TextSize = 18.000
+OpenShopbutton.TextWrapped = true
+OpenShopbutton.MouseButton1Down:Connect(function()
+			game.Players.LocalPlayer.PlayerGui.ShopGUI.Enabled = true
+end)
+
+OpenShopbackround.Name = "OpenShop - backround"
+OpenShopbackround.Parent = GUIstab
+OpenShopbackround.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+OpenShopbackround.BackgroundTransparency = 1.000
+OpenShopbackround.Position = UDim2.new(0.0297158957, 0, 0.186190292, 0)
+OpenShopbackround.Size = UDim2.new(0, 143, 0, 43)
+OpenShopbackround.ZIndex = 2
+OpenShopbackround.Image = "rbxassetid://3570695787"
+OpenShopbackround.ImageColor3 = Color3.fromRGB(45, 45, 45)
+OpenShopbackround.ScaleType = Enum.ScaleType.Slice
+OpenShopbackround.SliceCenter = Rect.new(100, 100, 100, 100)
+OpenShopbackround.SliceScale = 0.120
+
+OpenStoragebackround.Name = "OpenStorage - backround"
+OpenStoragebackround.Parent = GUIstab
+OpenStoragebackround.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+OpenStoragebackround.BackgroundTransparency = 1.000
+OpenStoragebackround.Position = UDim2.new(0.320392311, 0, 0.181934968, 0)
+OpenStoragebackround.Size = UDim2.new(0, 143, 0, 43)
+OpenStoragebackround.ZIndex = 2
+OpenStoragebackround.Image = "rbxassetid://3570695787"
+OpenStoragebackround.ImageColor3 = Color3.fromRGB(45, 45, 45)
+OpenStoragebackround.ScaleType = Enum.ScaleType.Slice
+OpenStoragebackround.SliceCenter = Rect.new(100, 100, 100, 100)
+OpenStoragebackround.SliceScale = 0.120
+
+OpenStoragebutton.Name = "OpenStorage - button"
+OpenStoragebutton.Parent = GUIstab
+OpenStoragebutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OpenStoragebutton.BackgroundTransparency = 1.000
+OpenStoragebutton.Position = UDim2.new(0.318731815, 0, 0.17855674, 0)
+OpenStoragebutton.Size = UDim2.new(0, 143, 0, 43)
+OpenStoragebutton.ZIndex = 6
+OpenStoragebutton.Font = Enum.Font.Ubuntu
+OpenStoragebutton.Text = "Open Stand Storage"
+OpenStoragebutton.TextColor3 = Color3.fromRGB(255, 157, 0)
+OpenStoragebutton.TextSize = 18.000
+OpenStoragebutton.TextWrapped = true
+OpenStoragebutton.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.PlayerGui.Storage.Stand_Storage.Visible = true
+end)
