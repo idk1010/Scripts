@@ -1,0 +1,576 @@
+if _G.HamstaScriptLoaded then
+    _G.HamstaScriptLoaded = false;
+    local HamstaGUI = game.CoreGui["ScreenGui"]
+    if HamstaGUI then
+        HamstaGui:Destroy();
+    end
+end
+
+-- Loop wait until we load in from rejoin.
+if _G.AutoRejoin then
+    repeat wait() until game.IsLoaded
+end
+
+-- Global Settings and locals for inner script use.
+_G.HamstaScriptLoaded = true;
+_G.CurrentIncome = 100;
+_G.CurrentlyRolling = false;
+local AutoLeaveIncome = false;
+
+-- Iris Compatibility (For better exploit support)
+loadstring(game:HttpGet("https://irisapp.ca/api/Scripts/IrisBetterCompat.lua"))()
+
+-- Spoofer (For HumanoidRootPart spoofing and ect | Newmat on V3RM <3)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NotMxth/Scripts/blob/main/genv", true))()
+
+-- Disclaimer message
+if messagebox and _G.MessageWarning then
+    messagebox("Thank you for using my script. Do know I am not responsible for bans or corrupted saves. This script is provided free so do not expect support. Enjoy :)","unConventional",0)
+end
+
+-- Anti AFK (Roblox-Side) (OutESP V3RM)
+pcall(function()
+    repeat wait() until game:GetService("Players").LocalPlayer
+    for i,v in pairs(getconnections(game:GetService("Players").LocalPlayer.Idled)) do
+        v:Disable()
+    end
+end)
+
+-- Disable AFK Stuff and fire remote to ensure we are making the most income.
+spawn(function()
+    game.Players.LocalPlayer.PlayerScripts:WaitForChild("gaming").Disabled = true; -- Disable AFK helper.
+    game:GetService("ReplicatedStorage"):WaitForChild("GetCash"):FireServer(math.random(500, 999)) -- Anti AFK Cash
+end)
+
+-- [[ Server Rejoin Stuff ]] --
+
+-- CharWar on V3RM || Server Hop
+local PlaceID = game.PlaceId
+local AllIDs = {}
+local foundAnything = ""
+local actualHour = os.date("!*t").hour
+local Deleted = false
+local File = pcall(function()
+    AllIDs = game:GetService('HttpService'):JSONDecode(readfile("NotSameServers.json"))
+end)
+if not File then
+    table.insert(AllIDs, actualHour)
+    writefile("NotSameServers.json", game:GetService('HttpService'):JSONEncode(AllIDs))
+end
+function TPReturner()
+    local Site;
+    if foundAnything == "" then
+        Site = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. PlaceID .. '/servers/Public?sortOrder=Asc&limit=100'))
+    else
+        Site = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. PlaceID .. '/servers/Public?sortOrder=Asc&limit=100&cursor=' .. foundAnything))
+    end
+    local ID = ""
+    if Site.nextPageCursor and Site.nextPageCursor ~= "null" and Site.nextPageCursor ~= nil then
+        foundAnything = Site.nextPageCursor
+    end
+    local num = 0;
+    for i,v in pairs(Site.data) do
+        local Possible = true
+        ID = tostring(v.id)
+        if tonumber(v.maxPlayers) > tonumber(v.playing) then
+            for _,Existing in pairs(AllIDs) do
+                if num ~= 0 then
+                    if ID == tostring(Existing) then
+                        Possible = false
+                    end
+                else
+                    if tonumber(actualHour) ~= tonumber(Existing) then
+                        local delFile = pcall(function()
+                            delfile("NotSameServers.json")
+                            AllIDs = {}
+                            table.insert(AllIDs, actualHour)
+                        end)
+                    end
+                end
+                num = num + 1
+            end
+            if Possible == true then
+                table.insert(AllIDs, ID)
+                wait()
+                pcall(function()
+                    writefile("NotSameServers.json", game:GetService('HttpService'):JSONEncode(AllIDs))
+                    wait()
+                    game:GetService("TeleportService"):TeleportToPlaceInstance(PlaceID, ID, game.Players.LocalPlayer)
+                end)
+                wait(4)
+            end
+        end
+    end
+end
+
+function Teleport()
+    while wait() do
+        pcall(function()
+            TPReturner()
+            if foundAnything ~= "" then
+                TPReturner()
+            end
+        end)
+    end
+end
+
+-- Reload if disconnected (Rejoin)
+spawn(function()
+    game.CoreGui.RobloxPromptGui.promptOverlay.DescendantAdded:Connect(function()
+        local GUI = game.CoreGui.RobloxPromptGui.promptOverlay:FindFirstChild("ErrorPrompt")
+        if GUI then
+            if GUI.TitleFrame.ErrorTitle.Text == "Disconnected" then
+                if AutoLeaveIncome then
+                    wait(9000) -- Wait 2 and half hours (Full regen of income)
+                    Teleport()
+                else
+                    if #game.Players:GetPlayers() <= 1 then
+                        game.Players.LocalPlayer:Kick("\nRejoining...")
+                        wait(10)
+                        game:GetService("TeleportService"):Teleport(game.PlaceId, game.Players.LocalPlayer)
+                    else
+                        game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, game.Players.LocalPlayer)
+                    end
+                end
+            end
+        end
+    end)
+end)
+
+-- [[ Functions ]] --
+
+-- Current Time
+local function updateTime()
+    local now = os.time()
+    local Hours = os.date("*t",now)["hour"]
+    local Mins = os.date("*t",now)["min"]
+    local AMIndicator = "nil"
+
+    if Hours > 12 then
+        Hours = Hours - 12
+        AMIndicator = "PM"
+    else
+        AMIndicator = "AM"
+    end
+
+    return Hours .. ":" .. Mins .. " " .. AMIndicator
+end
+
+-- IY Respawn Function (totally not stolen c:<)
+function respawn()
+    local plr = game.Players.LocalPlayer
+    local Human = plr.Character and plr.Character:FindFirstChildOfClass("Humanoid", true)
+    local pos = Human and Human.RootPart and Human.RootPart.CFrame
+    local pos1 = workspace.CurrentCamera.CFrame
+    local char = plr.Character
+
+    if char:FindFirstChildOfClass("Humanoid") then char:FindFirstChildOfClass("Humanoid"):ChangeState(15) end
+    char:ClearAllChildren()
+    local newChar = Instance.new("Model")
+    newChar.Parent = workspace
+    plr.Character = newChar
+    wait()
+    plr.Character = char
+    newChar:Destroy()
+end
+
+-- Anti AFK GUI Function
+function AntiAFK()
+    local ScreenGUI = game.Players.LocalPlayer.PlayerGui:WaitForChild("ScreenGui")
+    local AFKFrame = ScreenGUI:WaitForChild("AntiAFK")
+    local AFKQuestion = AFKFrame:WaitForChild("question").Text
+    local AFKButton = ScreenGUI:WaitForChild("income").TextButton
+
+    if AFKFrame.Visible == true or AFKButton.Visible == true then
+
+        -- Force AFKButton Click
+        for i,v in pairs(getconnections(AFKButton.MouseButton1Click)) do
+            v:Fire()
+        end
+
+        wait(math.random(3, 15))
+
+        -- Clean question string
+        local NewStr = AFKQuestion:gsub("[^0-9-+/-]", '');
+        local Answer = loadstring("return "..NewStr)(); -- Shoutout to Ezpi on Discord
+
+        if Answer ~= "N/A" then -- Careful
+            game.ReplicatedStorage:WaitForChild("UnAFK"):InvokeServer(Answer)
+        end
+
+        AFKFrame.Visible = false;
+        AFKButton.Visible = false;
+    end
+end
+
+-- Anti Character Knockback
+function AntiKnockback()
+    local env = getsenv(game.Players.LocalPlayer.PlayerScripts:WaitForChild("MoveHandler"))
+    local Knock_hook = hookfunction(env._G.knockback, function(...) return; end)
+end
+
+-- Unknown Function ( 汀掳 蜏蕱 汀掳)
+function urmomhasthebigoof()
+    local mt = getrawmetatable(game)
+    setreadonly(mt, false)
+    local old = mt.__newindex
+
+    mt.__newindex = newcclosure(function(o, k, v)
+        if tostring(k) == "Value" or tostring(k) == "Anchored" and not checkcaller() then
+            return false;
+        elseif tostring(k) == "WalkSpeed" and not checkcaller() then
+            return 16;
+        end
+
+        return old(o, k, v)
+    end)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 18; -- Max without powers.
+end
+
+-- Auto Delete Music
+function AntiMusic()
+    for _, gui in pairs (game.Players.LocalPlayer.PlayerGui:GetChildren()) do
+        if gui.Name == "ScreenGui" then
+            pcall(function()
+                wait(3)
+                gui["Day"]:Destroy();
+                gui["Night"]:Destroy();
+            end)
+        end
+    end
+end
+
+-- Auto Roll
+function AutoRoll()
+    local ScreenGui = game.Players.LocalPlayer.PlayerGui:WaitForChild("ScreenGui")
+    local CurrDollText = ScreenGui.money.Text
+    local CurrDoll = CurrDollText:gsub("[^0-9-]", ''); -- Remove everything but numbers.
+
+    if CurrDoll and tonumber(CurrDoll) >= 5000 and not _G.CurrentlyRolling then
+        _G.CurrentlyRolling = true;
+
+        -- Do Roll
+        spawn(function()
+            game:GetService("ReplicatedStorage")["Reroll"]:InvokeServer()
+        end)
+
+        -- Give it a second to update GUI text.
+        wait(5)
+
+        -- Get Ability Level from Reroll GUI
+        local RerollGUI = game.Players.LocalPlayer.PlayerGui:WaitForChild("Reroll")
+        local AbilityText = RerollGUI:WaitForChild("Rerolling"):WaitForChild("Ability").TextLabel.Text;
+        repeat wait() until AbilityText ~= nil
+        AbilityText = string.match(AbilityText, "%(.*%)");
+        local AbilityLevel = AbilityText:gsub("[^0-9.-]", '');
+
+        -- Get Current Level
+        local ScreenGui = game.Players.LocalPlayer.PlayerGui:WaitForChild("ScreenGui")
+        local CurrText = ScreenGui.level.Text
+        repeat wait() until CurrText ~= nil
+        CurrText = string.match(CurrText, "%(.*%)");
+        local CurrLevel = CurrText:gsub("[^0-9.-]", '');
+
+        -- If good enough we accept else ignore.
+        if AbilityLevel > CurrLevel then
+            warn("Accepted roll with power of ".. AbilityLevel);
+
+            local RerollGUI = game.Players.LocalPlayer.PlayerGui:WaitForChild("Reroll")
+            local Question = RerollGUI.Question.yes
+
+            repeat wait() until RerollGUI.Question.Visible
+            for i,v in pairs(getconnections(Question.MouseButton1Click)) do
+                v:Fire()
+            end
+        else
+            warn("Power of ".. AbilityLevel .." is too weak, not accepting roll.");
+
+            local RerollGUI = game.Players.LocalPlayer.PlayerGui:WaitForChild("Reroll")
+            local Question = RerollGUI.Question.no
+
+            repeat wait() until RerollGUI.Question.Visible
+            for i,v in pairs(getconnections(Question.MouseButton1Click)) do
+                v:Fire()
+            end
+        end
+
+        _G.CurrentlyRolling = false;
+    end
+end
+
+-- LOAD GUI & LIBRARY --
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/NotMxth/Scripts/blob/main/LIBRARY", true))()
+local w = library:CreateWindow('unConventional')
+
+-- GUI SECTION
+w:Section('Created by HamstaGang')
+
+-- GUI BUTTONS
+local fuckthemusicholyshit = w:Button('Mute Godawlful Music', function()
+    while wait() do
+        AntiMusic();
+    end
+end)
+
+local a = w:Button('Anti Knockback/Stun', function()
+    pcall(function()
+        AntiKnockback();
+    end)
+end)
+
+local ayy = w:Button('Spoof Cooldown/WalkSpeed', function()
+    pcall(function()
+        urmomhasthebigoof();
+    end)
+end)
+
+local hit = w:Button('Hitbox Expander', function() -- Credits to Slime on Discord <3
+    pcall(function()
+        local plr = game:GetService("Players").LocalPlayer
+
+        -- Spoof First
+        for i,v in pairs(game.Players:GetPlayers()) do
+            if v ~= plr  then
+                spoof(v.Character.HumanoidRootPart, "Size", Vector3.new(2, 2, 1)) -- Not today anti cheat heheh
+            end
+        end
+
+        game:GetService("RunService").RenderStepped:Connect(function()
+            for i,v in pairs(game.Players:GetPlayers()) do
+                if v ~= plr  then
+                    v.Character.HumanoidRootPart.Size = Vector3.new(20,20,20)
+                    v.Character.HumanoidRootPart.Transparency = 0.75
+                    v.Character.HumanoidRootPart.CanCollide = false
+                end
+            end
+        end)
+    end)
+end)
+
+local resp = w:Button('Fast Respawn', function()
+    respawn();
+end)
+
+local lag = w:Button('Lag Server (No Undo)', function()
+    local a=game.Players.LocalPlayer;local b=a.Character;if b:FindFirstChildOfClass("Humanoid")then b:FindFirstChildOfClass("Humanoid"):ChangeState(15)end;b:ClearAllChildren()local c=Instance.new("Model")c.Parent=workspace;a.Character=c;wait(0.5)a.Character=b;c:Destroy()
+    game:GetService("RunService").RenderStepped:Connect(function()
+        spawn(function()
+            pcall(function()
+                for i = 1, 15 do
+                    game:GetService("ReplicatedStorage").CustomizeCharacter:FireServer({["HairStyle"] = math.random(1,2),["Gender"] = "Male",["AuraColor"] = 1,["Face"] = math.random(1,2)})
+                end
+            end)
+        end)
+    end)
+end)
+
+-- GUI TOGGLES
+local king = w:Toggle('Respawn On Dmg', {flag = "Respawn"})
+local b = w:Toggle('Anti AFK', {flag = "AAFK"})
+local c = w:Toggle('Punch Aura', {flag = "PAura"})
+local d = w:Toggle('God Mode (Healing)', {flag = "GMode"})
+local e = w:Toggle('Rainbow Aura', {flag = "Rainbows"})
+local f = w:Toggle('Auto Income Leave', {flag = "IncomeLeave"})
+local g = w:Toggle('Auto Roll', {flag = "AutoRoll"})
+
+-- [[ 2ND GUI BOX (Character Appearance Editor) ]] --
+
+-- GUI WINDOW CREATE
+local ca = library:CreateWindow('Apperance')
+
+-- GUI Locals
+local aph = 1;
+local apg = "Male";
+local apa = 1;
+local apf = 1;
+
+-- GUI BUTTONS/SLIDERS/TOGGLES
+local hair = ca:Slider("Hair", {min = 1; max = 12; flag = 'Hair'}, function(v)
+    aph = v;
+end)
+
+ca:Dropdown("Gender", {flag = "gender"; list = {"Male"; "Female";}}, function(v)
+    apg = v;
+end)
+
+local face = ca:Slider("Face", {min = 1; max = 10; flag = 'Face'}, function(v)
+    apf = v;
+end)
+
+local aura = ca:Slider("Aura Color", {min = 1; max = 10; flag = 'Aura'}, function(v)
+    apa = v;
+end)
+
+local change = ca:Button('Change Apperance', function()
+    game:GetService("ReplicatedStorage"):WaitForChild("CustomizeCharacter"):FireServer({["HairStyle"] = aph,["Gender"] = apg,["AuraColor"] = apa,["Face"] = apf})
+end)
+
+
+-- [[ GUI FUNCTIONS ]] --
+
+-- Auto Roll
+spawn(function()
+    while wait() do -- Don't need to spam it.
+        if w.flags.AutoRoll then
+            AutoRoll();
+    end
+    end
+end)
+
+-- Auto Income Kick
+spawn(function()
+    while wait() do
+        for _, gui in pairs (game.Players.LocalPlayer.PlayerGui:GetChildren()) do
+            if gui.Name == "ScreenGui" then
+                if gui["income"] then
+                    -- Clean string
+                    local income = gui["income"].Text:gsub("[^0-9-]", '');
+
+                    if w.flags.IncomeLeave or _G.AutoIncomeLeave then
+                        -- Update Income
+                        _G.CurrentIncome = income
+
+                        -- Kick if too low.
+                        pcall(function()
+                            if tonumber(_G.CurrentIncome) <= 35 and not AutoLeaveIncome then
+                                AutoLeaveIncome = true;
+                                game.Players.LocalPlayer:Kick("Kicked by Auto Income Leave | Rejoining in 150 minutes | Left At ".. updateTime())
+                            end
+                        end)
+                    end
+                end
+            end
+        end
+    end
+end)
+
+-- Auto Respawn on DMG
+spawn(function()
+    local Plr = game.Players.LocalPlayer
+    Plr.CharacterAdded:Connect(function(char)
+        local health = char:WaitForChild("Humanoid").HealthChanged:Connect(function(health)
+            if health < 99 and health ~= 0 then
+                if w.flags.Respawn then
+                    warn("Health dropped: ".. health)
+                    respawn();
+                end
+            end
+        end)
+    end)
+end)
+
+-- Rainbow Aura
+spawn(function()
+    while wait() do
+        if w.flags.Rainbows then
+            for i = 1, 10 do -- Go through all aura colors
+                wait(0.1)
+                game:GetService("ReplicatedStorage"):WaitForChild("CustomizeCharacter"):FireServer({["HairStyle"] = 1,["Gender"] = "Male",["AuraColor"] = i,["Face"] = 1})
+                game:GetService("ReplicatedStorage"):WaitForChild("ToggleAbility"):InvokeServer(false)
+                game:GetService("ReplicatedStorage"):WaitForChild("ToggleAbility"):InvokeServer(true)
+            end
+        end
+    end
+end)
+
+-- Godmode Healing
+spawn(function()
+    while wait() do
+        if w.flags.GMode then
+            if game.Players.LocalPlayer.PlayerGui:WaitForChild("ScreenGui").ability.Text:match("Healing") then -- Healing ability
+                game:GetService("ReplicatedStorage"):WaitForChild("SkillRemotes"):WaitForChild("Heal"):FireServer(game.Players.LocalPlayer.Character)
+            else
+                w.flags.GMode = false;
+            end
+        end
+    end
+end)
+
+-- Anti AFK
+spawn(function()
+    while wait() do
+        if w.flags.AAFK then
+            pcall(function()
+                AntiAFK();
+            end)
+        end
+    end
+end)
+
+-- Punch Aura (Finds Closest Person)
+spawn(function()
+    local Players = game:GetService("Players")
+    local LocalPlayer = Players.LocalPlayer
+
+    local function GetClosest()
+        local Character = LocalPlayer.Character
+        local HumanoidRootPart = Character and Character:FindFirstChild("HumanoidRootPart")
+        if not (Character or HumanoidRootPart) then return end
+
+        local TargetDistance = math.huge
+        local Target
+
+        for i,v in ipairs(Players:GetPlayers()) do
+            if v ~= LocalPlayer and v.Character and v.Character:FindFirstChild("HumanoidRootPart") then
+                local TargetHRP = v.Character.HumanoidRootPart
+                local mag = (HumanoidRootPart.Position - TargetHRP.Position).magnitude
+                if mag < TargetDistance then
+                    TargetDistance = mag
+                    Target = v
+                end
+            end
+        end
+
+        return Target
+    end
+
+    while wait(0.5) do
+        if w.flags.PAura then
+            -- Find closest and kill
+            local Em_Humanoid = GetClosest().Character.Humanoid
+            game:GetService("ReplicatedStorage").Punch:FireServer(Em_Humanoid, 6, 0)
+            game:GetService("ReplicatedStorage").Punch:FireServer(Em_Humanoid, 6, 2)
+        end
+    end
+end)
+
+
+-- [[ AutoExec Functions ]] --
+
+-- Mute Music
+spawn(function()
+    while wait() do
+        if _G.AutoMusicMute then
+            AntiMusic();
+        end
+    end
+end)
+
+-- Anti Knockback/Stun
+spawn(function()
+    if _G.AntiKnockBack then
+        pcall(function()
+            AntiKnockback();
+        end)
+    end
+end)
+
+-- Auto Roll
+spawn(function()
+    while wait() do
+        if _G.AutoRoll then
+            AutoRoll();
+        end
+    end
+end)
+
+-- Anti AFK
+spawn(function()
+    while wait() do
+        if _G.AntiAFK then
+            pcall(function()
+                AntiAFK();
+            end)
+        end
+    end
+end)
