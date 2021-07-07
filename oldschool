@@ -1,4 +1,3 @@
-while wait() do
 local Animate = game.Players.LocalPlayer.Character.Animate
 
 Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=5319828216"
@@ -8,4 +7,3 @@ Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=5319844329"
 Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=5319841935"
 Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=5319816685"
 Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=5319839762"
-end
