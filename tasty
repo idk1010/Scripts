@@ -21,7 +21,7 @@ local AutoLeaveIncome = false;
 loadstring(game:HttpGet("https://irisapp.ca/api/Scripts/IrisBetterCompat.lua"))()
 
 -- Spoofer (For HumanoidRootPart spoofing and ect | Newmat on V3RM <3)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NotMxth/Scripts/main/Spoofing", true))()
+loadstring(game:HttpGet("https://pastebin.com/raw/tUUGAeaH", true))()
 
 -- Disclaimer message
 if messagebox and _G.MessageWarning then
@@ -299,7 +299,7 @@ function AutoRoll()
 end
 
 -- LOAD GUI & LIBRARY --
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/NotMxth/Scripts/main/LIBRARY", true))()
+local library = loadstring(game:HttpGet("https://pastebin.com/raw/CkyR8ePz", true))()
 local w = library:CreateWindow('unConventional')
 
 -- GUI SECTION
