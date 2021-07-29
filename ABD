@@ -1,0 +1,107 @@
+local ABD = Instance.new("ScreenGui")
+local Gradient = Instance.new("ImageLabel")
+local UIGradient = Instance.new("UIGradient")
+local UICorner = Instance.new("UICorner")
+local Button = Instance.new("TextButton")
+local Text = Instance.new("TextLabel")
+local Button_Roundify_12px = Instance.new("ImageLabel")
+local Shadow = Instance.new("ImageLabel")
+
+-- Properties
+
+ABD.Name = "ABD"
+ABD.Parent = game["CoreGui"]
+
+Gradient.Name = "Gradient"
+Gradient.Parent = ABD
+Gradient.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Gradient.BackgroundTransparency = 1.000
+Gradient.Position = UDim2.new(0.882421494, 0, 0.866757154, 0)
+Gradient.Size = UDim2.new(0, 188, 0, 87)
+Gradient.Image = "rbxassetid://3570695787"
+Gradient.ScaleType = Enum.ScaleType.Slice
+Gradient.SliceCenter = Rect.new(100, 100, 100, 100)
+Gradient.SliceScale = 0.120
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(102, 45, 113)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(197, 66, 110))}
+UIGradient.Parent = Gradient
+
+Button.Name = "Button"
+Button.Parent = ABD
+Button.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Button.BackgroundTransparency = 1.000
+Button.BorderSizePixel = 0
+Button.Position = UDim2.new(0.86901629, 0, 0.895275593, 0)
+Button.Size = UDim2.new(0, 154, 0, 45)
+Button.ZIndex = 4
+Button.Font = Enum.Font.GothamSemibold
+Button.Text = ""
+Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button.TextScaled = true
+Button.TextSize = 14.000
+Button.TextWrapped = true
+Button.MouseButton1Down:Connect(function()
+    local args = {
+        [1] = "Rokakaka Fruit"
+    }
+
+    game:GetService("ReplicatedStorage").Purchase:FireServer(unpack(args))
+    wait(0.25)
+    game:GetService("ReplicatedStorage").Roka:FireServer()
+    wait(0.75)
+    local args = {
+        [1] = "Arrow"
+    }
+
+    game:GetService("ReplicatedStorage").Purchase:FireServer(unpack(args))
+    wait(0.25)
+
+    game:GetService("ReplicatedStorage").Arrow:FireServer()
+    wait(1.75)
+    keypress(0x51)
+end)
+
+Text.Name = "Text"
+Text.Parent = Button
+Text.AnchorPoint = Vector2.new(0.5, 0.5)
+Text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text.BackgroundTransparency = 1.000
+Text.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Text.BorderSizePixel = 0
+Text.Position = UDim2.new(0.733437955, 0, 0.477777719, 0)
+Text.Size = UDim2.new(1, -20, 1, -20)
+Text.ZIndex = 3
+Text.Font = Enum.Font.GothamSemibold
+Text.Text = "Reroll"
+Text.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text.TextScaled = true
+Text.TextSize = 14.000
+Text.TextWrapped = true
+
+Button_Roundify_12px.Name = "Button_Roundify_12px"
+Button_Roundify_12px.Parent = Button
+Button_Roundify_12px.Active = true
+Button_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+Button_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_Roundify_12px.BackgroundTransparency = 1.000
+Button_Roundify_12px.Position = UDim2.new(0.729336917, 0, 0.477777719, 0)
+Button_Roundify_12px.Selectable = true
+Button_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+Button_Roundify_12px.ZIndex = 2
+Button_Roundify_12px.Image = "rbxassetid://3570695787"
+Button_Roundify_12px.ImageColor3 = Color3.fromRGB(48, 48, 48)
+Button_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+Button_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+Button_Roundify_12px.SliceScale = 0.120
+
+Shadow.Name = "Shadow"
+Shadow.Parent = Button
+Shadow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shadow.BackgroundTransparency = 1.000
+Shadow.Position = UDim2.new(0.245430276, 0, 0, 0)
+Shadow.Size = UDim2.new(1.00698984, 0, 1, 4)
+Shadow.Image = "rbxassetid://3570695787"
+Shadow.ImageColor3 = Color3.fromRGB(22, 22, 22)
+Shadow.ScaleType = Enum.ScaleType.Slice
+Shadow.SliceCenter = Rect.new(100, 100, 100, 100)
+Shadow.SliceScale = 0.120
