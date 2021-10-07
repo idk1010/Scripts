@@ -1,0 +1,5 @@
+while wait(0.25) do
+keypress(0x45)
+wait(0.015)
+keyrelease(0x45)
+end
