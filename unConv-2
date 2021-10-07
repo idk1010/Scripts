@@ -1,3 +1,4 @@
 while wait() do
+game.Workspace:FindFirstChild("Umberhallow")
 game:GetService("Workspace").Umberhallow.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,-6)
 end
