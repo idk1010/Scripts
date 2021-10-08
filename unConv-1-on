@@ -1,4 +1,6 @@
-while wait(0.25) do
+_G.toggle = true
+
+while _G.toggle do
 keypress(0x45)
 wait(0.015)
 keyrelease(0x45)
