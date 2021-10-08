@@ -1,0 +1,7 @@
+_G.toggle = false
+
+while _G.toggle do
+keypress(0x45)
+wait(0.015)
+keyrelease(0x45)
+end
