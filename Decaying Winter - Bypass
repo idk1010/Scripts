@@ -21,5 +21,3 @@ __namecall = hookmetamethod(game, "__namecall", function(self, ...)
     end
     return __namecall(self, ...)
 end)
-
-getgenv().AntiKickExecuted = true
