@@ -1,0 +1,5 @@
+local DecayingWinterWindow = Library.CreateLib("Decaying Winter - OMQHub", _G.Theme)
+local DWHomeTab = DecayingWinterWindow:NewTab("Home")
+local DWHomeTabSection = DWHomeTab:NewSection("Welcome to the Decaying-Winter Script")
+local DWHomeTabSection = DWHomeTab:NewSection("The anticheat has been bypassed, have fun.")
+local DWScriptsTab = DecayingWinterWindow:NewTab("Scripts")
