@@ -1,0 +1,23 @@
+local Players = game:GetService("Players")
+
+local LocalPlayer = Players.LocalPlayer
+local Backpack = LocalPlayer.Backpack
+local mainHandler = Backpack:WaitForChild("mainHandler")
+
+local StatInit
+do
+    local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+    local Humanoid = Character:WaitForChild("Humanoid")
+
+    for _, Connection in ipairs(getconnections(Humanoid.Changed)) do
+        local ConnectionFunction = Connection.Function
+
+        if (getfenv(ConnectionFunction).script == mainHandler) then
+            StatInit = debug.getupvalue(ConnectionFunction, 6)
+        end
+    end
+end
+
+while (true) do wait()
+    debug.setupvalue(StatInit, 1, 100)
+end
