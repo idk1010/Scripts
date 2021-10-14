@@ -1,0 +1,25 @@
+assert(not getgenv().AntiKickExecuted, "Anti Kick is already running!")
+local Players = game:GetService("Players")
+
+local LocalPlayer = Players.LocalPlayer
+local KickAttemptFormat = "Kick attempted for: %s"
+local BlockedMethods = {"Kick", "kick"}
+
+local function kickDetected(Player, Reason)
+    warn(KickAttemptFormat:format(Reason))
+end
+
+hookfunction(LocalPlayer.Kick, kickDetected)
+
+local __namecall
+__namecall = hookmetamethod(game, "__namecall", function(self, ...)
+    local args = {...}
+    local method = getnamecallmethod()
+    if (self == LocalPlayer and table.find(BlockedMethods, method)) then
+    kickDetected(self, args[1])
+    return
+    end
+    return __namecall(self, ...)
+end)
+
+getgenv().AntiKickExecuted = true
