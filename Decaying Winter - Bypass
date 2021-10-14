@@ -1,4 +1,3 @@
-assert(not getgenv().AntiKickExecuted, "Anti Kick is already running!")
 local Players = game:GetService("Players")
 
 local LocalPlayer = Players.LocalPlayer
@@ -24,5 +23,3 @@ __namecall = hookmetamethod(game, "__namecall", function(self, ...)
     
     return __namecall(self, ...)
 end)
-
-getgenv().AntiKickExecuted = true
